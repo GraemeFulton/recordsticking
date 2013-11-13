@@ -29,6 +29,8 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -37,6 +39,11 @@
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+                       
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <img class="main-logo" src="<?php echo bloginfo('template_url'); ?>/images/logo.png"/>
+                        </a>    
+                    
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -44,6 +51,20 @@
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+     
+                <!--#search clocks-->
+                <div id="main-search">
+                    <div id="search-clocks"><p>SEARCH CLOCKS; </p></div>
+                    <div id="main-search-form">
+                      <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+                        <div>
+                            <input type="text" value="<?php echo esc_html($s); ?>" name="s" id="s" />
+                            <input type="submit" id="submitbtn" value="&nbsp;" class="btn" />
+                        </div>
+                       </form>              
+                        </div>
+                 </div>
+                <!--#search clocks-->
 
 		<?php if ( get_header_image() ) : ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>

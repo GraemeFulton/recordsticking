@@ -58,6 +58,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+        font-family:'ImpactRegular';
 }
 body {
 	line-height: 1;
@@ -94,6 +95,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+        font-weight: normal!important;
 }
 html {
 	overflow-y: scroll;
@@ -188,7 +190,6 @@ img {
 	font-size: 11px;
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
-	font-weight: bold;
 	text-transform: uppercase;
 	color: #636363;
 }
@@ -575,8 +576,7 @@ a:hover {
 
 /* Navigation Menu */
 .main-navigation {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
+
 	text-align: center;
 }
 .main-navigation li {
@@ -921,7 +921,6 @@ img.aligncenter,
 }
 .entry-content dt,
 .comment-content dt {
-	font-weight: bold;
 	line-height: 1.714285714;
 }
 .entry-content dd,
@@ -1089,7 +1088,6 @@ article.format-link header {
 	font-size: 11px;
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
-	font-weight: bold;
 	font-style: italic;
 	text-transform: uppercase;
 	color: #848484;
@@ -1251,7 +1249,6 @@ article.format-quote .entry-content blockquote {
 	font-size: 0.714285714rem;
 }
 .comments-area .bypostauthor cite b {
-	font-weight: bold;
 }
 a.comment-reply-link,
 a.comment-edit-link {
@@ -1542,7 +1539,6 @@ img#wpstats {
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
 		color: #636363;
-		font-weight: bold;
 	}
 	.menu-toggle {
 		display: none;
@@ -1739,4 +1735,120 @@ img#wpstats {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+}
+
+/**********RECORDS TICKING***************/
+.main-logo{
+    width:75%;
+    position:relative;
+       display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.site-title{display:none;}
+.site-description{display:none;}
+
+#main-search #searchform input[type="text"]
+{
+    width:60%; height:50px; padding:0px;
+    border-color:#888;
+    margin-top:20px;
+}
+
+#main-search #submitbtn
+{
+    margin-left:-5.75%;  
+    background: url(images/button-search.png) no-repeat;
+    width:50px;
+    height:49px;
+    border:none;
+    border-left:1px solid #eaeaea;
+    background-position:center; 
+    color:#fff;
+    position:relative;
+}
+
+#main-search
+{   
+}
+
+#search-clocks
+{
+    float:left;
+    position: relative;
+    margin:30px 20px 0 20px;
+    font-size:30px;
+
+}
+#main-search-form{
+    position:relative;
+    width:100%;
+}
+
+/* ROTATE*/
+
+div.spinners{
+    padding: 5px 5px 20px 5px; overflow: hidden;
+    margin-left:8%;
+    margin-top:2%;
+    
+}
+
+a#rotator img:hover { 
+    display: block;
+-webkit-transform: rotate(360deg); 
+-moz-transform: rotate(360deg); 
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg); 
+}
+
+.spin {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 5s ease-out;
+  -ms-transition:all 5s ease-out;
+  -o-transition:all 5s ease-out;
+}
+
+.spin:hover {
+      -webkit-transition:all 23s ease-out;
+  -moz-transition:all 23s ease-out;
+  -ms-transition:all 23s ease-out;
+  -o-transition:all 23s ease-out;
+  transition:all 23s ease-out;
+    
+  -webkit-transform:rotate(1500deg);
+  -moz-transform:rotate(1500deg);
+  -ms-transform:rotate(1500deg);
+  -o-transform:rotate(1500deg);
+  transform:rotate(1500deg);
+}
+
+/*******IMPACT FONT************/
+
+@font-face {
+    font-family: 'ImpactRegular';
+    src: url('css/impact-webfont.eot');
+    src: url('css/impact-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/impact-webfont.woff') format('woff'),
+         url('css/impact-webfont.ttf') format('truetype'),
+         url('css/impact-webfont.svg#ImpactRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*******IMPACT FONT************/
+b{font-weight:normal;}
+
+.woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button {
+    
+  font-weight:normal !important;  
+  text-shadow: none !important;
+}
+.nav-menu .current_page_item, .page_item, .nav-menu li a{
+    font-size:20px !important;
+}
+.current_page_item, .current_page_parent{
+    background:#eaeaea;
+    padding: 0 10px 0 10px;
 }
