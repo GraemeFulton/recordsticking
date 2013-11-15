@@ -1852,3 +1852,33 @@ b{font-weight:normal;}
     background:#eaeaea;
     padding: 0 10px 0 10px;
 }
+/**********Menu Styles*******************/
+body.custom-background {
+background-color: #FFFFFF !important;
+}
+body .site {
+box-shadow: none;
+}
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
+color: #eaeaea;
+background:#111;
+}
+
+
+.main-navigation a:hover {
+	color: #fff !important;
+	background:#111;
+}
+
+.main-navigation li a {
+
+color: #111;
+}
+.current_page_item, .current_page_parent {
+background: #111;
+}
+.nav-menu li a {
+padding: 0px 2px 0px 2px;
+}
+
+/************************/
