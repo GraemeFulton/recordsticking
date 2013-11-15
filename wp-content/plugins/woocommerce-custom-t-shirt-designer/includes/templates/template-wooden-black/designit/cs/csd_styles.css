@@ -1,0 +1,426 @@
+/* Font decs for all browsers. boom. */
+@font-face {
+    font-family: 'Lucidas';
+    font-style: normal;
+    font-weight: bold;
+    src: url('http://madcore.com.au/LUCIDAGBOLD.eot');
+    src: local('Lucidas'), local('Lucidas-Bold'), url('../Lucidas-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lucidas';
+    font-style: normal;
+    font-weight: normal;
+    src: url('http://madcore.com.au/LUCIDAGNORMAL.eot');
+    src: local('Lucidas'), local('Lucidas'), url('../Lucidas.ttf') format('truetype');
+}
+
+.rhsstepbutton {
+    display: block;
+    width: 181px;
+    height: 25px;
+    background:  #000000 url('../img5/ct_rhs_next_button.png') bottom no-repeat;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.rhsstepbuttonsp {
+    padding-top:3px; 
+    padding-left: 15px;
+}
+
+.rhsstepbutton:hover {
+    background-position: 0 0;
+    cursor: pointer;
+}
+
+.rhscurrorder {
+    text-align: left;
+    font-size: 11px;
+    line-height: 16px;
+    color:#b8b8b8;
+}
+
+.rhscurrorderb {
+    text-align: right;
+    font-size: 11px;
+    line-height: 16px;
+    color:#b8b8b8;
+}
+
+
+.rhstext {
+    color: #b8b8b8;
+    font-size: 12px; 
+    line-height: 18px;   
+}
+
+
+#f1_upload_process{
+   display:none;
+   text-align:center;
+}
+
+input
+{
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+select
+{
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;;
+    font-size: 12px;
+}
+
+div.searchresultoverlay {
+    background: #000; 
+    border: #000000 1px solid; 
+    position: relative; 
+    top: -150px; 
+    left: 30px; 
+    z-index: 50; 
+    width: 60px; 
+    font-size: 10px;
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif; 
+    text-align: center; 
+    padding: 2px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px;
+}
+
+h1 {
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif; 
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.inputboxes {
+   background: #000;
+   border: 1px solid #888888;
+   font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+   font-size: 12px;
+   color: white;
+   padding: 3px;
+   height: 17px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px; 
+   border-top: 1px solid #888888;
+}
+
+.textboxes {
+   background: #000;
+   border: 1px solid #888888;
+   font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+   font-size: 12px;
+   color: white;
+   padding: 3px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px; 
+   border-top: 1px solid #888888;
+}
+
+
+a.stepbuttons {
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+a.smallgreylink {
+font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+color: #a8a8a8;
+font-size: 10px; }
+a.smallgreylink:visited { color: #a8a8a8; }
+a.smallgreylink:hover { color: red; }
+
+
+a.stepcurrent { color: #EBC544 }
+a.stepcurrent:visited { color: #EBC544; }
+a.stepcurrent:hover { color: #EBC544; }
+
+a.step:link { color: #b8b8b8; }
+a.step:visited { color: #b8b8b8; }
+a.step:hover { color: #ffffff; }
+
+
+span.smallbluetext {
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    color: #3e99ff;
+    font-size: 10px; 
+}
+
+
+input[type="checkbox"], input[type="radio"]{
+   background: transparent;
+   border: 0;
+}
+
+textarea {
+    background: #000;
+    border: 1px solid #888888;
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 12px;
+    resize: none;
+    overflow:auto;
+}
+
+div#prevtext {
+     font-weight: bold;
+     padding-top: 5px;
+}
+	
+div.containerblue {
+    width: 730px;
+    padding-top: 12px;
+    padding-left: 20px;
+    float: left;
+    background: #000 url(img/header.png) no-repeat;
+}
+
+div#holder {
+    clear: both;
+    width: 500px;
+    background: #fff;
+}
+
+div.colourbox {
+    width:20px;
+    height:20px;
+    margin: 1px 1px 1px 1px;
+    text-align:center;
+    border: 1px darkgray solid;
+    float:left;
+}
+	
+
+div.containerbig {
+    padding-top: 4px;
+    padding-left: 0px;
+    float: left;
+    width: 175px;
+    height: 280px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+
+div.container_acc {
+    padding-top: 4px;
+    padding-left: 0px;
+    float: left;
+    height: 158px;
+    overflow: hidden;
+
+}
+	
+div.container_acc_picture {
+    height: 100px;
+	width:210px;
+    text-align: right;
+    padding: 8px;
+}
+
+
+#content {
+    position: absolute; /* Needed for Safari */
+    margin: auto; /* Takes care of horizontal alignment in standards compliant browsers */
+    text-align: left;
+    width: 200px;
+    height: 200px;
+    background-color: #fc0;
+		
+}
+
+div.containersmall {
+    padding-top: 4px;
+    padding-left: 0px;
+    float: left;
+    width: 175px;
+    height: 270px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+div.containerbig_picture {
+    height: 250px;
+    width: 128px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+td {
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+div.text {
+    line-height: 16px;
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+div.headingtext {
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+div.steptext {
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+    margin-left: 10px;
+}
+
+div.containerbiginfoicons {
+    position: relative;
+    top: -80px;
+    left: 5px;
+    z-index: 50;
+}
+
+div.containerzoomicon {
+    position: relative;
+    top: -290px;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    -khtml-opacity: 0.40; 
+    -moz-opacity:.40; 
+    -ms-filter:”alpha(opacity=40)”; 
+    filter:alpha(opacity=40); 
+    opacity:.40;   
+    z-index: 50;
+}
+
+div.containeraccicon {
+    -khtml-opacity: 0.40; 
+    -moz-opacity:.40; 
+    -ms-filter:”alpha(opacity=40)”; 
+    filter:alpha(opacity=40); 
+    opacity:.40;   
+    z-index: 50;
+}
+
+div.containerbig_text {
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 20px;
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: -35px;
+}
+
+div.container_acc_text {
+    height: 50px;
+    text-align: center;
+    line-height: 20px;
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: -5px;
+	margin-left: 10px;
+
+}
+
+
+.pushButton {
+    width: 100px;
+    height: 25px;
+    color: white;
+    font-family: "Lucida Grande", "Lucidas", Tahoma, sans-serif;
+    padding-bottom: 2px;
+    border: 0px;
+    background: #20292D url(img/modalBtn.png) no-repeat;
+}
+
+.pushButtonPressed {
+    background: #20292D url(img/modalBtnPrsd.png) no-repeat;
+}
+
+.reviewtext {
+    color: #b8b8b8; 
+    margin-top: 5px; 
+    margin-left: 10px;
+}
+
+.reviewlist {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  line-height: 18px;
+}
+
+.reviewgrp {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reviewcomments {
+    width: 185px; 
+    padding:5px; 
+    resize: none;
+    border-color: #444444;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; 
+    color: white;
+}
+
+#frontpreview_ {
+    position: absolute; 
+    height:223px; 
+    width: 345px;
+}
+
+#frontpreviewb_ {
+    position: absolute; 
+    height:243px; 
+    width: 232px;
+}
+
+
+
+#backpreview_ {
+    position: absolute; 
+    height: 310px; 
+    width: 450px;
+}
+
+
+#backpreview__ {
+    position: absolute; 
+    height: 550px; 
+    width: 450px;
+}
+
+#backpreviewb_ {
+    position: absolute; 
+    height: 300px; 
+    width: 250px;
+}
+
+#frontpreviewb__ {
+    position: absolute; 
+    height: 300px; 
+    width: 227px;
+}
+
+#backpreviewb__ {
+    position: absolute; 
+    height: 300px; 
+    width: 230px;
+}
+
+.savestatus {
+    color: #EBC544;
+    font-weight:bold;
+}
