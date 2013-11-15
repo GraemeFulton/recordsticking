@@ -61,7 +61,13 @@ function twentytwelve_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'primary', __( 'Primary Menu', 'twentytwelve' ) );
+	//register_nav_menu( 'primary', __( 'Primary Menu', 'twentytwelve' ) );
+        
+        // This theme uses wp_nav_menu() in TWO locations.
+        register_nav_menus( array(
+            'primary' => __( 'Primary Menu', 'twentytwelve'),
+            'secondary' => __( 'Secondary Menu', 'twentytwelve' ),
+         ) );
 
 	/*
 	 * This theme supports custom background color and image,

@@ -191,7 +191,7 @@ img {
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
 	text-transform: uppercase;
-	color: #636363;
+	color: #222;
 }
 
 /* Shared Post Format styling */
@@ -487,7 +487,7 @@ body {
 	font-size: 1rem;
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
-	color: #444;
+	color: #000;
 }
 body.custom-font-enabled {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1751,7 +1751,7 @@ img#wpstats {
 
 #main-search #searchform input[type="text"]
 {
-    width:60%; height:50px; padding:0px;
+    width:77%; height:50px; padding:0px;
     border-color:#888;
     margin-top:20px;
 }
@@ -1777,7 +1777,7 @@ img#wpstats {
 {
     float:left;
     position: relative;
-    margin:30px 20px 0 20px;
+    margin:30px 20px 0 0px;
     font-size:30px;
 
 }
@@ -1845,13 +1845,7 @@ b{font-weight:normal;}
   font-weight:normal !important;  
   text-shadow: none !important;
 }
-.nav-menu .current_page_item, .page_item, .nav-menu li a{
-    font-size:20px !important;
-}
-.current_page_item, .current_page_parent{
-    background:#eaeaea;
-    padding: 0 10px 0 10px;
-}
+
 /**********Menu Styles*******************/
 body.custom-background {
 background-color: #FFFFFF !important;
@@ -1859,12 +1853,14 @@ background-color: #FFFFFF !important;
 body .site {
 box-shadow: none;
 }
+
 .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
 color: #eaeaea;
-background:#111;
 }
 
-
+.nav-menu .current_page_item, .page_item, .nav-menu li a{
+    font-size:20px !important;
+}
 .main-navigation a:hover {
 	color: #fff !important;
 	background:#111;
@@ -1872,13 +1868,33 @@ background:#111;
 
 .main-navigation li a {
 
-color: #111;
+color: #000;
 }
 .current_page_item, .current_page_parent {
 background: #111;
 }
+
+
 .nav-menu li a {
-padding: 0px 2px 0px 2px;
+padding: 0px 10px 0px 10px;
+}
+/************************/
+
+/******Shopping cart navigation (top)***************/
+.cart-navigation{
+    float:right;
+}
+.cart-navigation li a {
+color: #000;
+font-size: 12px !important;
+}
+.cart-navigation li {
+margin: 0 -5px 0 0 !important;
 }
 
-/************************/
+body .site{margin-top:0px !important;}
+
+.site-header {
+padding: 0px 0;
+padding:0;
+}
