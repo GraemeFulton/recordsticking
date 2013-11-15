@@ -41,6 +41,7 @@
             <nav id="site-navigation-top" class="main-navigation cart-navigation" role="navigation">
                 <?php wp_nav_menu( array('menu_class' => 'nav-menu','theme_location' => 'secondary') ); ?>
             </nav>
+            <div class="clear_both"></div>
             <!------------->
             <hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

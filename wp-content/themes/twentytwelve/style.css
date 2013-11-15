@@ -1898,3 +1898,6 @@ body .site{margin-top:0px !important;}
 padding: 0px 0;
 padding:0;
 }
+.clear_both{
+    clear: both;
+}
