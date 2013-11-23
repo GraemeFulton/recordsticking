@@ -7,23 +7,23 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+<div id="primary" class="site-content">
 		<div id="content" role="main">
 	
                     <div style="margin-left:-65px;">
-    
-<img src="<?php echo bloginfo('template_url'); ?>/images/map.png" width="1061" height="990" alt="map example" usemap="#home_map"  class="map" />
+<?php $site_url= get_site_url(); ?>
+<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2013/11/home-page-main-image-black.png" width="1061" height="1150" alt="map example" usemap="#home_map"  class="map" />
 <map name='home_map' class="home_map">
-<area shape='circle' rec="50" coords='216, 272, 120' href='#' id = '50s-map' class = 'home-map' alt = '50s Clocks' title = '50s Clocks' />
-<area shape='circle' rec="60"coords='416, 442, 115' href='#' id = '60s-map' class = 'home-map' alt = '60s Clocks' title = '60s Clocks' />
-<area shape='circle' rec="90"coords='204, 612, 121' href='#' id = '90s-map' class = 'home-map' alt = '90s Clocks' title = '90s Clocks' />
-<area shape='circle' rec="00"coords='500, 732, 124' href='#' id = '00s-map' class = 'home-map' alt = '00s Clocks' title = '00s Clocks' />
-<area shape='circle' rec="70"coords='659, 534, 118' href='#' id = '70s-map' class = 'home-map' alt = '70s Clocks' title = '70s Clocks' />
-<area shape='circle' rec="10"coords='825, 746, 114' href='#' id = '10s-map' class = 'home-map' alt = '10s Clocks' title = '10s Clocks' />
-<area shape='rect' coords='167, 909, 402, 959' href='#' id = 'musicians-map' class = 'home-map' alt = 'Musicians' title = 'Musicians' />
-<area shape='rect' coords='419, 912, 645, 957' href='#' id = 'fimstars-map' class = 'home-map' alt = 'Filmstars' title = 'Filmstars' />
-<area shape='rect' coords='659, 912, 1006, 959' href='#' id = 'sportingicons-map' class = 'home-map' alt = 'Sporting Icons' title = 'Sporting Icons' />
-<area shape='circle' rec="80"coords='915, 473, 117' href='#' id = '80s-map' class = 'home-map' alt = '80s Clocks' title = '80s Clocks' />
+<area shape='circle' rec="50" coords='209, 412, 129' href='<?php echo $site_url;?>/product-category/wall-clocks/50s-clocks/' id = '50s-map' class = 'home-map' alt = '50s Clocks' title = '50s Clocks' />
+<area shape='circle' rec="60"coords='412, 586, 124' href='<?php echo $site_url;?>/product-category/wall-clocks/60s-clocks/' id = '60s-map' class = 'home-map' alt = '60s Clocks' title = '60s Clocks' />
+<area shape='circle' rec="90"coords='194, 750, 127' href='<?php echo $site_url;?>/product-category/wall-clocks/90s-clocks/' id = '90s-map' class = 'home-map' alt = '90s Clocks' title = '90s Clocks' />
+<area shape='circle' rec="10"coords='812, 882, 122' href='<?php echo $site_url;?>/product-category/wall-clocks/2010s-clocks/' id = '80s-map' class = 'home-map' alt = '00s Clocks' title = '00s Clocks' />
+<area shape='circle' rec="70"coords='650, 673, 122' href='<?php echo $site_url;?>/product-category/wall-clocks/70s-clocks/' id = '70s-map' class = 'home-map' alt = '70s Clocks' title = '70s Clocks' />
+<area shape='circle' rec="80"coords='904, 627, 122' href='<?php echo $site_url;?>/product-category/wall-clocks/80s-clocks/' id = '10s-map' class = 'home-map' alt = '10s Clocks' title = '10s Clocks' />
+<area shape='rect' coords='418, 1076, 644, 1126'  href='<?php echo $site_url;?>/product-category/wall-clocks/filmstars/' id = 'sporting' class = 'home-map' alt = 'Musicians' title = 'Musicians' />
+<area shape='rect' coords='657, 1077, 1001, 1127' href='<?php echo $site_url;?>/product-category/wall-clocks/sporting-icons' id = 'wall-clocks' class = 'home-map' alt = 'Filmstars' title = 'Filmstars' />
+<area shape='rect' coords='402, 1125, 169, 1078'  href='<?php echo $site_url;?>/wall-clocks-2/' id = 'wall-clocks' class = 'home-map' alt = 'wall-clocks' title = 'Wall Clocks' />
+<area shape='circle' rec="00"coords='491, 873, 130' href='<?php echo $site_url;?>/product-category/wall-clocks/00s-clocks/' id = '00s-map' class = 'home-map' alt = '80s Clocks' title = '80s Clocks' />
 </map>
 
 <script>
@@ -59,8 +59,8 @@ A jQuery plugin to enhance image maps.
                altImageFill: true,
     altImageStroke: false,
     altImageOpacity:1,
-    fillOpacity: 0.7,
-    altImage: "<?php echo bloginfo('template_url'); ?>/images/map2.png",
+    fillOpacity: 1,
+    altImage: "<?php echo get_site_url(); ?>/wp-content/uploads/2013/11/home-page-main-image-colour.png",
     clickNavigate: true
          
      });
