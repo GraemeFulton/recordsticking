@@ -76,6 +76,34 @@
 		<?php if ( get_header_image() ) : ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
+
+
+<?php $site_url= get_site_url();?>
+
+<div style="margin-top:10px;">
+
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/All-Clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="50's Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/50s-Clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="60s Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/60s-clocks1.png" />
+
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="70's Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/70s-Clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="80's Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/80s-clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="90's Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/90s-clocks1.png" />
+
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="00's Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/00s-clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="10's Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/2010-clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="Filmstars Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/Filmstars-clocks1.png" />
+
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="Sport Icon Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/Sport-icons-clocks1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="Records Ticking: Vinyl Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/Records-ticking-record1.png" />
+<img class="spin" style="width: 80px; height: 80px; float: left;" alt="Other Clocks" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/Other-Clocks1.png" />
+
+</div>
+
 	</header><!-- #masthead -->
 
+
 	<div id="main" class="wrapper">
+
+
+
