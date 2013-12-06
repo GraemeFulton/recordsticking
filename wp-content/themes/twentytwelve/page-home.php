@@ -8,9 +8,17 @@
 get_header(); ?>
 
 <div id="primary" class="site-content">
+
+<?php 
+if(MobileDTS::is('mobile')){
+echo "<script>window.location.href='http://www.therecordsticking.co.uk/wall-clocks-2' </script>";
+}
+else{
+?>
 		<div id="content" role="main">
 	
                     <div style="margin-left:-65px;">
+
 <?php $site_url= get_site_url(); ?>
 <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2013/12/home-page-main-image-black.png" width="1061" height="1150" alt="map example" usemap="#home_map"  class="map" />
 <map name='home_map' class="home_map">
@@ -69,9 +77,7 @@ A jQuery plugin to enhance image maps.
      
 </script>
 </div>
-<style>
-    
-</style>
+<?php }?>
 
                     
                     

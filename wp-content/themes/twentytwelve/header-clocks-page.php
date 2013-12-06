@@ -58,7 +58,8 @@
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-     
+
+<?php if(!MobileDTS::is('mobile')){?>     
                 <!--#search clocks-->
                 <div id="main-search">
                     <div id="search-clocks"><p>SEARCH CLOCKS; </p></div>
@@ -76,6 +77,21 @@
 		<?php if ( get_header_image() ) : ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
+<?php }
+else{?>
+<style>
+#mob-search{width:100%; margin-top:20px;}
+</style>
+<center>
+<form id="mob-search" method="get" action="<?php bloginfo('home'); ?>">
+<div>
+<input style="width:70%" placeholder="SEARCH CLOCKS" type="text" name="s" id="s" size="15" />
+<input type="submit" value="<?php echo attribute_escape(__('Search')); ?>" />
+</div>
+</form>
+</center>
+
+<?php } ?>
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">
