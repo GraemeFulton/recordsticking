@@ -6,7 +6,7 @@
  * A Page for courses
 */
 
-get_header(); 
+get_header('clocks-page'); 
 
 $site_url= get_site_url();
 ?>

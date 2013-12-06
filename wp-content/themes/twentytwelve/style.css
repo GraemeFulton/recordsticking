@@ -62,7 +62,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body {
 	line-height: 1;
+-webkit-backface-visibility: hidden;
 }
+
+
+
 ol,
 ul {
 	list-style: none;
@@ -1758,16 +1762,19 @@ img#wpstats {
 
 #main-search #submitbtn
 {
-    margin-left:-5.75%;  
-    background: url(images/button-search.png) no-repeat;
-    width:50px;
-    height:49px;
-    border:none;
-    border-left:1px solid #eaeaea;
-    background-position:center; 
-    color:#fff;
-    position:relative;
+margin-left: -5.3%;
+margin-top: 21px;
+background: url(images/button-search.png) no-repeat;
+width: 50px;
+height: 49px;
+border: none;
+border-left: 1px solid #eaeaea;
+background-position: center;
+color: #fff;
+position: absolute;
 }
+
+
 
 #main-search
 {   
@@ -1811,6 +1818,7 @@ a#rotator img:hover {
 }
 
 .spin:hover {
+
       -webkit-transition:all 23s ease-out;
   -moz-transition:all 23s ease-out;
   -ms-transition:all 23s ease-out;
@@ -1822,6 +1830,7 @@ a#rotator img:hover {
   -ms-transform:rotate(1500deg);
   -o-transform:rotate(1500deg);
   transform:rotate(1500deg);
+
 }
 
 /*******IMPACT FONT************/
@@ -1855,8 +1864,9 @@ box-shadow: none;
 }
 
 .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
-color: #eaeaea;
+color: #eaeaea;background:#111;
 }
+.button{color:#fff !important; background:#222 !important;}
 
 .nav-menu .current_page_item, .page_item, .nav-menu li a{
     font-size:20px !important;

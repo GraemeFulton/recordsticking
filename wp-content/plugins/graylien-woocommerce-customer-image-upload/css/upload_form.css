@@ -1,0 +1,58 @@
+#customer-upload-form {
+  width: 300px;
+  margin:auto;
+  background: #ececec;
+  padding: 20px;
+  border: 1px solid #ccc;
+  position:relative;
+}
+.wp-post-image{display:none;}
+.onsale{display:none;}
+.woocommerce-tabs{display:none;}
+.related.products{display:none;}
+.images{display:none;}
+
+.summary{
+border: 1px solid #000;
+margin:0 auto !important;
+ float:none !important;
+padding:22px;
+width:58% !important;
+}
+
+#image-pre{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#image-prev {
+  background: #fff;
+  border: 1px solid #ccc;
+  text-align:center;
+  padding:20px;
+  margin-bottom:19px;
+}
+#image-prev-cart {
+  background: #fff;
+  border: 1px solid #ccc;
+  text-align:center;
+  padding:20px;
+  margin-bottom:19px;
+}
+#image-prev-cart img{
+
+    width:258px !important;
+
+}
+.product_meta{display:none;}
+
+#image-prev img {
+  width: 258px;
+  vertical-align: middle;
+  border:1px solid #474747;
+}
+
+div.quantity{float:none !important;}
+
+.customer-button:hover{cursor: pointer; cursor: hand;}
+.customer-button { /*basic styles*/padding-top: 12px; height: 70px; color: #fff; background-color: #000; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2f2f), color-stop(.5, #1e1f1f), color-stop(.51, #0c0c0c), to(#000)); background: -moz-linear-gradient(top, #2f2f2f, #1e1f1f 50%, #0c0c0c 51%, #000); /*border styles*/ border-top: solid 2px #555; border-bottom: solid 2px #111; -moz-box-shadow:inset 0 0 15px #000000; -webkit-box-shadow:inset 0 0 15px #000000; box-shadow:inset 0 0 15px #000000; } .button p { font-size: 30px; line-height: 70px; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; text-shadow: 0px 0px 3px #888; } a { text-decoration: none; color: fff; } .button:hover { -moz-box-shadow:inset 0 0 50px #000000; -webkit-box-shadow:inset 0 0 50px #000000; box-shadow:inset 0 0 50px #000000; } .button p:hover { text-shadow: 0px 0px 3px #444; }

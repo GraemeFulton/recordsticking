@@ -12,7 +12,7 @@ get_header(); ?>
 	
                     <div style="margin-left:-65px;">
 <?php $site_url= get_site_url(); ?>
-<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2013/11/home-page-main-image-black.png" width="1061" height="1150" alt="map example" usemap="#home_map"  class="map" />
+<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2013/12/home-page-main-image-black.png" width="1061" height="1150" alt="map example" usemap="#home_map"  class="map" />
 <map name='home_map' class="home_map">
 <area shape='circle' rec="50" coords='209, 412, 129' href='<?php echo $site_url;?>/product-category/wall-clocks/50s-clocks/' id = '50s-map' class = 'home-map' alt = '50s Clocks' title = '50s Clocks' />
 <area shape='circle' rec="60"coords='412, 586, 124' href='<?php echo $site_url;?>/product-category/wall-clocks/60s-clocks/' id = '60s-map' class = 'home-map' alt = '60s Clocks' title = '60s Clocks' />
