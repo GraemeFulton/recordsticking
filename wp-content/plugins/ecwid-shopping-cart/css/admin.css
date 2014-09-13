@@ -1,0 +1,64 @@
+#wpadminbar .ecwid-top-menu-item {
+	margin-top: 0px;
+	width: 23px;
+	height: 28px;
+	background: url(../images/icon-head-default.png) no-repeat 0% 2px;
+}
+
+#wpadminbar .ecwid-top-menu-item:hover,
+#wpadminbar .hover .ecwid-top-menu-item{
+	background-image: url(../images/icon-head-active.png);
+}
+
+#adminmenu #toplevel_page_ecwid div.wp-menu-image {
+	background: url(../images/icon-sidebar-default.png) no-repeat 5px 2px;
+	margin: 2px 3px 2px 2px;
+	width: 23px;
+	height: 23px;
+}
+
+#adminmenu #toplevel_page_ecwid:hover div.wp-menu-image,
+#adminmenu #toplevel_page_ecwid.wp-has-current-submenu div.wp-menu-image
+{
+	background-image: url(../images/icon-sidebar-active.png);
+}
+
+.ecwid-settings h2 {
+	background:url(../images/icon-title.png) no-repeat 0% 50%;
+	padding-left: 43px;
+	line-height: 32px;
+	margin-bottom: 30px;
+}
+
+#hide-vote-message {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#hide-vote-message.hiding {
+	cursor: wait;
+}
+
+#wp-toolbar > ul > li#wp-admin-bar-ecwid-main {
+	display: block;
+}
+
+.ecwid-badge {
+	display: table;
+	width: 70%;
+	min-width: 200px;
+	padding: 3px;
+}
+
+.ecwid-badge > div {
+	display: table-cell;
+	vertical-align: middle;
+	height: 55px;
+}
+
+.ecwid-badge .checkbox {
+	width: 15px;
+}
+.ecwid-badge .image {
+	text-align: center;
+}

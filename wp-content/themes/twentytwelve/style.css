@@ -1890,6 +1890,15 @@ padding: 0px 10px 0px 10px;
 }
 /************************/
 
+.menu-facebook {
+    background-image: url(http://www.therecordsticking.co.uk/wp-content/uploads/2013/12/facebook_icon.png) !important;
+    background-repeat: no-repeat !important;
+    width: 50px;
+    background-size: 46px 46px;
+margin-left:100px !important;
+}
+.menu-facebook a{
+color:transparent !important;}
 /******Shopping cart navigation (top)***************/
 .cart-navigation{
     float:right;
@@ -1958,4 +1967,12 @@ float: none !important;
 padding: 22px;
 width: 98% !important;
 }
+}
+
+.woocommerce div.product div.images, .woocommerce #content div.product div.images, .woocommerce-page div.product div.images, .woocommerce-page #content div.product div.images {margin-right:10px;}
+.fb_iframe_widget span {
+display: inline-block;
+position: relative;
+text-align: justify;
+width: 500px !important;
 }

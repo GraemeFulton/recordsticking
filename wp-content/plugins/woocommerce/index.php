@@ -1,2 +1,3 @@
-<?php
-// Silence is golden.
+Hacked By. Unnamed 404
+
+----- MADIUN CYBER FIGHTER -----
