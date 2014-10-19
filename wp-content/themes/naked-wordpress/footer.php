@@ -10,9 +10,9 @@
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
 		
-		<p>The <a href="http://bckmn.com/naked-wordpress" rel="theme">Record's Ticking</a> 
-			by <a href="http://wordpress.org" rel="generator">Robert Hume</a> 
-			website by <a href="http://bckmn.com" rel="designer">Graeme Fulton</a>
+		<p>The <a href="http://www.therecordsticking.co.uk" rel="theme">Record's Ticking</a> 
+			by <a href="http://www.therecordsticking.co.uk" rel="generator">Robert Hume</a> 
+			website by <a href="http://twitter.com/graeme_fulton" rel="designer">Graeme Fulton</a>
 		</p>
 		
 	</div><!-- .site-info -->
