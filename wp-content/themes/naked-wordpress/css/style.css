@@ -24,3 +24,7 @@ h2{
    min-width: 100%;
    position: absolute;
 }   
+.products.container{
+    width:100%!important;
+}
+.woocommerce-pagination{float:left}

@@ -7,6 +7,4 @@
  * @version     2.0.0
  */
 ?>
-<div class='row'>
-<div class="product-content">
-<ul class="products">
+<div class="products container">

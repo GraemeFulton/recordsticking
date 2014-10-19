@@ -32,30 +32,7 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="<?php echo $template_dir; ?>/js/bootstrap.min.js"></script>
-        <script>
-$(document).ready(function(){
 
-$(".product-box").each(function(){
-    // Uncomment the following if you need to make this dynamic
-    //var refH = $(this).height();
-    //var refW = $(this).width();
-    //var refRatio = refW/refH;
-
-    // Hard coded value...
-    var refRatio = 240/300;
-
-    var imgH = $(this).children("img").height();
-    var imgW = $(this).children("img").width();
-
-    if ( (imgW/imgH) < refRatio ) { 
-        $(this).addClass("portrait");
-    } else {
-        $(this).addClass("landscape");
-    }
-})
-
-})
-</script>
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -85,20 +62,13 @@ $(".product-box").each(function(){
          do_action('bp_after_header');
  ?>
 	</div>
-	<div class="center">
-
-		<div id="brand">
-			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); // Link to the home page ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Display the blog name ?></a>
-			</h1>
-			<h4 class="site-description">
-				<?php bloginfo( 'description' ); // Display the blog description, found in General Settings ?>
-			</h4>
-		</div><!-- /brand -->
-		
-		<div class="clear"></div>
-	</div><!--/container -->
+	
 		
 </header><!-- #masthead .site-header -->
-
+<div class="container">
+<div class="center">
+<?php get_search_form(); ?>
+    
+    	</div><!--/container -->   
+</div>
 <div class="main-fluid"><!-- start the page containter -->

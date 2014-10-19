@@ -14,6 +14,8 @@ global $wp_query;
 if ( $wp_query->max_num_pages <= 1 )
 	return;
 ?>
+<div class="container-fluid pagi">
+    
 <nav class="woocommerce-pagination">
 	<?php
 		echo paginate_links( apply_filters( 'woocommerce_pagination_args', array(
@@ -29,3 +31,4 @@ if ( $wp_query->max_num_pages <= 1 )
 		) ) );
 	?>
 </nav>
+</div>

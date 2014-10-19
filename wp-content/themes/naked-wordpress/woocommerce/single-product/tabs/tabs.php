@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $tabs ) ) : ?>
-
+<div class="col-md-6">
 	<div class="woocommerce-tabs">
 		<ul class="tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
@@ -37,5 +37,6 @@ if ( ! empty( $tabs ) ) : ?>
 
 		<?php endforeach; ?>
 	</div>
+</div>
 
 <?php endif; ?>

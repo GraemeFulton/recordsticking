@@ -30,6 +30,7 @@ global $woocommerce, $product, $post;
 								else
 									$selected_value = isset( $_POST[ 'attribute_' . sanitize_title( $name ) ] ) ? $_POST[ 'attribute_' . sanitize_title( $name ) ] : '';
 
+                                                                $selected_value=$options[0];
 								// Get terms if this is a taxonomy - ordered
 								if ( taxonomy_exists( $name ) ) {
 

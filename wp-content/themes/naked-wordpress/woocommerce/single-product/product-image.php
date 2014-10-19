@@ -30,8 +30,7 @@ global $post, $woocommerce, $product;
 				$gallery = '';
 			}
 
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s"  rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_title, $image ), $post->ID );
-
+echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" title="%s" rel="lightbox[]">%s</a>', $image_link, $image_title, $image ), $post->ID );
 		} else {
 
 			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="Placeholder" />', woocommerce_placeholder_img_src() ), $post->ID );
@@ -42,3 +41,15 @@ global $post, $woocommerce, $product;
 	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
 
 </div>
+<script>
+
+$(document).ready(function(){
+    $('.attachment-shop_thumbnail').on('click', function(){
+               var photo_fullsize =  $(this).attr('src');
+                $('.wp-post-image').attr('src', photo_fullsize);
+                $('.wp-post-image').parent().attr('href', photo_fullsize)
+        return false;
+    });
+    
+})
+</script>

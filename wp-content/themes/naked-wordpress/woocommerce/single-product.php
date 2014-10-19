@@ -12,7 +12,6 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header('shop'); ?>
-
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
