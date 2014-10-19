@@ -1,7 +1,6 @@
 <?php
 /*
-Plugin Name: IBM Navbar
-Plugin URI: http://ibm.com/
+Plugin Name: Bootstrap Navbar
 Description: Bootstrap navigation bar (extends wordpress walker)
 Version: 1.0
 Author: Graeme Fulton
