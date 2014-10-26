@@ -61,13 +61,14 @@
 <?php //BOOTSTRAP NAV-WALKER
          do_action('bp_after_header');
  ?>
+            <?php get_search_form(); ?>
+
 	</div>
 	
 		
 </header><!-- #masthead .site-header -->
 <div class="container">
 <div class="center">
-<?php get_search_form(); ?>
     
     	</div><!--/container -->   
 </div>

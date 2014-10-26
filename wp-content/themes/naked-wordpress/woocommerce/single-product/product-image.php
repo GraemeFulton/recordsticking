@@ -12,7 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $woocommerce, $product;
 
 ?>
-<div class="images">
+<div class="images row">
+      <div class="col-xs-3 thumbnail-column">
+	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
+    </div>
+    <div class="col-xs-9">
 
 	<?php
 		if ( has_post_thumbnail() ) {
@@ -37,8 +41,8 @@ echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="
 
 		}
 	?>
-
-	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
+    </div>
+  
 
 </div>
 <script>
@@ -46,8 +50,13 @@ echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="
 $(document).ready(function(){
     $('.attachment-shop_thumbnail').on('click', function(){
                var photo_fullsize =  $(this).attr('src');
-                $('.wp-post-image').attr('src', photo_fullsize);
-                $('.wp-post-image').parent().attr('href', photo_fullsize)
+               $('.wp-post-image').hide();
+                setTimeout(function(){$('.wp-post-image').attr('src', photo_fullsize);
+                         $('.wp-post-image').parent().attr('href', photo_fullsize);
+                            $('.wp-post-image').fadeIn();            
+    }, 1)
+             
+               
         return false;
     });
     

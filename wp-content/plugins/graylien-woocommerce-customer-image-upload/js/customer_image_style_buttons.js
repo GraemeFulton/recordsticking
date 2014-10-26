@@ -16,4 +16,4 @@ $('#add-to-cart').click(function(){
 	$('.single_add_to_cart_button').click();
 });
 
-$('.wp-post-image').remove();
+//$('.wp-post-image').remove();

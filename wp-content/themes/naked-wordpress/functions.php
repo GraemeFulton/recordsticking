@@ -79,3 +79,23 @@ function remove_loop_button(){
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 }
 add_action('init','remove_loop_button');
+
+
+//CHANGE ORDER OF PRODUCT PAGE
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+  
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 5 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 40 );
+
+//remove related products from after product summary, and put into single_product_summary
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+add_action( 'records_ticking_related_products', 'woocommerce_output_related_products', 50);
+
+
+
+

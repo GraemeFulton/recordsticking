@@ -44,7 +44,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 <?php endif; ?>
 	<a class="product-link" href="<?php the_permalink(); ?>">
 
-            <div class="col-md-4 grid-box">
+            <div class="col-sm-4 grid-box">
             <div class="product-box" style="background-image: url('<?php echo $image[0]; ?>')">
         
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
@@ -73,8 +73,9 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 
 
 	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
+                         <h3 class="text-bottom"><?php the_title(); ?></h3>
+
 </div>
-         <h3 class="" style="text-align:center; color:#222"><?php the_title(); ?></h3>
             
             </div>
 

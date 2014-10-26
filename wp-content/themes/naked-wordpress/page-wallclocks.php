@@ -11,7 +11,7 @@ $site_url= get_site_url();
 ?>
 
 		
-<div class="col-md-1"></div>
+<div class="col-md-2"></div>
                     
  <div class="spinners col-md-9 center">
 

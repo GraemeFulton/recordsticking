@@ -15,10 +15,10 @@ $attachment_ids = $product->get_gallery_attachment_ids();
 
 if ( $attachment_ids ) {
 	?>
-	<div class="thumbnails"><?php
+	<?php
 
 		$loop = 0;
-		$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
+		$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 1 );
 
 		foreach ( $attachment_ids as $attachment_id ) {
 
@@ -44,6 +44,6 @@ if ( $attachment_ids ) {
 			$loop++;
 		}
 
-	?></div>
+	?>
 	<?php
 }

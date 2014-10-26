@@ -14,7 +14,7 @@ $site_url= get_site_url();
 
 
 
-<div class="col-md-1"></div>
+<div class="col-md-2"></div>
                     
  <div class="spinners col-md-9 center">
 <a href="<?php echo $site_url?>/product-category/all-clocks-alarms-clocks/"><img class="spin" style="width: 250px; height: 250px; float: left;" alt="" src="<?php echo $site_url; ?>/wp-content/uploads/2013/11/All-Clocks1.png">
