@@ -38,12 +38,12 @@ background: url("images/plugin_page_bg.png") repeat-x scroll 0 0 #FFFFFF;
 }
 #plugin_page_links
 {
-    background: url("images/menu_bg.png") repeat scroll 0 0 transparent;
-    border-radius: 8px 8px 8px 8px;
-    color: #75AA00;
-    min-height: 25px;
-    padding: 5px;
-    text-align: center;
+background: none repeat scroll 0 0 #87CEFA;
+border-radius: 8px;
+color: #2F4F4F;
+min-height: 22px;
+padding: 5px;
+text-align: center;
 }
 #acurax-social-media-widget .plugin-title
 {
@@ -51,13 +51,11 @@ background: url("images/plugin_page_bg.png") repeat-x scroll 0 0 #FFFFFF;
 }
 #plugin_page_links a
 {
-    border-right: 1px solid white;
-    color: white;
-    font-family: arial;
-    font-size: 13px;
-    font-weight: bold;
-    margin-left: -5px;
-    padding: 2px 6px 2px 3px;
+color: #2F4F4F;
+font-family: arial;
+font-size: 13px;
+font-weight: bold;
+padding: 2px 10px;
 }
 #plugin_page_links a:hover
 {

@@ -1,0 +1,750 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Bank\n"
+"POT-Creation-Date: 2014-11-17 12:37+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\Gallery-Testing\\wp-content\\plugins"
+"\\gallery-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr "Infoga Gallery Bank shortcode"
+
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr "Välj ett album nedan för att infoga det i ditt inlägg eller sida"
+
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr "Gallerityp"
+
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr "Album med bilder"
+
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr "Endast bilder"
+
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr "Albumformat"
+
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr "Välj albumformat"
+
+#: front_views/gallery-bank-shortcode.php:27
+msgid "Select Album"
+msgstr "Välj album"
+
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr "Välj ett album"
+
+#: front_views/gallery-bank-shortcode.php:63
+msgid "Gallery Format"
+msgstr "Galleri-format"
+
+#: front_views/gallery-bank-shortcode.php:65
+msgid "Select Gallery Format "
+msgstr "Välj galleriformat"
+
+#: front_views/gallery-bank-shortcode.php:74 views/album-preview.php:47
+#: views/images-sorting.php:240
+msgid "Images in Row"
+msgstr "Bilder i rad"
+
+#: front_views/gallery-bank-shortcode.php:79
+msgid "Image Width"
+msgstr "Bildbredd"
+
+#: front_views/gallery-bank-shortcode.php:86 views/album-sorting.php:190
+msgid "Albums in Row"
+msgstr "Album i rad"
+
+#: front_views/gallery-bank-shortcode.php:91
+msgid "Text Format"
+msgstr "Textformat"
+
+#: front_views/gallery-bank-shortcode.php:93
+msgid "Select Format "
+msgstr "Välj format"
+
+#: front_views/gallery-bank-shortcode.php:100
+msgid "Special Effects"
+msgstr "Specialeffekter"
+
+#: front_views/gallery-bank-shortcode.php:122
+msgid "Animation Effects"
+msgstr "Animationseffekter"
+
+#: front_views/gallery-bank-shortcode.php:175
+msgid "Show Responsive Gallery"
+msgstr "Visa tillgängligt galleri"
+
+#: front_views/gallery-bank-shortcode.php:179
+msgid "Show Album Title"
+msgstr "Visa albumtitel"
+
+#: front_views/gallery-bank-shortcode.php:184
+msgid "Insert Album"
+msgstr "Infoga album"
+
+#: front_views/gallery-bank-shortcode.php:187
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: front_views/gallery-bank-shortcode.php:499
+msgid "Please select an Album"
+msgstr "Vänligen välj ett album"
+
+#: front_views/gallery-bank-shortcode.php:503
+msgid "Please select an Album Format"
+msgstr "Vänligen välj ett albumformat"
+
+#: front_views/gallery-bank-shortcode.php:507
+msgid "Please select a Gallery Images Format"
+msgstr "Vänligen välj ett bildformat för galleri"
+
+#: front_views/gallery-bank-shortcode.php:511
+msgid "Please select a Text Format for the Gallery"
+msgstr "Vänligen välj ett textformat för galleriet"
+
+#: gallery-bank.php:100 gallery-bank.php:173 gallery-bank.php:246
+msgid "<img src=\""
+msgstr ""
+
+#: gallery-bank.php:102 gallery-bank.php:175 gallery-bank.php:248
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr ""
+
+#: gallery-bank.php:109 gallery-bank.php:182 gallery-bank.php:255
+#: lib/gallery-bank-class.php:16 lib/gallery-bank-class.php:31
+#: lib/gallery-bank-class.php:46 views/header.php:153 views/header.php:167
+#: views/header.php:181
+msgid "Dashboard"
+msgstr "Översikt"
+
+#: gallery-bank.php:117 gallery-bank.php:190 gallery-bank.php:263
+#: views/dashboard.php:129
+msgid "Add New Album"
+msgstr "Lägg till nytt album"
+
+#: gallery-bank.php:125 gallery-bank.php:198 gallery-bank.php:271
+#: lib/gallery-bank-class.php:17 lib/gallery-bank-class.php:32
+#: lib/gallery-bank-class.php:47 views/dashboard.php:154 views/header.php:154
+#: views/header.php:168 views/header.php:182
+msgid "Short-Codes"
+msgstr "Korta-koder"
+
+#: gallery-bank.php:132 gallery-bank.php:205 gallery-bank.php:278
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:33
+#: lib/gallery-bank-class.php:48 views/header.php:155 views/header.php:169
+#: views/header.php:183
+msgid "Album Sorting"
+msgstr "Sortera album"
+
+#: gallery-bank.php:139 gallery-bank.php:212 gallery-bank.php:285
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:34
+#: lib/gallery-bank-class.php:49 views/header.php:156 views/header.php:170
+#: views/header.php:184 views/settings.php:276
+msgid "Global Settings"
+msgstr "Globala inställningar"
+
+#: gallery-bank.php:146 gallery-bank.php:219 gallery-bank.php:292
+#: lib/gallery-bank-class.php:20 lib/gallery-bank-class.php:35
+#: lib/gallery-bank-class.php:50 views/gallery-bank-system-report.php:29
+#: views/header.php:157 views/header.php:171
+msgid "System Status"
+msgstr "Systemstatus"
+
+#: gallery-bank.php:153 gallery-bank.php:226 gallery-bank.php:299
+#: lib/gallery-bank-class.php:21 lib/gallery-bank-class.php:36
+#: lib/gallery-bank-class.php:51 views/header.php:81 views/header.php:158
+#: views/header.php:172 views/header.php:185
+msgid "Recommendations"
+msgstr "Rekommendationer"
+
+#: gallery-bank.php:160 gallery-bank.php:233 gallery-bank.php:306
+#: lib/gallery-bank-class.php:22 lib/gallery-bank-class.php:37
+#: lib/gallery-bank-class.php:52 views/header.php:159 views/header.php:173
+#: views/header.php:186 views/purchase_pro_version.php:34
+msgid "Premium Editions"
+msgstr "premie utgåvor"
+
+#: gallery-bank.php:167 gallery-bank.php:240 gallery-bank.php:313
+#: lib/gallery-bank-class.php:23 lib/gallery-bank-class.php:38
+#: lib/gallery-bank-class.php:53 views/header.php:86 views/header.php:160
+#: views/header.php:174 views/header.php:187
+msgid "Our Other Services"
+msgstr "Våra andra tjänster"
+
+#: gallery-bank.php:327
+msgid "View Gallery Bank Documentation"
+msgstr "Visa Galleri Bank Documenta"
+
+#: gallery-bank.php:327
+msgid "Docs"
+msgstr "Dokument"
+
+#: gallery-bank.php:328
+msgid "View Gallery Bank Premium Editions"
+msgstr "Visa Galleri Bank premie utgåvor"
+
+#: gallery-bank.php:328
+msgid "Go for Premium!"
+msgstr "Gå för premie!"
+
+#: lib/add-new-album-class.php:44 views/edit-album.php:346
+#: views/edit-album.php:353
+msgid " Set as Album Cover"
+msgstr "Välj som album-omslag"
+
+#: lib/add-new-album-class.php:47 views/edit-album.php:294
+#: views/edit-album.php:359
+msgid "Enter your Title"
+msgstr "Fyll i titel"
+
+#: lib/add-new-album-class.php:48 views/edit-album.php:299
+#: views/edit-album.php:364
+msgid "Enter your Description "
+msgstr "Fyll i beskrivning"
+
+#: lib/add-new-album-class.php:50 views/edit-album.php:305
+#: views/edit-album.php:370
+msgid "Enter your Tags"
+msgstr "Fyll i taggar"
+
+#: lib/add-new-album-class.php:54 views/edit-album.php:391
+msgid "Delete Image"
+msgstr "Radera bild"
+
+#: lib/gallery-bank-class.php:15 lib/gallery-bank-class.php:30
+#: lib/gallery-bank-class.php:45 views/header.php:141
+msgid "Gallery Bank"
+msgstr "Galleribank"
+
+#: lib/gallery-bank-class.php:332
+msgid "Add Gallery using Gallery Bank"
+msgstr "Lägg till galleri med Gallery Bank"
+
+#: views/album-preview.php:31
+msgid "Album Preview"
+msgstr "Förhandsvisning av album"
+
+#: views/album-preview.php:34 views/album-sorting.php:158
+#: views/edit-album.php:161 views/edit-album.php:415
+#: views/images-sorting.php:202 views/purchase_pro_version.php:38
+#: views/settings.php:279 views/shortcode.php:33
+msgid "Back to Albums"
+msgstr "Tillbaka till album"
+
+#: views/album-preview.php:52 views/album-sorting.php:195
+#: views/images-sorting.php:244
+msgid "Please Choose"
+msgstr "Vänligen välj"
+
+#: views/album-sorting.php:154
+msgid "Re-Order Albums"
+msgstr "Ordna om album"
+
+#: views/album-sorting.php:160 views/images-sorting.php:204
+msgid "Update Order"
+msgstr "Uppdatera ordning"
+
+#: views/album-sorting.php:163 views/images-sorting.php:207
+msgid "Sorting Order has been updated."
+msgstr "Ordningen har blivit uppdaterad."
+
+#: views/album-sorting.php:275 views/dashboard.php:302 views/dashboard.php:306
+#: views/dashboard.php:310 views/edit-album.php:612 views/edit-album.php:628
+#: views/images-sorting.php:308
+msgid "This feature is only available in Paid Premium Version!"
+msgstr ""
+"Den här funktionen är endast tillgänglig på betald högkvalitetspapper "
+"versionen!"
+
+#: views/dashboard.php:118 views/shortcode.php:29
+msgid "Gallery Bank Short-Codes"
+msgstr "Gallery Bank Korta-koder"
+
+#: views/dashboard.php:135
+msgid "Delete All Albums"
+msgstr "Radera alla album"
+
+#: views/dashboard.php:136
+msgid "Purge Images & Albums"
+msgstr "Rensa upp bilder & album"
+
+#: views/dashboard.php:137
+msgid "Restore Factory Settings"
+msgstr "Återställ fabriksinställningarna"
+
+#: views/dashboard.php:144
+msgid "Existing Albums Overview"
+msgstr "Översikt befintliga album"
+
+#: views/dashboard.php:150 views/edit-album.php:253
+msgid "Thumbnail"
+msgstr "Miniatyr"
+
+#: views/dashboard.php:151
+msgid "Title"
+msgstr "Titel"
+
+#: views/dashboard.php:152
+msgid "Total Images"
+msgstr "Totalt antal bilder"
+
+#: views/dashboard.php:153
+msgid "Date"
+msgstr "Födelse"
+
+#: views/dashboard.php:218
+msgid "Edit Album"
+msgstr "Ändra album"
+
+#: views/dashboard.php:223 views/images-sorting.php:198
+msgid "Re-Order Images"
+msgstr "Ordna om bilder"
+
+#: views/dashboard.php:228
+msgid "Preview Album"
+msgstr "Förhandsvisa album"
+
+#: views/dashboard.php:233
+msgid "Delete Album"
+msgstr "Radera album"
+
+#: views/dashboard.php:289
+msgid "Are you sure you want to delete this Album?"
+msgstr "Är du säker på att du vill radera detta album?"
+
+#: views/edit-album.php:158
+msgid "Album"
+msgstr "Albumet"
+
+#: views/edit-album.php:162 views/edit-album.php:414
+msgid "Save Album"
+msgstr "Spara Albumet"
+
+#: views/edit-album.php:166
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr "Albumet sparad. Vänligen vänta omdirigeringen ska hända."
+
+#: views/edit-album.php:173
+msgid "Album Details"
+msgstr "Albumdetaljer"
+
+#: views/edit-album.php:177
+msgid "Album Title"
+msgstr "Albumtitel"
+
+#: views/edit-album.php:182
+msgid "Enter your Album Title"
+msgstr "Fyll i albumtitel"
+
+#: views/edit-album.php:189
+msgid "Description"
+msgstr "Beskrivning"
+
+#: views/edit-album.php:203
+msgid "Upload Images"
+msgstr "Ladda upp bilder"
+
+#: views/edit-album.php:206
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr "Din webläsare saknar Flash, Silverlight eller HTML5-stöd"
+
+#: views/edit-album.php:213
+msgid "Upload Videos"
+msgstr "Ladda upp videos"
+
+#: views/edit-album.php:214 views/edit-album.php:260 views/settings.php:288
+#: views/settings.php:504 views/settings.php:734 views/settings.php:845
+#: views/settings.php:944 views/settings.php:1266 views/settings.php:1382
+#: views/settings.php:1433 views/settings.php:1485
+msgid " (Available in Premium Versions)"
+msgstr "((Finns på högkvalitetspapper versioner)"
+
+#: views/edit-album.php:219
+msgid "Video Url"
+msgstr "Video Url"
+
+#: views/edit-album.php:223
+msgid "Enter your Video Url"
+msgstr "Fyll i video url"
+
+#: views/edit-album.php:229
+msgid "Upload Video"
+msgstr "Ladda upp video"
+
+#: views/edit-album.php:240
+msgid "Your Gallery Bank Album"
+msgstr "Ditt Gallery Bank album"
+
+#: views/edit-album.php:250
+msgid "Delete"
+msgstr "Radera"
+
+#: views/edit-album.php:256
+msgid "Title & Description"
+msgstr "Titel & Beskrivning"
+
+#: views/edit-album.php:259
+msgid "Tags (comma separated list)"
+msgstr "Taggar (kommaseparerad lista)"
+
+#: views/edit-album.php:263
+msgid "Url to Redirect on click of an Image"
+msgstr "Url att omdirigera till vid klick på en bild"
+
+#: views/edit-album.php:315
+msgid "Delete Video"
+msgstr "Radera video"
+
+#: views/edit-album.php:599
+msgid "Are you sure you want to delete this Image?"
+msgstr "Är du säker på att du vill radera denna bild?"
+
+#: views/gallery-bank-system-report.php:32
+msgid "Get System Report"
+msgstr "Hämta systemrapport"
+
+#: views/gallery-bank-system-report.php:36
+msgid "Close System Report"
+msgstr "Stäng systemrapport"
+
+#: views/gallery-bank-system-report.php:132
+msgid "Default"
+msgstr "Förinställt"
+
+#: views/header.php:18
+msgid "Get Started"
+msgstr "få startade"
+
+#: views/header.php:21
+msgid "Watch Gallery Video!"
+msgstr "Titta på Galleri - Videons!"
+
+#: views/header.php:25
+msgid "read documentation here"
+msgstr "läs dokumentation här"
+
+#: views/header.php:30
+msgid "Go Premium"
+msgstr "Gå premie"
+
+#: views/header.php:34
+msgid "Features"
+msgstr "finesser"
+
+#: views/header.php:39
+msgid "Online Demos"
+msgstr "Onlinespel Demoversioner"
+
+#: views/header.php:44
+msgid "Premium Pricing Plans"
+msgstr "premie prissättning planer"
+
+#: views/header.php:51
+msgid "Knowledge Base"
+msgstr "kunskapsbas som"
+
+#: views/header.php:56
+msgid "Support Forum"
+msgstr "Supportforum"
+
+#: views/header.php:61
+msgid "FAQ's"
+msgstr "Vanliga frågor"
+
+#: views/header.php:66
+msgid "Detailed Features"
+msgstr "detaljerade finesser"
+
+#: views/header.php:72
+msgid "More Actions"
+msgstr "fler åtgärder"
+
+#: views/header.php:76
+msgid "Plugin Customization"
+msgstr "plugin för Anpassning"
+
+#: views/purchase_pro_version.php:43
+msgid "WP Gallery Bank is an one time Investment. Its Worth it!"
+msgstr "WP Galleri Bank är en engångs Investment. Dess Värt det!"
+
+#: views/settings.php:280
+msgid "Update Settings"
+msgstr "Uppdatera inställningarna"
+
+#: views/settings.php:287
+msgid "Thumbnail Settings"
+msgstr "Inställningar för miniatyrer"
+
+#: views/settings.php:299
+msgid "Thumbnail Size"
+msgstr "Storlek på miniatyr"
+
+#: views/settings.php:306 views/settings.php:314 views/settings.php:522
+#: views/settings.php:530
+msgid "Original"
+msgstr "Original"
+
+#: views/settings.php:309 views/settings.php:317 views/settings.php:525
+#: views/settings.php:533
+msgid "Custom"
+msgstr "Modifierad"
+
+#: views/settings.php:326 views/settings.php:542
+msgid "Width"
+msgstr "Bredd"
+
+#: views/settings.php:336 views/settings.php:552
+msgid "Height"
+msgstr "Höjd"
+
+#: views/settings.php:348 views/settings.php:563 views/settings.php:985
+msgid "Opacity"
+msgstr "Opacitet"
+
+#: views/settings.php:360 views/settings.php:575 views/settings.php:996
+msgid "Border Size"
+msgstr "Storlek på kant"
+
+#: views/settings.php:371 views/settings.php:587 views/settings.php:1007
+msgid "Border Radius"
+msgstr "Kantradie"
+
+#: views/settings.php:382 views/settings.php:599 views/settings.php:1032
+msgid "Border Color"
+msgstr "Färg på kant"
+
+#: views/settings.php:396
+msgid "Margin Between Images"
+msgstr "Marginal mellan bilder"
+
+#: views/settings.php:406 views/settings.php:633 views/settings.php:1018
+msgid "Text Color"
+msgstr "Textfärg"
+
+#: views/settings.php:420 views/settings.php:650 views/settings.php:1092
+msgid "Text-Align"
+msgstr "Textplacering"
+
+#: views/settings.php:434 views/settings.php:664 views/settings.php:801
+#: views/settings.php:1106 views/settings.php:1314
+msgid "Font-Family"
+msgstr "Teckensnitt"
+
+#: views/settings.php:457 views/settings.php:687 views/settings.php:1129
+msgid "Heading Font-Size"
+msgstr "Rubrik teckenstorlek"
+
+#: views/settings.php:474 views/settings.php:704 views/settings.php:1146
+msgid "Text Font-Size"
+msgstr "Text teckenstorlek"
+
+#: views/settings.php:491 views/settings.php:721
+msgid "Description Length"
+msgstr "Beskrivningens längd"
+
+#: views/settings.php:503
+msgid "Album Cover Settings"
+msgstr "Albumomslag inställningar"
+
+#: views/settings.php:515
+msgid "Cover Size"
+msgstr "Omslagsstorlek"
+
+#: views/settings.php:613
+msgid "Margin Between Albums"
+msgstr "Marginal mellan album"
+
+#: views/settings.php:623
+msgid "Text for Album Click"
+msgstr "Text för klick på album"
+
+#: views/settings.php:733
+msgid "Filter Settings"
+msgstr "Filter inställningar"
+
+#: views/settings.php:745
+msgid "Filters"
+msgstr "Filter"
+
+#: views/settings.php:752 views/settings.php:760 views/settings.php:1170
+#: views/settings.php:1178 views/settings.php:1196 views/settings.php:1203
+#: views/settings.php:1221 views/settings.php:1228 views/settings.php:1245
+#: views/settings.php:1252 views/settings.php:1360 views/settings.php:1367
+#: views/settings.php:1400 views/settings.php:1408 views/settings.php:1451
+#: views/settings.php:1459
+msgid "Enable"
+msgstr "Aktivera"
+
+#: views/settings.php:755 views/settings.php:763 views/settings.php:1173
+#: views/settings.php:1181 views/settings.php:1198 views/settings.php:1206
+#: views/settings.php:1223 views/settings.php:1230 views/settings.php:1247
+#: views/settings.php:1254 views/settings.php:1362 views/settings.php:1370
+#: views/settings.php:1403 views/settings.php:1411 views/settings.php:1454
+#: views/settings.php:1462
+msgid "Disable"
+msgstr "Inaktivera"
+
+#: views/settings.php:773
+msgid "Filter Color"
+msgstr "Filterfärg"
+
+#: views/settings.php:787
+msgid "Filter Text Color"
+msgstr "Filter textfärg"
+
+#: views/settings.php:824 views/settings.php:1337
+msgid "Font-Size"
+msgstr "Teckenstorlek"
+
+#: views/settings.php:844
+msgid "Roles & Capabilities"
+msgstr "Roller & möjligheter"
+
+#: views/settings.php:856
+msgid "Privileges for Admin"
+msgstr "Privilegier för admin"
+
+#: views/settings.php:860 views/settings.php:876 views/settings.php:892
+#: views/settings.php:909 views/settings.php:927
+msgid "Full Control"
+msgstr "Full kontroll"
+
+#: views/settings.php:863 views/settings.php:879 views/settings.php:895
+#: views/settings.php:912 views/settings.php:930
+msgid "Read"
+msgstr "Läsa"
+
+#: views/settings.php:866 views/settings.php:882 views/settings.php:898
+#: views/settings.php:915 views/settings.php:933
+msgid "Write"
+msgstr "Skriva"
+
+#: views/settings.php:872
+msgid "Privileges for Editor"
+msgstr "Privilegier för redaktör"
+
+#: views/settings.php:888
+msgid "Privileges for Author"
+msgstr "Privilegier för upphovsman"
+
+#: views/settings.php:904
+msgid "Privileges for Contributor"
+msgstr "Privilegier för medverkande"
+
+#: views/settings.php:921
+msgid "Privileges for Subscriber"
+msgstr "Privilegier för prenumerant"
+
+#: views/settings.php:943
+msgid "Lightbox Settings"
+msgstr "Lightbox inställningar"
+
+#: views/settings.php:955
+msgid "Lightbox Type"
+msgstr "Lightbox typ"
+
+#: views/settings.php:1046
+msgid "Inline Background"
+msgstr "Inline bakgrund"
+
+#: views/settings.php:1060
+msgid "Overlay Background"
+msgstr "Overlay bakgrund"
+
+#: views/settings.php:1074
+msgid "Fade In Time"
+msgstr "Tona in tid"
+
+#: views/settings.php:1083
+msgid "Fade Out Time"
+msgstr "Tona ut tid"
+
+#: views/settings.php:1163
+msgid "Facebook Comments"
+msgstr "Facebook kommentarer"
+
+#: views/settings.php:1190
+msgid "Social Sharing"
+msgstr "Sociala nätverk"
+
+#: views/settings.php:1215
+msgid "Image Title"
+msgstr "Bildtitel"
+
+#: views/settings.php:1239
+msgid "Image Description"
+msgstr "Bildbeskrivning"
+
+#: views/settings.php:1265
+msgid "Front - End Layout Settings"
+msgstr "Framsida - layoutinställningar"
+
+#: views/settings.php:1277
+msgid "Text for Back Button"
+msgstr "Text för Tillbaka-knapp"
+
+#: views/settings.php:1287
+msgid "Button Color"
+msgstr "Knappfärg"
+
+#: views/settings.php:1300
+msgid "Button Text Color"
+msgstr "Knapp textfärg"
+
+#: views/settings.php:1354
+msgid "Album Seperator"
+msgstr "Albumavskiljare"
+
+#: views/settings.php:1381
+msgid "Pagination Settings for Images"
+msgstr "Paginering - inställningar för bilder"
+
+#: views/settings.php:1393
+msgid "Paging"
+msgstr "Paging"
+
+#: views/settings.php:1420
+msgid "No. of Images Per Page "
+msgstr "Antalet bilder per sida"
+
+#: views/settings.php:1432
+msgid "Slide Show Settings"
+msgstr "Slideshow inställningar"
+
+#: views/settings.php:1444
+msgid "Auto Play"
+msgstr "Autoplay"
+
+#: views/settings.php:1471
+msgid "Interval"
+msgstr "Intervall"
+
+#: views/settings.php:1484
+msgid "Language Direction Settings"
+msgstr "Inställningar för språkriktning"
+
+#: views/settings.php:1496
+msgid "Language Direction"
+msgstr "Språkriktning"
+
+#: views/settings.php:1653
+msgid "This Feature is only available in Paid Premium Version!"
+msgstr "Den här funktionen är endast tillgänglig i Paid premie version!"

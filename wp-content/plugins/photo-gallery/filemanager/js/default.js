@@ -164,7 +164,7 @@ function submitFiles() {
   }
   var filesValid = [];
   for (var i = 0; i < filesSelected.length; i++) {
-    var file_object = jQuery(".explorer_item[name='" + filesSelected[i] + "']");
+    var file_object = jQuery('.explorer_item[name="' + filesSelected[i] + '"]');
     if (jQuery(file_object).attr("isDir") == "false") {
       var fileData = [];
       fileData['name'] = filesSelected[i];
@@ -398,7 +398,7 @@ function onFileClick(event, obj) {
   }
 
   for (var i = 0; i < filesSelected.length; i++) {
-    jQuery(".explorer_item[name='" + filesSelected[i] + "']").addClass("explorer_item_select");
+    jQuery('.explorer_item[name="' + filesSelected[i] + '"]').addClass("explorer_item_select");
   }
   updateFileNames();
 }
@@ -482,7 +482,7 @@ function onFileDragStart(event, obj) {
     }
 
     for (var i = 0; i < filesSelected.length; i++) {
-      jQuery(".explorer_item[name='" + filesSelected[i] + "']").addClass("explorer_item_select");
+      jQuery('.explorer_item[name="' + filesSelected[i] + '"]').addClass("explorer_item_select");
     }
 
     updateFileNames();
@@ -506,7 +506,7 @@ function onFileDrop(event, obj) {
 }
 
 function onBtnOpenClick(event, obj) {
-  if (jQuery(".explorer_item[name='" + filesSelected[0] + "']").attr("isDir") == true) {
+  if (jQuery('.explorer_item[name="' + filesSelected[0] + '"]').attr("isDir") == true) {
     filesSelected.length = 1;
     submit("", null, null, null, dir + DS + filesSelected[0], null, null, null, null, null, null);
   }

@@ -1,0 +1,882 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Bank\n"
+"POT-Creation-Date: 2014-11-17 12:36+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\Gallery-Testing\\wp-content\\plugins"
+"\\gallery-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr "Вставить шорткод Gallery Bank"
+
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr "Ввберите альбом ниже, чтобы добавить его к к вашей записи или странице"
+
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr "Тип галереи"
+
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr "Альбомы с изображениями"
+
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr "Только изображения"
+
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr "Формат альбома"
+
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr "Ввберите формат альбома"
+
+#: front_views/gallery-bank-shortcode.php:27
+msgid "Select Album"
+msgstr "Выберите альбом"
+
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr "Выберите альбом"
+
+#: front_views/gallery-bank-shortcode.php:63
+msgid "Gallery Format"
+msgstr "Формат галереи"
+
+#: front_views/gallery-bank-shortcode.php:65
+msgid "Select Gallery Format "
+msgstr "Выберите формат галереи"
+
+#: front_views/gallery-bank-shortcode.php:74 views/album-preview.php:47
+#: views/images-sorting.php:240
+msgid "Images in Row"
+msgstr "Изображений в ряд"
+
+#: front_views/gallery-bank-shortcode.php:79
+msgid "Image Width"
+msgstr "Ширина изображения"
+
+#: front_views/gallery-bank-shortcode.php:86 views/album-sorting.php:190
+msgid "Albums in Row"
+msgstr "Альбомов в ряд"
+
+#: front_views/gallery-bank-shortcode.php:91
+msgid "Text Format"
+msgstr "Формат текста"
+
+#: front_views/gallery-bank-shortcode.php:93
+msgid "Select Format "
+msgstr "Ввберите формат"
+
+#: front_views/gallery-bank-shortcode.php:100
+msgid "Special Effects"
+msgstr "Специальнце эффекты"
+
+#: front_views/gallery-bank-shortcode.php:122
+msgid "Animation Effects"
+msgstr "Анимация"
+
+#: front_views/gallery-bank-shortcode.php:175
+msgid "Show Responsive Gallery"
+msgstr "Отображать отзывчивую галерею"
+
+#: front_views/gallery-bank-shortcode.php:179
+msgid "Show Album Title"
+msgstr "Отображать заголовок альбома"
+
+#: front_views/gallery-bank-shortcode.php:184
+msgid "Insert Album"
+msgstr "Вставить альбом"
+
+#: front_views/gallery-bank-shortcode.php:187
+msgid "Cancel"
+msgstr "Отмена"
+
+#: front_views/gallery-bank-shortcode.php:499
+msgid "Please select an Album"
+msgstr "Пожалуйста выберите альбом"
+
+#: front_views/gallery-bank-shortcode.php:503
+msgid "Please select an Album Format"
+msgstr "Пожалуйста выберите формат альбома"
+
+#: front_views/gallery-bank-shortcode.php:507
+msgid "Please select a Gallery Images Format"
+msgstr "Пожалуйста выберите формат изображений в галерее"
+
+#: front_views/gallery-bank-shortcode.php:511
+msgid "Please select a Text Format for the Gallery"
+msgstr "Пожалуйста выберите формат текста в галерее"
+
+#: gallery-bank.php:100 gallery-bank.php:173 gallery-bank.php:246
+msgid "<img src=\""
+msgstr "<img src=\""
+
+#: gallery-bank.php:102 gallery-bank.php:175 gallery-bank.php:248
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr "/wp-admin/admin.php?page=gallery_bank"
+
+#: gallery-bank.php:109 gallery-bank.php:182 gallery-bank.php:255
+#: lib/gallery-bank-class.php:16 lib/gallery-bank-class.php:31
+#: lib/gallery-bank-class.php:46 views/header.php:153 views/header.php:167
+#: views/header.php:181
+msgid "Dashboard"
+msgstr "Консоль"
+
+#: gallery-bank.php:117 gallery-bank.php:190 gallery-bank.php:263
+#: views/dashboard.php:129
+msgid "Add New Album"
+msgstr "Добавить новый альбом"
+
+#: gallery-bank.php:125 gallery-bank.php:198 gallery-bank.php:271
+#: lib/gallery-bank-class.php:17 lib/gallery-bank-class.php:32
+#: lib/gallery-bank-class.php:47 views/dashboard.php:154 views/header.php:154
+#: views/header.php:168 views/header.php:182
+msgid "Short-Codes"
+msgstr "Короткие-коды"
+
+#: gallery-bank.php:132 gallery-bank.php:205 gallery-bank.php:278
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:33
+#: lib/gallery-bank-class.php:48 views/header.php:155 views/header.php:169
+#: views/header.php:183
+msgid "Album Sorting"
+msgstr "Сортировка альбома"
+
+#: gallery-bank.php:139 gallery-bank.php:212 gallery-bank.php:285
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:34
+#: lib/gallery-bank-class.php:49 views/header.php:156 views/header.php:170
+#: views/header.php:184 views/settings.php:276
+msgid "Global Settings"
+msgstr "Глобальные настройки"
+
+#: gallery-bank.php:146 gallery-bank.php:219 gallery-bank.php:292
+#: lib/gallery-bank-class.php:20 lib/gallery-bank-class.php:35
+#: lib/gallery-bank-class.php:50 views/gallery-bank-system-report.php:29
+#: views/header.php:157 views/header.php:171
+msgid "System Status"
+msgstr "Статус системы"
+
+#: gallery-bank.php:153 gallery-bank.php:226 gallery-bank.php:299
+#: lib/gallery-bank-class.php:21 lib/gallery-bank-class.php:36
+#: lib/gallery-bank-class.php:51 views/header.php:81 views/header.php:158
+#: views/header.php:172 views/header.php:185
+msgid "Recommendations"
+msgstr "Рекомендации"
+
+#: gallery-bank.php:160 gallery-bank.php:233 gallery-bank.php:306
+#: lib/gallery-bank-class.php:22 lib/gallery-bank-class.php:37
+#: lib/gallery-bank-class.php:52 views/header.php:159 views/header.php:173
+#: views/header.php:186 views/purchase_pro_version.php:34
+msgid "Premium Editions"
+msgstr "Премиум издания"
+
+#: gallery-bank.php:167 gallery-bank.php:240 gallery-bank.php:313
+#: lib/gallery-bank-class.php:23 lib/gallery-bank-class.php:38
+#: lib/gallery-bank-class.php:53 views/header.php:86 views/header.php:160
+#: views/header.php:174 views/header.php:187
+msgid "Our Other Services"
+msgstr "Наши Прочие услуги"
+
+#: gallery-bank.php:327
+msgid "View Gallery Bank Documentation"
+msgstr "Просмотр галереи банк документацию"
+
+#: gallery-bank.php:327
+msgid "Docs"
+msgstr "Документы"
+
+#: gallery-bank.php:328
+msgid "View Gallery Bank Premium Editions"
+msgstr "Просмотр  Галерея Банк- Премиум Editions"
+
+#: gallery-bank.php:328
+msgid "Go for Premium!"
+msgstr "Перейти на Премиум!"
+
+#: lib/add-new-album-class.php:44 views/edit-album.php:346
+#: views/edit-album.php:353
+msgid " Set as Album Cover"
+msgstr "Установить как обложку альбома"
+
+#: lib/add-new-album-class.php:47 views/edit-album.php:294
+#: views/edit-album.php:359
+msgid "Enter your Title"
+msgstr "Введите заголовок"
+
+#: lib/add-new-album-class.php:48 views/edit-album.php:299
+#: views/edit-album.php:364
+msgid "Enter your Description "
+msgstr "Введите описание"
+
+#: lib/add-new-album-class.php:50 views/edit-album.php:305
+#: views/edit-album.php:370
+msgid "Enter your Tags"
+msgstr "Введите метки"
+
+#: lib/add-new-album-class.php:54 views/edit-album.php:391
+msgid "Delete Image"
+msgstr "Удалить изображение"
+
+#: lib/gallery-bank-class.php:15 lib/gallery-bank-class.php:30
+#: lib/gallery-bank-class.php:45 views/header.php:141
+msgid "Gallery Bank"
+msgstr "Gallery Bank"
+
+#: lib/gallery-bank-class.php:332
+msgid "Add Gallery using Gallery Bank"
+msgstr "Добавить галерею с помощью модуля Gallery Bank"
+
+#: views/album-preview.php:31
+msgid "Album Preview"
+msgstr "Предпросмотр альбома"
+
+#: views/album-preview.php:34 views/album-sorting.php:158
+#: views/edit-album.php:161 views/edit-album.php:415
+#: views/images-sorting.php:202 views/purchase_pro_version.php:38
+#: views/settings.php:279 views/shortcode.php:33
+msgid "Back to Albums"
+msgstr "Назад к альбомам"
+
+#: views/album-preview.php:52 views/album-sorting.php:195
+#: views/images-sorting.php:244
+msgid "Please Choose"
+msgstr "Пожалуйста выберите"
+
+#: views/album-sorting.php:154
+msgid "Re-Order Albums"
+msgstr "Изменить порядок альбомов"
+
+#: views/album-sorting.php:160 views/images-sorting.php:204
+msgid "Update Order"
+msgstr "Обновить порядок"
+
+#: views/album-sorting.php:163 views/images-sorting.php:207
+msgid "Sorting Order has been updated."
+msgstr "Порядок сортировки был обновлен"
+
+#: views/album-sorting.php:275 views/dashboard.php:302 views/dashboard.php:306
+#: views/dashboard.php:310 views/edit-album.php:612 views/edit-album.php:628
+#: views/images-sorting.php:308
+msgid "This feature is only available in Paid Premium Version!"
+msgstr "Эта функция доступна только в платной премиум-версию!"
+
+#: views/dashboard.php:118 views/shortcode.php:29
+msgid "Gallery Bank Short-Codes"
+msgstr "Gallery Bank Короткие-коды"
+
+#: views/dashboard.php:135
+msgid "Delete All Albums"
+msgstr "Удалить все альбомы"
+
+#: views/dashboard.php:136
+msgid "Purge Images & Albums"
+msgstr "Очистить изображения и альбомы"
+
+#: views/dashboard.php:137
+msgid "Restore Factory Settings"
+msgstr "Восстановить настройки по умолчанию"
+
+#: views/dashboard.php:144
+msgid "Existing Albums Overview"
+msgstr "Просмотр существующих альбомов"
+
+#: views/dashboard.php:150 views/edit-album.php:253
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: views/dashboard.php:151
+msgid "Title"
+msgstr "Заголовок"
+
+#: views/dashboard.php:152
+msgid "Total Images"
+msgstr "Всего изображений"
+
+#: views/dashboard.php:153
+msgid "Date"
+msgstr "дата"
+
+#: views/dashboard.php:218
+msgid "Edit Album"
+msgstr "Редактировать альбом"
+
+#: views/dashboard.php:223 views/images-sorting.php:198
+msgid "Re-Order Images"
+msgstr "Изменить порядок следования изображений"
+
+#: views/dashboard.php:228
+msgid "Preview Album"
+msgstr "Предпросмотр альбома"
+
+#: views/dashboard.php:233
+msgid "Delete Album"
+msgstr "Удалить альбом"
+
+#: views/dashboard.php:289
+msgid "Are you sure you want to delete this Album?"
+msgstr "Вы уверены что хотите удалить этот альбом?"
+
+#: views/edit-album.php:158
+msgid "Album"
+msgstr "Альбом"
+
+#: views/edit-album.php:162 views/edit-album.php:414
+msgid "Save Album"
+msgstr "Сохранить Альбом"
+
+#: views/edit-album.php:166
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr "Альбом - Сохранено. Пожалуйста, подождите для редирект к произойдет."
+
+#: views/edit-album.php:173
+msgid "Album Details"
+msgstr "Детали альбома"
+
+#: views/edit-album.php:177
+msgid "Album Title"
+msgstr "Заголовок альбома"
+
+#: views/edit-album.php:182
+msgid "Enter your Album Title"
+msgstr "Введите заголовок альбома"
+
+#: views/edit-album.php:189
+msgid "Description"
+msgstr "Описание"
+
+#: views/edit-album.php:203
+msgid "Upload Images"
+msgstr "Загрузить изображенич"
+
+#: views/edit-album.php:206
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr ""
+"Ваш бразуер не поддерживает ни одной из следующих функций: Flash, "
+"Silverlight, HTML5"
+
+#: views/edit-album.php:213
+msgid "Upload Videos"
+msgstr "Загрузка видеороликов"
+
+#: views/edit-album.php:214 views/edit-album.php:260 views/settings.php:288
+#: views/settings.php:504 views/settings.php:734 views/settings.php:845
+#: views/settings.php:944 views/settings.php:1266 views/settings.php:1382
+#: views/settings.php:1433 views/settings.php:1485
+msgid " (Available in Premium Versions)"
+msgstr "(Доступных в премия версиях)"
+
+#: views/edit-album.php:219
+msgid "Video Url"
+msgstr "Адрес видео"
+
+#: views/edit-album.php:223
+msgid "Enter your Video Url"
+msgstr "Введите адрес видео"
+
+#: views/edit-album.php:229
+msgid "Upload Video"
+msgstr "Загрузка видео"
+
+#: views/edit-album.php:240
+msgid "Your Gallery Bank Album"
+msgstr "Ваш альбом Gallery Bank"
+
+#: views/edit-album.php:250
+msgid "Delete"
+msgstr "Удалить"
+
+#: views/edit-album.php:256
+msgid "Title & Description"
+msgstr "Заголовок и описание"
+
+#: views/edit-album.php:259
+msgid "Tags (comma separated list)"
+msgstr "Метки (разделяются запятыми)"
+
+#: views/edit-album.php:263
+msgid "Url to Redirect on click of an Image"
+msgstr "Адрес перенаправления при нажатии на изображение"
+
+#: views/edit-album.php:315
+msgid "Delete Video"
+msgstr "Удалить видео"
+
+#: views/edit-album.php:599
+msgid "Are you sure you want to delete this Image?"
+msgstr "Вы уверены что хотите удалить это изображение?"
+
+#: views/gallery-bank-system-report.php:32
+msgid "Get System Report"
+msgstr "Получить системный отчет"
+
+#: views/gallery-bank-system-report.php:36
+msgid "Close System Report"
+msgstr "Закрыть системный отчет"
+
+#: views/gallery-bank-system-report.php:132
+msgid "Default"
+msgstr "По умолчанию"
+
+#: views/header.php:18
+msgid "Get Started"
+msgstr "Начало работы"
+
+#: views/header.php:21
+msgid "Watch Gallery Video!"
+msgstr "Наблюдать Галерея Видео!"
+
+#: views/header.php:25
+msgid "read documentation here"
+msgstr "читать документацию здесь"
+
+#: views/header.php:30
+msgid "Go Premium"
+msgstr "Перейти Премиум"
+
+#: views/header.php:34
+msgid "Features"
+msgstr "черты"
+
+#: views/header.php:39
+msgid "Online Demos"
+msgstr "Онлайн Demos"
+
+#: views/header.php:44
+msgid "Premium Pricing Plans"
+msgstr "Премиум ценовые планы"
+
+#: views/header.php:51
+msgid "Knowledge Base"
+msgstr "База знаний"
+
+#: views/header.php:56
+msgid "Support Forum"
+msgstr "Поддержка Форум"
+
+#: views/header.php:61
+msgid "FAQ's"
+msgstr "Часто задаваемые вопросы"
+
+#: views/header.php:66
+msgid "Detailed Features"
+msgstr "Детальные характеристики"
+
+#: views/header.php:72
+msgid "More Actions"
+msgstr "Другие действия"
+
+#: views/header.php:76
+msgid "Plugin Customization"
+msgstr "Плагин Изготовление на заказ"
+
+#: views/purchase_pro_version.php:43
+msgid "WP Gallery Bank is an one time Investment. Its Worth it!"
+msgstr "WP Галерея Банк единовременных инвестиций. Оно того стоит!"
+
+#: views/settings.php:280
+msgid "Update Settings"
+msgstr "Обновить настройки"
+
+#: views/settings.php:287
+msgid "Thumbnail Settings"
+msgstr "Настройки миниатюр"
+
+#: views/settings.php:299
+msgid "Thumbnail Size"
+msgstr "Размер миниатюры"
+
+#: views/settings.php:306 views/settings.php:314 views/settings.php:522
+#: views/settings.php:530
+msgid "Original"
+msgstr "Оригинал"
+
+#: views/settings.php:309 views/settings.php:317 views/settings.php:525
+#: views/settings.php:533
+msgid "Custom"
+msgstr "Пользовательское"
+
+#: views/settings.php:326 views/settings.php:542
+msgid "Width"
+msgstr "Ширина"
+
+#: views/settings.php:336 views/settings.php:552
+msgid "Height"
+msgstr "Высота"
+
+#: views/settings.php:348 views/settings.php:563 views/settings.php:985
+msgid "Opacity"
+msgstr "Непрозрачность"
+
+#: views/settings.php:360 views/settings.php:575 views/settings.php:996
+msgid "Border Size"
+msgstr "Размер рамки"
+
+#: views/settings.php:371 views/settings.php:587 views/settings.php:1007
+msgid "Border Radius"
+msgstr "Радиус рамки"
+
+#: views/settings.php:382 views/settings.php:599 views/settings.php:1032
+msgid "Border Color"
+msgstr "Цвет рамки"
+
+#: views/settings.php:396
+msgid "Margin Between Images"
+msgstr "Расстояние между изображениями"
+
+#: views/settings.php:406 views/settings.php:633 views/settings.php:1018
+msgid "Text Color"
+msgstr "Цвет текста"
+
+#: views/settings.php:420 views/settings.php:650 views/settings.php:1092
+msgid "Text-Align"
+msgstr "Выравнивание текста"
+
+#: views/settings.php:434 views/settings.php:664 views/settings.php:801
+#: views/settings.php:1106 views/settings.php:1314
+msgid "Font-Family"
+msgstr "Шрифт"
+
+#: views/settings.php:457 views/settings.php:687 views/settings.php:1129
+msgid "Heading Font-Size"
+msgstr "Размер шрифта заголовка"
+
+#: views/settings.php:474 views/settings.php:704 views/settings.php:1146
+msgid "Text Font-Size"
+msgstr "Размер шрифта основного текста"
+
+#: views/settings.php:491 views/settings.php:721
+msgid "Description Length"
+msgstr "Длина описания"
+
+#: views/settings.php:503
+msgid "Album Cover Settings"
+msgstr "Настройки обложки альбома"
+
+#: views/settings.php:515
+msgid "Cover Size"
+msgstr "Размер обложки"
+
+#: views/settings.php:613
+msgid "Margin Between Albums"
+msgstr "Расстояние между альбомами"
+
+#: views/settings.php:623
+msgid "Text for Album Click"
+msgstr "Текст для клика по альбому"
+
+#: views/settings.php:733
+msgid "Filter Settings"
+msgstr "Настройки фильтра"
+
+#: views/settings.php:745
+msgid "Filters"
+msgstr "Фильтры"
+
+#: views/settings.php:752 views/settings.php:760 views/settings.php:1170
+#: views/settings.php:1178 views/settings.php:1196 views/settings.php:1203
+#: views/settings.php:1221 views/settings.php:1228 views/settings.php:1245
+#: views/settings.php:1252 views/settings.php:1360 views/settings.php:1367
+#: views/settings.php:1400 views/settings.php:1408 views/settings.php:1451
+#: views/settings.php:1459
+msgid "Enable"
+msgstr "Включить"
+
+#: views/settings.php:755 views/settings.php:763 views/settings.php:1173
+#: views/settings.php:1181 views/settings.php:1198 views/settings.php:1206
+#: views/settings.php:1223 views/settings.php:1230 views/settings.php:1247
+#: views/settings.php:1254 views/settings.php:1362 views/settings.php:1370
+#: views/settings.php:1403 views/settings.php:1411 views/settings.php:1454
+#: views/settings.php:1462
+msgid "Disable"
+msgstr "Выключить"
+
+#: views/settings.php:773
+msgid "Filter Color"
+msgstr "Цвет фильтра"
+
+#: views/settings.php:787
+msgid "Filter Text Color"
+msgstr "Цвет текст фильтра"
+
+#: views/settings.php:824 views/settings.php:1337
+msgid "Font-Size"
+msgstr "Размер шрифта"
+
+#: views/settings.php:844
+msgid "Roles & Capabilities"
+msgstr "Роли и права"
+
+#: views/settings.php:856
+msgid "Privileges for Admin"
+msgstr "Привелегии для админа"
+
+#: views/settings.php:860 views/settings.php:876 views/settings.php:892
+#: views/settings.php:909 views/settings.php:927
+msgid "Full Control"
+msgstr "Полный доступ"
+
+#: views/settings.php:863 views/settings.php:879 views/settings.php:895
+#: views/settings.php:912 views/settings.php:930
+msgid "Read"
+msgstr "Чтение"
+
+#: views/settings.php:866 views/settings.php:882 views/settings.php:898
+#: views/settings.php:915 views/settings.php:933
+msgid "Write"
+msgstr "Запись"
+
+#: views/settings.php:872
+msgid "Privileges for Editor"
+msgstr "Привелегии для редактора"
+
+#: views/settings.php:888
+msgid "Privileges for Author"
+msgstr "Привилегии для автора"
+
+#: views/settings.php:904
+msgid "Privileges for Contributor"
+msgstr "Привилегии для участника"
+
+#: views/settings.php:921
+msgid "Privileges for Subscriber"
+msgstr "Привилегии для подписчика"
+
+#: views/settings.php:943
+msgid "Lightbox Settings"
+msgstr "Настройки Lightbox"
+
+#: views/settings.php:955
+msgid "Lightbox Type"
+msgstr "Тип Lightbox"
+
+#: views/settings.php:1046
+msgid "Inline Background"
+msgstr "Фон для строки"
+
+#: views/settings.php:1060
+msgid "Overlay Background"
+msgstr "Фон для оверлея"
+
+#: views/settings.php:1074
+msgid "Fade In Time"
+msgstr "Время появления"
+
+#: views/settings.php:1083
+msgid "Fade Out Time"
+msgstr "Время затухания"
+
+#: views/settings.php:1163
+msgid "Facebook Comments"
+msgstr "Комментарии facebook"
+
+#: views/settings.php:1190
+msgid "Social Sharing"
+msgstr "Поделиться в соц сетях"
+
+#: views/settings.php:1215
+msgid "Image Title"
+msgstr "Заголовок изображения"
+
+#: views/settings.php:1239
+msgid "Image Description"
+msgstr "Описание изображения"
+
+#: views/settings.php:1265
+msgid "Front - End Layout Settings"
+msgstr "Настройки разметки"
+
+#: views/settings.php:1277
+msgid "Text for Back Button"
+msgstr "Текст для кнопки 'назад'"
+
+#: views/settings.php:1287
+msgid "Button Color"
+msgstr "Цвет кнопки"
+
+#: views/settings.php:1300
+msgid "Button Text Color"
+msgstr "Цвет текста кнопки"
+
+#: views/settings.php:1354
+msgid "Album Seperator"
+msgstr "Разделитель албомов"
+
+#: views/settings.php:1381
+msgid "Pagination Settings for Images"
+msgstr "Настройки пагинации для изображений"
+
+#: views/settings.php:1393
+msgid "Paging"
+msgstr "Пагинация"
+
+#: views/settings.php:1420
+msgid "No. of Images Per Page "
+msgstr "Изображений на странице"
+
+#: views/settings.php:1432
+msgid "Slide Show Settings"
+msgstr "Настройки слайдшоу"
+
+#: views/settings.php:1444
+msgid "Auto Play"
+msgstr "Авто воспроизведение"
+
+#: views/settings.php:1471
+msgid "Interval"
+msgstr "Интервал"
+
+#: views/settings.php:1484
+msgid "Language Direction Settings"
+msgstr "Языковые настройки"
+
+#: views/settings.php:1496
+msgid "Language Direction"
+msgstr "Направление"
+
+#: views/settings.php:1653
+msgid "This Feature is only available in Paid Premium Version!"
+msgstr "Эта функция доступна только в платной премиум-версию!"
+
+#~ msgid "Purchase Pro Version"
+#~ msgstr "Купить Pro версию"
+
+#~ msgid "VIEW ALL"
+#~ msgstr "СМОТРЕТЬ ВСЕ"
+
+#~ msgid "Licensing"
+#~ msgstr "Лицензирование"
+
+#~ msgid "Select Gallery"
+#~ msgstr "Выберите галерею"
+
+#~ msgid "Select Gallery Format"
+#~ msgstr "Выберите формат галереи"
+
+#~ msgid "Images In Row"
+#~ msgstr "Изображений в строке"
+
+#~ msgid "Select Text Format"
+#~ msgstr "Выберите формат текста"
+
+#~ msgid "Special Effect"
+#~ msgstr "Специальный эффект"
+
+#~ msgid "Select Special Effect"
+#~ msgstr "Выберите специальный эффект"
+
+#~ msgid "Animation Effect"
+#~ msgstr "Эффект анимации"
+
+#~ msgid "Responsive Gallery"
+#~ msgstr "Отзывичвая галерея"
+
+#~ msgid "Save and Submit Changes"
+#~ msgstr "Сохранить и применить изменения"
+
+#~ msgid "Album Published. Kindly wait for the redirect to happen."
+#~ msgstr "Альбом опубликован. Дождитесь перенаправленич"
+
+#~ msgid "Are you sure you want to delete these Images?"
+#~ msgstr "Вы уверены что хотите удалить эти иозбражения?"
+
+#~ msgid "Attention! A new vesion of Gallery Bank is available for download."
+#~ msgstr "Внимание! Для скачивания доступна новая версия модуля Gallery Bank"
+
+#~ msgid "Click"
+#~ msgstr "Нажмите"
+
+#~ msgid "here"
+#~ msgstr "здесь"
+
+#~ msgid "to upgrade your version of Gallery Bank."
+#~ msgstr "чтобы обновить свою версию Gallery Bank"
+
+#~ msgid "Dashboard - Gallery Bank"
+#~ msgstr "Консоль - Gallery Bank"
+
+#~ msgid "Date of Creation"
+#~ msgstr "Дата создания"
+
+#~ msgid "Are you sure you want to delete all Albums?"
+#~ msgstr "Вы уверены что хотите удалить все альбомы?"
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Вы уверены что хотите восстановить настройки по умолчанию?"
+
+#~ msgid "Are you sure you want to Purge all Images & Albums?"
+#~ msgstr "Вы уверены что хотите очистить все изображения и альбомы?"
+
+#~ msgid "Gallery Bank Licensing Module"
+#~ msgstr "Режим лицензирования Gallery Bank"
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Получилось! Настройки были обновлены"
+
+#~ msgid "Update"
+#~ msgstr "Обновить"
+
+#~ msgid "Restore Settings"
+#~ msgstr "Восстановить настройки"
+
+#~ msgid "Settings has been updated."
+#~ msgstr "Настройки были обновлены"
+
+#~ msgid "Success! Settings have been restored."
+#~ msgstr "Получилось! Настройки были восстановлены"
+
+#~ msgid "Are you sure you want to restore settings?"
+#~ msgstr "Вы уверены что хотите восстановить настройки?"
+
+#~ msgid " Rotate Image"
+#~ msgstr "Повернуть изображение"
+
+#~ msgid "Upload Images "
+#~ msgstr "Загрузить изображения"
+
+#~ msgid "Your Wordpress Version doesn\"t support Wp-media."
+#~ msgstr "Ваша версия wordpress не поддерживает Wp-media"
+
+#~ msgid "Upload Thumbnails "
+#~ msgstr "Загрузить миниатюры"
+
+#~ msgid "Show Albums"
+#~ msgstr "Показать альбомы"
+
+#~ msgid "Responsive"
+#~ msgstr "Отзывчивый"
+
+#~ msgid "With Albums in Row"
+#~ msgstr "С альбомами в строке"
+
+#~ msgid "Image Uploader Settings"
+#~ msgstr "Настройки загрузчика изображений"
+
+#~ msgid "Uploader for Images"
+#~ msgstr "Загрузчик для изображений"
+
+#~ msgid "WP Media"
+#~ msgstr "WP Media"
+
+#~ msgid "Change Uploading Image Name"
+#~ msgstr "Изменить имя загружаемого изображения"
+
+#~ msgid "Image url location"
+#~ msgstr "Местоположение url изображения"
+
+#~ msgid "Open in New Window"
+#~ msgstr "Открывать в новом окне"
+
+#~ msgid "Same Window"
+#~ msgstr "То же окно"

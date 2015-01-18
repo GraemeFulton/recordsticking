@@ -1,0 +1,887 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Bank\n"
+"POT-Creation-Date: 2014-11-17 12:33+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\Gallery-Testing\\wp-content\\plugins"
+"\\gallery-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr "Sisipkan Gallery Bank Shortcode"
+
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr ""
+"Pilih album di bawah ini untuk menambahkannya ke postingan atau halaman anda."
+
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr "Tipe Galeri"
+
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr "Album dengan gambar"
+
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr "Hanya gambar"
+
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr "Format Album"
+
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr "Pilih Format Album"
+
+#: front_views/gallery-bank-shortcode.php:27
+msgid "Select Album"
+msgstr "Pilih Album"
+
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr "Pilih Album"
+
+#: front_views/gallery-bank-shortcode.php:63
+msgid "Gallery Format"
+msgstr "Format Galeri"
+
+#: front_views/gallery-bank-shortcode.php:65
+msgid "Select Gallery Format "
+msgstr "Pilih Format Galeri"
+
+#: front_views/gallery-bank-shortcode.php:74 views/album-preview.php:47
+#: views/images-sorting.php:240
+msgid "Images in Row"
+msgstr "Gambar dalam baris"
+
+#: front_views/gallery-bank-shortcode.php:79
+msgid "Image Width"
+msgstr "Lebar Gambar"
+
+#: front_views/gallery-bank-shortcode.php:86 views/album-sorting.php:190
+msgid "Albums in Row"
+msgstr "Albums dalam baris"
+
+#: front_views/gallery-bank-shortcode.php:91
+msgid "Text Format"
+msgstr "Format Teks"
+
+#: front_views/gallery-bank-shortcode.php:93
+msgid "Select Format "
+msgstr "Pilih Format"
+
+#: front_views/gallery-bank-shortcode.php:100
+msgid "Special Effects"
+msgstr "Efek Khusus"
+
+#: front_views/gallery-bank-shortcode.php:122
+msgid "Animation Effects"
+msgstr "Efek Animasi"
+
+#: front_views/gallery-bank-shortcode.php:175
+msgid "Show Responsive Gallery"
+msgstr "Tampilkan Galeri Responsif"
+
+#: front_views/gallery-bank-shortcode.php:179
+msgid "Show Album Title"
+msgstr "Tampilkan Judul Album"
+
+#: front_views/gallery-bank-shortcode.php:184
+msgid "Insert Album"
+msgstr "Sisipkan Album"
+
+#: front_views/gallery-bank-shortcode.php:187
+msgid "Cancel"
+msgstr "Batal"
+
+#: front_views/gallery-bank-shortcode.php:499
+msgid "Please select an Album"
+msgstr "Silakan pilih Album"
+
+#: front_views/gallery-bank-shortcode.php:503
+msgid "Please select an Album Format"
+msgstr "Silakan pilih format Album"
+
+#: front_views/gallery-bank-shortcode.php:507
+msgid "Please select a Gallery Images Format"
+msgstr "Silahkan pilih Format Gambar Galeri"
+
+#: front_views/gallery-bank-shortcode.php:511
+msgid "Please select a Text Format for the Gallery"
+msgstr "Silahkan pilih Format Teks Galeri"
+
+#: gallery-bank.php:100 gallery-bank.php:173 gallery-bank.php:246
+msgid "<img src=\""
+msgstr "<img src=\""
+
+#: gallery-bank.php:102 gallery-bank.php:175 gallery-bank.php:248
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr "/wp-admin/admin.php?page=gallery_bank"
+
+#: gallery-bank.php:109 gallery-bank.php:182 gallery-bank.php:255
+#: lib/gallery-bank-class.php:16 lib/gallery-bank-class.php:31
+#: lib/gallery-bank-class.php:46 views/header.php:153 views/header.php:167
+#: views/header.php:181
+msgid "Dashboard"
+msgstr "Dasbor"
+
+#: gallery-bank.php:117 gallery-bank.php:190 gallery-bank.php:263
+#: views/dashboard.php:129
+msgid "Add New Album"
+msgstr "Tambah Album Baru"
+
+#: gallery-bank.php:125 gallery-bank.php:198 gallery-bank.php:271
+#: lib/gallery-bank-class.php:17 lib/gallery-bank-class.php:32
+#: lib/gallery-bank-class.php:47 views/dashboard.php:154 views/header.php:154
+#: views/header.php:168 views/header.php:182
+msgid "Short-Codes"
+msgstr "Pendek-Kode"
+
+#: gallery-bank.php:132 gallery-bank.php:205 gallery-bank.php:278
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:33
+#: lib/gallery-bank-class.php:48 views/header.php:155 views/header.php:169
+#: views/header.php:183
+msgid "Album Sorting"
+msgstr "Menyortir Album"
+
+#: gallery-bank.php:139 gallery-bank.php:212 gallery-bank.php:285
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:34
+#: lib/gallery-bank-class.php:49 views/header.php:156 views/header.php:170
+#: views/header.php:184 views/settings.php:276
+msgid "Global Settings"
+msgstr "Pengaturan Global"
+
+#: gallery-bank.php:146 gallery-bank.php:219 gallery-bank.php:292
+#: lib/gallery-bank-class.php:20 lib/gallery-bank-class.php:35
+#: lib/gallery-bank-class.php:50 views/gallery-bank-system-report.php:29
+#: views/header.php:157 views/header.php:171
+msgid "System Status"
+msgstr "Status Sistem"
+
+#: gallery-bank.php:153 gallery-bank.php:226 gallery-bank.php:299
+#: lib/gallery-bank-class.php:21 lib/gallery-bank-class.php:36
+#: lib/gallery-bank-class.php:51 views/header.php:81 views/header.php:158
+#: views/header.php:172 views/header.php:185
+msgid "Recommendations"
+msgstr "rekomendasi"
+
+#: gallery-bank.php:160 gallery-bank.php:233 gallery-bank.php:306
+#: lib/gallery-bank-class.php:22 lib/gallery-bank-class.php:37
+#: lib/gallery-bank-class.php:52 views/header.php:159 views/header.php:173
+#: views/header.php:186 views/purchase_pro_version.php:34
+msgid "Premium Editions"
+msgstr "edisi yang Premi"
+
+#: gallery-bank.php:167 gallery-bank.php:240 gallery-bank.php:313
+#: lib/gallery-bank-class.php:23 lib/gallery-bank-class.php:38
+#: lib/gallery-bank-class.php:53 views/header.php:86 views/header.php:160
+#: views/header.php:174 views/header.php:187
+msgid "Our Other Services"
+msgstr "Kami Jasa Lainnya"
+
+#: gallery-bank.php:327
+msgid "View Gallery Bank Documentation"
+msgstr "Lihat Gallery Bank Dokumentasi"
+
+#: gallery-bank.php:327
+msgid "Docs"
+msgstr "dokumentasi"
+
+#: gallery-bank.php:328
+msgid "View Gallery Bank Premium Editions"
+msgstr "Lihat Gallery Bank Premi edisi"
+
+#: gallery-bank.php:328
+msgid "Go for Premium!"
+msgstr "Pergi untuk Premi!"
+
+#: lib/add-new-album-class.php:44 views/edit-album.php:346
+#: views/edit-album.php:353
+msgid " Set as Album Cover"
+msgstr "Setel sebagai Sampul Album"
+
+#: lib/add-new-album-class.php:47 views/edit-album.php:294
+#: views/edit-album.php:359
+msgid "Enter your Title"
+msgstr "Masukkan Judul"
+
+#: lib/add-new-album-class.php:48 views/edit-album.php:299
+#: views/edit-album.php:364
+msgid "Enter your Description "
+msgstr "Masukkan deskripsi"
+
+#: lib/add-new-album-class.php:50 views/edit-album.php:305
+#: views/edit-album.php:370
+msgid "Enter your Tags"
+msgstr "Masukkan Tags"
+
+#: lib/add-new-album-class.php:54 views/edit-album.php:391
+msgid "Delete Image"
+msgstr "Hapus Gambar"
+
+#: lib/gallery-bank-class.php:15 lib/gallery-bank-class.php:30
+#: lib/gallery-bank-class.php:45 views/header.php:141
+msgid "Gallery Bank"
+msgstr "Gallery Bank"
+
+#: lib/gallery-bank-class.php:332
+msgid "Add Gallery using Gallery Bank"
+msgstr "Tambahkan Galeri Menggunakan Gallery Bank"
+
+#: views/album-preview.php:31
+msgid "Album Preview"
+msgstr "Album Pratinjau"
+
+#: views/album-preview.php:34 views/album-sorting.php:158
+#: views/edit-album.php:161 views/edit-album.php:415
+#: views/images-sorting.php:202 views/purchase_pro_version.php:38
+#: views/settings.php:279 views/shortcode.php:33
+msgid "Back to Albums"
+msgstr "Kembali ke Album"
+
+#: views/album-preview.php:52 views/album-sorting.php:195
+#: views/images-sorting.php:244
+msgid "Please Choose"
+msgstr "Silahkan Pilih"
+
+#: views/album-sorting.php:154
+msgid "Re-Order Albums"
+msgstr "Susun ulang Album"
+
+#: views/album-sorting.php:160 views/images-sorting.php:204
+msgid "Update Order"
+msgstr "Perbarui Urutan"
+
+#: views/album-sorting.php:163 views/images-sorting.php:207
+msgid "Sorting Order has been updated."
+msgstr "Penyortiran Urutan telah diperbarui."
+
+#: views/album-sorting.php:275 views/dashboard.php:302 views/dashboard.php:306
+#: views/dashboard.php:310 views/edit-album.php:612 views/edit-album.php:628
+#: views/images-sorting.php:308
+msgid "This feature is only available in Paid Premium Version!"
+msgstr "Fitur ini hanya tersedia dalam Versi Berbayar Premi!"
+
+#: views/dashboard.php:118 views/shortcode.php:29
+msgid "Gallery Bank Short-Codes"
+msgstr "Gallery Bank Pendek-Kode"
+
+#: views/dashboard.php:135
+msgid "Delete All Albums"
+msgstr "Hapus Semua Album"
+
+#: views/dashboard.php:136
+msgid "Purge Images & Albums"
+msgstr "Bersihkan Gambar & Album"
+
+#: views/dashboard.php:137
+msgid "Restore Factory Settings"
+msgstr "Kembali ke Pengaturan Pabrik"
+
+#: views/dashboard.php:144
+msgid "Existing Albums Overview"
+msgstr "Selayang Pandang Album yang ada"
+
+#: views/dashboard.php:150 views/edit-album.php:253
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: views/dashboard.php:151
+msgid "Title"
+msgstr "judul"
+
+#: views/dashboard.php:152
+msgid "Total Images"
+msgstr "Total gambar"
+
+#: views/dashboard.php:153
+msgid "Date"
+msgstr "Tanggal"
+
+#: views/dashboard.php:218
+msgid "Edit Album"
+msgstr "Sunting Album"
+
+#: views/dashboard.php:223 views/images-sorting.php:198
+msgid "Re-Order Images"
+msgstr "Urut ulang Gambar"
+
+#: views/dashboard.php:228
+msgid "Preview Album"
+msgstr "Pratinjau Album"
+
+#: views/dashboard.php:233
+msgid "Delete Album"
+msgstr "Hapus Album"
+
+#: views/dashboard.php:289
+msgid "Are you sure you want to delete this Album?"
+msgstr "Apakah Anda yakin ingin menghapus album ini?"
+
+#: views/edit-album.php:158
+msgid "Album"
+msgstr "Album"
+
+#: views/edit-album.php:162 views/edit-album.php:414
+msgid "Save Album"
+msgstr "SImpan Album"
+
+#: views/edit-album.php:166
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr "ALbum Tersimpan. Harap menunggu halan di redirect"
+
+#: views/edit-album.php:173
+msgid "Album Details"
+msgstr "Rincian Album"
+
+#: views/edit-album.php:177
+msgid "Album Title"
+msgstr "Judul Album"
+
+#: views/edit-album.php:182
+msgid "Enter your Album Title"
+msgstr "Masukkan Judul Album"
+
+#: views/edit-album.php:189
+msgid "Description"
+msgstr "Deskripsi"
+
+#: views/edit-album.php:203
+msgid "Upload Images"
+msgstr "Unggah Gambar"
+
+#: views/edit-album.php:206
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr "Browser Anda tidak memiliki Flash, Silverlight atau dukungan HTML5."
+
+#: views/edit-album.php:213
+msgid "Upload Videos"
+msgstr "Unggah Video"
+
+#: views/edit-album.php:214 views/edit-album.php:260 views/settings.php:288
+#: views/settings.php:504 views/settings.php:734 views/settings.php:845
+#: views/settings.php:944 views/settings.php:1266 views/settings.php:1382
+#: views/settings.php:1433 views/settings.php:1485
+msgid " (Available in Premium Versions)"
+msgstr "(Tersedia dalam Versi Premi)"
+
+#: views/edit-album.php:219
+msgid "Video Url"
+msgstr "Video Url"
+
+#: views/edit-album.php:223
+msgid "Enter your Video Url"
+msgstr "Masukkan Video Url"
+
+#: views/edit-album.php:229
+msgid "Upload Video"
+msgstr "Unggah Video"
+
+#: views/edit-album.php:240
+msgid "Your Gallery Bank Album"
+msgstr "Album Gallery Bank Anda"
+
+#: views/edit-album.php:250
+msgid "Delete"
+msgstr "Hapus"
+
+#: views/edit-album.php:256
+msgid "Title & Description"
+msgstr "Judul & Deskripsi"
+
+#: views/edit-album.php:259
+msgid "Tags (comma separated list)"
+msgstr "Tags (daftar dipisahkan koma)"
+
+#: views/edit-album.php:263
+msgid "Url to Redirect on click of an Image"
+msgstr "Url Redirect di klik dari suatu Gambar"
+
+#: views/edit-album.php:315
+msgid "Delete Video"
+msgstr "Hapus video yang"
+
+#: views/edit-album.php:599
+msgid "Are you sure you want to delete this Image?"
+msgstr "Apakah Anda yakin ingin menghapus gambar ini?"
+
+#: views/gallery-bank-system-report.php:32
+msgid "Get System Report"
+msgstr "Dapatkan Laporan Sistem"
+
+#: views/gallery-bank-system-report.php:36
+msgid "Close System Report"
+msgstr "Tutup Laporan Sistem"
+
+#: views/gallery-bank-system-report.php:132
+msgid "Default"
+msgstr "Standar"
+
+#: views/header.php:18
+msgid "Get Started"
+msgstr "Dapatkan Mulai"
+
+#: views/header.php:21
+msgid "Watch Gallery Video!"
+msgstr "Perhiasan Galeri Video!"
+
+#: views/header.php:25
+msgid "read documentation here"
+msgstr "baca dokumentasi di sini"
+
+#: views/header.php:30
+msgid "Go Premium"
+msgstr "pergi Premi"
+
+#: views/header.php:34
+msgid "Features"
+msgstr "fitur"
+
+#: views/header.php:39
+msgid "Online Demos"
+msgstr "Online Demos"
+
+#: views/header.php:44
+msgid "Premium Pricing Plans"
+msgstr "Rencana Harga Premi"
+
+#: views/header.php:51
+msgid "Knowledge Base"
+msgstr "Basis pengetahuan"
+
+#: views/header.php:56
+msgid "Support Forum"
+msgstr "Dukungan Forum"
+
+#: views/header.php:61
+msgid "FAQ's"
+msgstr "Pertanyaan Umum"
+
+#: views/header.php:66
+msgid "Detailed Features"
+msgstr "Fitur rinci"
+
+#: views/header.php:72
+msgid "More Actions"
+msgstr "Tindakan Lebih"
+
+#: views/header.php:76
+msgid "Plugin Customization"
+msgstr "Plugin Kustomisasi"
+
+#: views/purchase_pro_version.php:43
+msgid "WP Gallery Bank is an one time Investment. Its Worth it!"
+msgstr "WP Gallery Bank adalah investasi satu waktu. fiturnya bernilai itu!"
+
+#: views/settings.php:280
+msgid "Update Settings"
+msgstr "Perbarui Pengaturan"
+
+#: views/settings.php:287
+msgid "Thumbnail Settings"
+msgstr "Pengaturan Gambar Mini"
+
+#: views/settings.php:299
+msgid "Thumbnail Size"
+msgstr "Ukuran Gambar Mini"
+
+#: views/settings.php:306 views/settings.php:314 views/settings.php:522
+#: views/settings.php:530
+msgid "Original"
+msgstr "Asli"
+
+#: views/settings.php:309 views/settings.php:317 views/settings.php:525
+#: views/settings.php:533
+msgid "Custom"
+msgstr "Custom"
+
+#: views/settings.php:326 views/settings.php:542
+msgid "Width"
+msgstr "Lebar"
+
+#: views/settings.php:336 views/settings.php:552
+msgid "Height"
+msgstr "Tinggi"
+
+#: views/settings.php:348 views/settings.php:563 views/settings.php:985
+msgid "Opacity"
+msgstr "Opasitas"
+
+#: views/settings.php:360 views/settings.php:575 views/settings.php:996
+msgid "Border Size"
+msgstr "Ukuran Border"
+
+#: views/settings.php:371 views/settings.php:587 views/settings.php:1007
+msgid "Border Radius"
+msgstr "Radius Border"
+
+#: views/settings.php:382 views/settings.php:599 views/settings.php:1032
+msgid "Border Color"
+msgstr "Warna Border"
+
+#: views/settings.php:396
+msgid "Margin Between Images"
+msgstr "Marjin Antar Gambar"
+
+#: views/settings.php:406 views/settings.php:633 views/settings.php:1018
+msgid "Text Color"
+msgstr "Warna Teks"
+
+#: views/settings.php:420 views/settings.php:650 views/settings.php:1092
+msgid "Text-Align"
+msgstr "Teks-Align"
+
+#: views/settings.php:434 views/settings.php:664 views/settings.php:801
+#: views/settings.php:1106 views/settings.php:1314
+msgid "Font-Family"
+msgstr "Font-Family"
+
+#: views/settings.php:457 views/settings.php:687 views/settings.php:1129
+msgid "Heading Font-Size"
+msgstr "Ukuran Font Heading"
+
+#: views/settings.php:474 views/settings.php:704 views/settings.php:1146
+msgid "Text Font-Size"
+msgstr "Ukuran Font Text"
+
+#: views/settings.php:491 views/settings.php:721
+msgid "Description Length"
+msgstr "Panjang Deskripsi"
+
+#: views/settings.php:503
+msgid "Album Cover Settings"
+msgstr "Pengaturan Sampul Album"
+
+#: views/settings.php:515
+msgid "Cover Size"
+msgstr "Ukuran Sampul"
+
+#: views/settings.php:613
+msgid "Margin Between Albums"
+msgstr "Marjin Antar Album"
+
+#: views/settings.php:623
+msgid "Text for Album Click"
+msgstr "Teks untuk Klik Album"
+
+#: views/settings.php:733
+msgid "Filter Settings"
+msgstr "Pengaturan Filter"
+
+#: views/settings.php:745
+msgid "Filters"
+msgstr "Filter"
+
+#: views/settings.php:752 views/settings.php:760 views/settings.php:1170
+#: views/settings.php:1178 views/settings.php:1196 views/settings.php:1203
+#: views/settings.php:1221 views/settings.php:1228 views/settings.php:1245
+#: views/settings.php:1252 views/settings.php:1360 views/settings.php:1367
+#: views/settings.php:1400 views/settings.php:1408 views/settings.php:1451
+#: views/settings.php:1459
+msgid "Enable"
+msgstr "Aktifkan"
+
+#: views/settings.php:755 views/settings.php:763 views/settings.php:1173
+#: views/settings.php:1181 views/settings.php:1198 views/settings.php:1206
+#: views/settings.php:1223 views/settings.php:1230 views/settings.php:1247
+#: views/settings.php:1254 views/settings.php:1362 views/settings.php:1370
+#: views/settings.php:1403 views/settings.php:1411 views/settings.php:1454
+#: views/settings.php:1462
+msgid "Disable"
+msgstr "Nonaktifkan"
+
+#: views/settings.php:773
+msgid "Filter Color"
+msgstr "Filter Warna"
+
+#: views/settings.php:787
+msgid "Filter Text Color"
+msgstr "Filter Warna Text"
+
+#: views/settings.php:824 views/settings.php:1337
+msgid "Font-Size"
+msgstr "Ukuran Font"
+
+#: views/settings.php:844
+msgid "Roles & Capabilities"
+msgstr "Peranan & Kemampuan"
+
+#: views/settings.php:856
+msgid "Privileges for Admin"
+msgstr "Hak istimewa untuk Admin"
+
+#: views/settings.php:860 views/settings.php:876 views/settings.php:892
+#: views/settings.php:909 views/settings.php:927
+msgid "Full Control"
+msgstr "Kontrol Penuh"
+
+#: views/settings.php:863 views/settings.php:879 views/settings.php:895
+#: views/settings.php:912 views/settings.php:930
+msgid "Read"
+msgstr "Baca"
+
+#: views/settings.php:866 views/settings.php:882 views/settings.php:898
+#: views/settings.php:915 views/settings.php:933
+msgid "Write"
+msgstr "Tulis"
+
+#: views/settings.php:872
+msgid "Privileges for Editor"
+msgstr "Hak istimewa untuk Penyunting"
+
+#: views/settings.php:888
+msgid "Privileges for Author"
+msgstr "Hak istimewa untuk Author"
+
+#: views/settings.php:904
+msgid "Privileges for Contributor"
+msgstr "Hak istimewa untuk Kontributor"
+
+#: views/settings.php:921
+msgid "Privileges for Subscriber"
+msgstr "Hak istimewa untuk berlangganan"
+
+#: views/settings.php:943
+msgid "Lightbox Settings"
+msgstr "P'aturan Lightbox"
+
+#: views/settings.php:955
+msgid "Lightbox Type"
+msgstr "Jenis Lightbox"
+
+#: views/settings.php:1046
+msgid "Inline Background"
+msgstr "Background Inline"
+
+#: views/settings.php:1060
+msgid "Overlay Background"
+msgstr "Background Overlay"
+
+#: views/settings.php:1074
+msgid "Fade In Time"
+msgstr "Waktu Fade In"
+
+#: views/settings.php:1083
+msgid "Fade Out Time"
+msgstr "Waktu Fade Out"
+
+#: views/settings.php:1163
+msgid "Facebook Comments"
+msgstr "Facebook Komentar"
+
+#: views/settings.php:1190
+msgid "Social Sharing"
+msgstr "Sosial Sharng"
+
+#: views/settings.php:1215
+msgid "Image Title"
+msgstr "Judul Gambar"
+
+#: views/settings.php:1239
+msgid "Image Description"
+msgstr "Deskripsi Gambar"
+
+#: views/settings.php:1265
+msgid "Front - End Layout Settings"
+msgstr "Pengaturan Tata Letak Front End"
+
+#: views/settings.php:1277
+msgid "Text for Back Button"
+msgstr "Teks untuk Tombol Kembali"
+
+#: views/settings.php:1287
+msgid "Button Color"
+msgstr "Tombol Warna"
+
+#: views/settings.php:1300
+msgid "Button Text Color"
+msgstr "Warna Tombol Teks"
+
+#: views/settings.php:1354
+msgid "Album Seperator"
+msgstr "Album Pemisah"
+
+#: views/settings.php:1381
+msgid "Pagination Settings for Images"
+msgstr "Pengaturan Nomor Halaman untuk gambar"
+
+#: views/settings.php:1393
+msgid "Paging"
+msgstr "Paging"
+
+#: views/settings.php:1420
+msgid "No. of Images Per Page "
+msgstr "Jumlah Gambar Per Halaman"
+
+#: views/settings.php:1432
+msgid "Slide Show Settings"
+msgstr "Pengaturan Slideshow"
+
+#: views/settings.php:1444
+msgid "Auto Play"
+msgstr "bermain Otomatis"
+
+#: views/settings.php:1471
+msgid "Interval"
+msgstr "selang waktu"
+
+#: views/settings.php:1484
+msgid "Language Direction Settings"
+msgstr "Pengaturan Language Direction"
+
+#: views/settings.php:1496
+msgid "Language Direction"
+msgstr "Language Direction"
+
+#: views/settings.php:1653
+msgid "This Feature is only available in Paid Premium Version!"
+msgstr "Fitur ini hanya tersedia dalam Versi Berbayar Premi!"
+
+#~ msgid "Purchase Pro Version"
+#~ msgstr "Pembelian Pro Versi"
+
+#~ msgid "VIEW ALL"
+#~ msgstr "LIHAT SEMUA"
+
+#~ msgid "Licensing"
+#~ msgstr "Perizinan"
+
+#~ msgid "Select Gallery"
+#~ msgstr "Pilih Galeri"
+
+#~ msgid "Select Gallery Format"
+#~ msgstr "Pilih Format Galeri"
+
+#~ msgid "Images In Row"
+#~ msgstr "Gambar dalam Baris"
+
+#~ msgid "Select Text Format"
+#~ msgstr "Pilih FOrmat Teks"
+
+#~ msgid "Special Effect"
+#~ msgstr "Efek Spesial"
+
+#~ msgid "Select Special Effect"
+#~ msgstr "Pilih Efek Spesial"
+
+#~ msgid "Animation Effect"
+#~ msgstr "Efek Animasi"
+
+#~ msgid "Responsive Gallery"
+#~ msgstr "Responsif Galeri"
+
+#~ msgid "Save and Submit Changes"
+#~ msgstr "Simpan dan Kirim Perubahan"
+
+#~ msgid "Album Published. Kindly wait for the redirect to happen."
+#~ msgstr "Album Diterbitkan. Mohon menunggu redirect terjadi"
+
+#~ msgid "Are you sure you want to delete these Images?"
+#~ msgstr "Apakah Anda yakin ingin menghapus semua gambar ini? "
+
+#~ msgid "Attention! A new vesion of Gallery Bank is available for download."
+#~ msgstr "Perhatian! Versi terbaru dari Gallery Bank tersedia untuk di unduh"
+
+#~ msgid "Click"
+#~ msgstr "Klik"
+
+#~ msgid "here"
+#~ msgstr "disini"
+
+#~ msgid "to upgrade your version of Gallery Bank."
+#~ msgstr "untuk memperbarui versi Gallery Bank anda"
+
+#~ msgid "Dashboard - Gallery Bank"
+#~ msgstr "Dasbor - Gallery Bank"
+
+#~ msgid "Date of Creation"
+#~ msgstr "Tanggal dibuat"
+
+#~ msgid "Are you sure you want to delete all Albums?"
+#~ msgstr "Apakah Anda yakin ingin menghapus seluruh album?"
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Apakah Anda yakin ingin kembali pe pengaturan pabrik?"
+
+#~ msgid "Are you sure you want to Purge all Images & Albums?"
+#~ msgstr "Apakah anda yakin ingin membersihkan semua gambar dan album?"
+
+#~ msgid "Update Album"
+#~ msgstr "Perbarui Album"
+
+#~ msgid "Album Updated. Kindly wait for the redirect to happen."
+#~ msgstr "Album sudah diperbarui. Mohon menunggu sebentar."
+
+#~ msgid "Gallery Bank Licensing Module"
+#~ msgstr "Modul Perizinan Gallery Bank"
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Berhasil! Pengaturan sudah diperbarui"
+
+#~ msgid "Update"
+#~ msgstr "Perbarui"
+
+#~ msgid "Restore Settings"
+#~ msgstr "Kembalikan Pengaturan"
+
+#~ msgid "Settings has been updated."
+#~ msgstr "Pengaturan sudah diperbarui"
+
+#~ msgid "Success! Settings have been restored."
+#~ msgstr "Berhasil! Pengaturan sudah dikembalikan"
+
+#~ msgid "Are you sure you want to restore settings?"
+#~ msgstr "Apakah Anda yakin ingin mengembalikan pengaturan?"
+
+#~ msgid " Rotate Image"
+#~ msgstr "Putar Gambar"
+
+#~ msgid "Upload Images "
+#~ msgstr "Upload Gambar"
+
+#~ msgid "Your Wordpress Version doesn\"t support Wp-media."
+#~ msgstr "Versi Wordpress Anda tidak mendukung Wp-media."
+
+#~ msgid "Upload Thumbnails "
+#~ msgstr "Upload Gambar mini"
+
+#~ msgid "Show Albums"
+#~ msgstr "Tampilkan Album"
+
+#~ msgid "Responsive"
+#~ msgstr "Responsif"
+
+#~ msgid "With Albums in Row"
+#~ msgstr "Dengan Album dalam Baris"
+
+#~ msgid "Image Uploader Settings"
+#~ msgstr "Pengaturan Gambar Uploader"
+
+#~ msgid "Uploader for Images"
+#~ msgstr "Uploader untuk Gambar"
+
+#~ msgid "WP Media"
+#~ msgstr "WP Media"
+
+#~ msgid "Change Uploading Image Name"
+#~ msgstr "Ubah Nama Uploading Gambar"
+
+#~ msgid "Image url location"
+#~ msgstr "Lokasi URL Gambar"
+
+#~ msgid "Open in New Window"
+#~ msgstr "Buka di Jendela Baru"
+
+#~ msgid "Same Window"
+#~ msgstr "Jelndela yang sama"

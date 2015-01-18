@@ -120,7 +120,7 @@ abstract class SMAPBaseFacebook
   /**
    * Version.
    */
-  const VERSION = '3.2.0';
+  const VERSION = '3.2.2';
 
   /**
    * Signed Request Algorithm.
@@ -151,12 +151,12 @@ abstract class SMAPBaseFacebook
    * Maps aliases to Facebook domains.
    */
   public static $DOMAIN_MAP = array(
-    'api'         => 'https://api.facebook.com/',
-    'api_video'   => 'https://api-video.facebook.com/',
-    'api_read'    => 'https://api-read.facebook.com/',
-    'graph'       => 'https://graph.facebook.com/',
-    'graph_video' => 'https://graph-video.facebook.com/',
-    'www'         => 'https://www.facebook.com/',
+    'api'         => XYZ_SMAP_FB_api,
+    'api_video'   => XYZ_SMAP_FB_api_video,
+    'api_read'    => XYZ_SMAP_FB_api_read,
+    'graph'       => XYZ_SMAP_FB_graph,
+    'graph_video' => XYZ_SMAP_FB_graph_video,
+    'www'         => XYZ_SMAP_FB_www,
   );
 
   /**
@@ -439,6 +439,11 @@ abstract class SMAPBaseFacebook
       // the JS SDK puts a code in with the redirect_uri of ''
       if (array_key_exists('code', $signed_request)) {
         $code = $signed_request['code'];
+        if ($code && $code == $this->getPersistentData('code')) {
+          // short-circuit if the code we have is the same as the one presented
+          return $this->getPersistentData('access_token');
+        }
+
         $access_token = $this->getAccessTokenFromCode($code, '');
         if ($access_token) {
           $this->setPersistentData('code', $code);
@@ -932,7 +937,7 @@ abstract class SMAPBaseFacebook
     } else {
       $opts[CURLOPT_HTTPHEADER] = array('Expect:');
     }
-
+    $opts[CURLOPT_SSL_VERIFYPEER]=(get_option('xyz_smap_peer_verification')=='1') ? TRUE : FALSE;
     curl_setopt_array($ch, $opts);
     $result = curl_exec($ch);
 

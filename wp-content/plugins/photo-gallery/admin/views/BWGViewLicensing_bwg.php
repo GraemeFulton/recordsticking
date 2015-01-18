@@ -178,7 +178,7 @@ class BWGViewLicensing_bwg {
         </a>
       </div>
     <div style="float: left; clear: both;">
-      <p>After the purchasing the commercial version follow this steps:</p>
+      <p>After purchasing the commercial version follow these steps:</p>
       <ol>
         <li>Deactivate Photo Gallery plugin.</li>
         <li>Delete Photo Gallery plugin.</li>

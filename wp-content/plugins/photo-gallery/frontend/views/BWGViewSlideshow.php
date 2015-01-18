@@ -33,6 +33,9 @@ class BWGViewSlideshow {
     else {
       $order_by = $params['order_by'];
     }
+    if (!isset($params['slideshow_title_full_width'])) {
+      $params['slideshow_title_full_width'] = 0;
+    }
     $image_right_click = $options_row->image_right_click;
     if (!$from) {
       $theme_id = (isset($params['theme_id']) ? esc_html($params['theme_id']) : 1);
@@ -462,7 +465,11 @@ class BWGViewSlideshow {
         border-radius: <?php echo $theme_row->slideshow_title_border_radius; ?>;
         background-color: #<?php echo $theme_row->slideshow_title_background_color; ?>;
         padding: <?php echo $theme_row->slideshow_title_padding; ?>;
+        <?php if($params['slideshow_title_full_width']) { ?>
+        width: 100%;
+        <?php } else { ?>
         margin: 5px;
+        <?php } ?>
         display: inline-block;
         word-wrap: break-word;
         word-break: break-word;
@@ -655,7 +662,7 @@ class BWGViewSlideshow {
                             }
                             else { ?>
                               <span id="bwg_slideshow_image_<?php echo $bwg; ?>" class="bwg_slideshow_video_<?php echo $bwg; ?>" image_id="<?php echo $image_row->id; ?>">
-                                <iframe class="bwg_video_frame_<?php echo $bwg; ?>" src="<?php echo ($image_row->filetype == "YOUTUBE" ? "//www.youtube.com/embed/" . $image_row->filename . "?enablejsapi=1" : "//player.vimeo.com/video/" . $image_row->filename . "?api=1"); ?>" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+                                <iframe class="bwg_video_frame_<?php echo $bwg; ?>" src="<?php echo ($image_row->filetype == "YOUTUBE" ? "//www.youtube.com/embed/" . $image_row->filename . "?enablejsapi=1&wmode=transparent" : "//player.vimeo.com/video/" . $image_row->filename . "?api=1"); ?>" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
                               </span>
                             <?php
                             }
@@ -679,7 +686,7 @@ class BWGViewSlideshow {
                             }
                             else { ?>
                               <span id="bwg_slideshow_image_second_<?php echo $bwg; ?>" class="bwg_slideshow_video_<?php echo $bwg; ?>">
-                                <iframe class="bwg_video_frame_<?php echo $bwg; ?>" src="<?php echo ($image_row->filetype == "YOUTUBE" ? "//www.youtube.com/embed/" . $image_row->filename . "?enablejsapi=1" : "//player.vimeo.com/video/" . $image_row->filename . "?api=1"); ?>" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+                                <iframe class="bwg_video_frame_<?php echo $bwg; ?>" src="<?php echo ($image_row->filetype == "YOUTUBE" ? "//www.youtube.com/embed/" . $image_row->filename . "?enablejsapi=1&wmode=transparent" : "//player.vimeo.com/video/" . $image_row->filename . "?api=1"); ?>" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
                               </span>
                             <?php
                             }

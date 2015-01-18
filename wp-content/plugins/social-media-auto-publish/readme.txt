@@ -3,8 +3,8 @@ Contributors: f1logic
 Donate link: http://xyzscripts.com/donate/
 Tags:  social media auto publish, social media publishing, post to facebook, post to twitter, post to linkedin, social network auto publish, social media, social network, add link to facebook, add link to twitter, add link to linkedin, publish to facebook, publish to twitter, publish to linkedin
 Requires at least: 2.8
-Tested up to: 3.6
-Stable tag: 1.2.1
+Tested up to: 4.0
+Stable tag: 1.3.2
 License: GPLv2 or later
 
 Publish posts automatically to social media networks like Facebook, Twitter and LinkedIn.
@@ -109,6 +109,11 @@ When you create your own applications, it ensures that the posts to Facebook, Tw
 You may use post title, content, excerpt, permalink, site title and user nicename for auto publishing.
 
 
+= 6. Why do I see SSL related errors in logs ? =
+
+SSL peer verification may not be functioning in your server. Please turn off SSL peer verification in settings of plugin and try again.
+
+
 More questions ? [Drop a mail](http://xyzscripts.com/members/support/ "XYZScripts Support") and we shall get back to you with the answers.
 
 
@@ -120,6 +125,23 @@ More questions ? [Drop a mail](http://xyzscripts.com/members/support/ "XYZScript
 4. Publishing options while creating a post.
 
 == Changelog ==
+
+= Social Media Auto Publish 1.3.2 =
+* Fixed auto-publish of scheduled post
+
+= Social Media Auto Publish 1.3.1 =
+* Added compatibility with wordpress 3.9.1
+* Facebook API V 2.0 compatibility added
+* Compatibility with bitly plugin
+
+= Social Media Auto Publish 1.3 =
+* View logs for last published post
+* Option to enable/disable SSL peer verification
+* Option to reauthorize the Facebook/LinkedIn application
+
+= Social Media Auto Publish 1.2.2 =
+* Bug fixed for &amp;nbsp; in post
+* Twitter api updated to https
 
 = Social Media Auto Publish 1.2.1 =
 * Default image fetch logic for auto publish updated

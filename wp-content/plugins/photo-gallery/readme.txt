@@ -2,9 +2,9 @@
 Contributors: webdorado
 Donate link: http://web-dorado.com/products/wordpress-photo-gallery-plugin.html
 Tags: photo, photo gallery, image gallery, video gallery, gallery, galleries,  wordpress gallery plugin, images gallery, album, photo albums, simple gallery, best gallery plugin, free photo gallery, wp gallery, wordpress gallery, website gallery, gallery shortcode, best gallery, picture, pictures, gallery slider, photo album, photogallery, widget gallery, image, images, photos,  gallery lightbox, photoset, wordpress photo gallery plugin, wp gallery plugins, responsive wordpress photo gallery, media, image album, filterable gallery, banner rotator, fullscreen gallery, fotogalerie, galleria, galerie, galeri 
-Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 1.2.3
+Requires at least: 3.0 
+Tested up to: 4.1 
+Stable tag: 1.2.8 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,18 +74,24 @@ Photo Gallery product in addition to the main plugin includes 4 specific widgets
 *   Possibility to display images in the albums in thumbnail or masonry view upon opening   
 *   WordPress Search Integration by gallery and album title   
 *   Possibility to display the number of the images in the lighbox (optional feature)   
+*   Resizing possibility after adding the images   
+*   Possibility to display Search Box on the gallery page for the search based on titles   
+*   Possibility to display the number of images in the lighbox  
+*   Redirection option upon clicking image thumbnail  
+*   Option of displaying the image information in full-width mode  
 
 Upgrade to [WordPress Photo Gallery Pro](http://web-dorado.com/products/wordpress-photo-gallery-plugin.html) to add features:
 
 *   Masonry View. 
 *   Blog Style View.   
+*   Masonry Album view   
 *   Slideshow/Lightbox 15 effects.    
 *   Editable themes.   
 *   Commenting possibility with Captcha protection possibility.   
 *   Comment-managing possibility to avoid spamming (Unpublish/Delete).    
 *   Social sharing possibility (Facebook, Google+, Twitter, Pinterest and Tumblr)    
 *   Dynamic Photo Gallery Tag Cloud widget  with image tag cloud and text tag cloud options.   
-
+*   Possibility to include both videos and images within a single gallery.   
 
 
 
@@ -173,6 +179,27 @@ If any problem occurs, please contact us at  [info@web-dorado.com](mailto:info@w
 6.  Photo Gallery - Edit Watermark   
 
 == Changelog ==
+= 1.2.8 =
+security issue fixed
+
+= 1.2.7 =
+masonry album view type   
+single quota bug in image fixed
+
+= 1.2.6 =
+bug in new image save fixed
+
+= 1.2.5 =
+wrap around in lightbox
+
+= 1.2.4 =
+pagination input
+
+= 1.2.3 =
+play icon over the video thumbnail
+
+= 1.2.2 =
+add upload images with custom size
 
 = 1.2.1 =
 minor changes in shortcode generation code 
@@ -284,7 +311,6 @@ change shortcodes
 
   
 ==Wordpress Photo Gallery Step by step guide==    
-Step by step guide  
   
 = Step 1: Installing the Gallery =   
 1.1 Minimum requirements.  
@@ -467,12 +493,12 @@ Advertisement position. Choose the positioning of the advertisement from the ava
 
   
 5.8 Image Options  
-5.7.1 Enable image title for Image Browser view. Choose whether to display image titles for the Image Browser view or not.  
-5.8.2 Enable image description for Image Browser view. Choose whether to have image descriptions for the Image Browser view or not.  
-5.8.3 Image width. Define the image width for the Image Browser view option.  
-5.8.4 Enable image title for Blog Style view. Choose whether to have image titles in Blog Style view or not.  
-5.8.5 Image width for Blog Style view. Define the image width for the Blog Style view.  
-5.8.6 Images per page in Blog Style view. Specify the number of images to be displayed in a single page for the Blog Style view.  
+5.7.1 Enable image title for Image Browser view. Choose whether to display gallery image titles for the Image Browser view or not.  
+5.8.2 Enable image description for Image Browser view. Choose whether to have gallery image descriptions for the Image Browser view or not.  
+5.8.3 Image width. Define the gallery image width for the Image Browser view option.  
+5.8.4 Enable image title for Blog Style view. Choose whether to have gallery image titles in Blog Style view or not.  
+5.8.5 Image width for Blog Style view. Define the galllery image width for the Blog Style view.  
+5.8.6 Images per page in Blog Style view. Specify the number of gallery images to be displayed in a single page for the Blog Style view.  
 5.8.7 Enable Pagination for Blog Style view. Choose whether to have pagination for the Blog Style view or not.  
   
   
@@ -587,17 +613,17 @@ Use one of the default Photo Gallery themes or click `Add new` button to create 
 6.4.16 Background color. Select the background color for the image browser box.   
 6.4.17 Background transparency. Specify the transparency level of the overall background.  
 6.4.18 Box shadow. Set the shadow values for the image browser box.  
-6.4.19 Title alignment. Define the alignment for the image titles.   
-6.4.20 Font size. Set the font size for the text elements of images, e.g. title and description.  
+6.4.19 Title alignment. Define the alignment for the gallery image titles.   
+6.4.20 Font size. Set the font size for the text elements of the gallery images, e.g. title and description.  
 6.4.21 Font color. Choose the font color for the text elements of the images, e.g. title and description.  
 6.4.22 Font family. Choose the font family to be used for the image text elements, e.g. title and description.   
-6.4.23 Description margin. Using CSS type values set image description padding.  
-6.4.24 Description padding. Using CSS type values set image description padding.  
-6.4.25 Description border width. Define the border width for the image descriptions.  
-6.4.26 Description border style. Select the border style for the image description in image browser view.   
-6.4.27 Description border color. Choose the border color for the image description in image browser view.   
-6.4.28 Description border radius. Define the border radius for the image description in image browser view.  
-6.4.29 Description background color. Select the background color for the image description in the image browser view.  
+6.4.23 Description margin. Using CSS type values set  gallery image description padding.  
+6.4.24 Description padding. Using CSS type values set gallery image description padding.  
+6.4.25 Description border width. Define the border width for the gallery image descriptions.  
+6.4.26 Description border style. Select the border style for the gallery image description in image browser view.   
+6.4.27 Description border color. Choose the border color for the gallery image description in image browser view.   
+6.4.28 Description border radius. Define the border radius for the gallery image description in image browser view.  
+6.4.29 Description background color. Select the background color for the galleryimage description in the image browser view.  
   
 6.5 Compact Album  
 6.5.1 Name. Provide a name for the theme.  
@@ -708,17 +734,17 @@ Use one of the default Photo Gallery themes or click `Add new` button to create 
 6.7.15 Buttons and title margin. Set the buttons (social media sharing and comments) and title margins using CSS type values.   
 6.7.16 Buttons size. Set the buttons (social media sharing and comments) size in pixels.  
 6.7.17 Buttons color. Select the buttons (social media sharing and comments) color.  
-6.7.18 Buttons and title border width. Set the border width for the buttons (social media sharing and comments) and title.  
-6.7.19 Buttons and title border style. Select the border style for the buttons (social media sharing and comments) and title.  
-6.7.20 Buttons and title border color. Select the border color for the buttons (social media sharing and comments) and title.  
-6.7.21 Buttons and title border radius. Set the border radius for the buttons (social media sharing and comments) and title.  
-6.7.22 Buttons and title background color. Select the background color for the buttons (social media sharing and comments) and title.  
-6.7.23 Buttons and title background transparency. Set the level of the background transparency for the buttons (social media sharing and comments) and title.  
+6.7.18 Buttons and title border width. Set the border width for the buttons (social media sharing and comments) and gallery image title.  
+6.7.19 Buttons and title border style. Select the border style for the buttons (social media sharing and comments) and gallery image title.  
+6.7.20 Buttons and title border color. Select the border color for the buttons (social media sharing and comments) and gallery image title.  
+6.7.21 Buttons and title border radius. Set the border radius for the buttons (social media sharing and comments) and gallery image title.  
+6.7.22 Buttons and title background color. Select the background color for the buttons (social media sharing and comments) and gallery image title.  
+6.7.23 Buttons and title background transparency. Set the level of the background transparency for the buttons (social media sharing and comments) and gallery image title.  
 6.7.24 Buttons or title alignment. Choose an alignment for either buttons or title. The second option will be adjusted automatically.  
   
 6.8 Lightbox
 6.8.1 Name. Provide a name for the theme.
-6.8.2 Overlay background color. Choose the background color for the image background overlay. 
+6.8.2 Overlay background color. Choose the background color for the gallery image background overlay. 
 6.8.3 Overlay background transparency. Select the level of transparency for the background overlay. 
 6.8.4 Lightbox background color. Select the overall background color for the lightbox. 
 6.8.5 Control buttons height. Set the height for the control buttons in the lightbox.
@@ -872,16 +898,16 @@ Use one of the default Photo Gallery themes or click `Add new` button to create 
   
 = Step 8: Publishing the Created Photo Gallery. =   
 To insert a gallery into a Page or a Post.   
-Open the post/page you want to display the gallery. Press the button named Photo Gallery. A camera icon will be inserted into the page/post. Click on the image and select the gallery/album display you want to use for that specific page/post.  
+Open the post/page you want to display the gallery. Press the button named Photo Gallery. A camera icon will be inserted into the page/post. Click on the gallery image and select the gallery/album display you want to use for that specific page/post.  
 Each Photo Gallery shortcode uses three columns of parameters. The first column shows parameters specific for that Photo Gallery view only, the second one shows Lightbox (except Slideshow view) parameters, the third one is referred to the Advertisement.   
-In addition you can add the shortcode using Shortcode Generator .     
+In addition you can add the galllery shortcode using Shortcode Generator of the Photo Gallery.     
 8.1 General Parameters (First Column)  
 8.1.1Thumbnails  
 Theme. Select the theme to be applied to this Photo Gallery view.   
 Gallery. Select the gallery.   
 Sort by. Choose the option to use for the gallery image sequence.   
 Max. number of image columns. Provide the number of image columns in a page.  
-Images per page. Provide the maximum number of images per page.  
+Images per page. Provide the maximum number of gallery images per page.  
 Enable pagination. Choose whether to have pagination for the view or not.  
 Image thumbnail dimensions. Define the thumbnail width and height in pixels.  
 8.1.2 Masonry  
@@ -889,13 +915,13 @@ Theme. Select the theme to be applied to this Photo Gallery view.
 Gallery. Select the gallery.   
 Sort by. Choose the option to use for image sequence.   
 Max. number of image columns. Provide the number of image columns in a page.  
-Images per page. Provide the maximum number of images per page.  
+Images per page. Provide the maximum number of gallery images per page.  
 Enable pagination. Choose whether to have pagination for the view or not.  
 Image thumbnail width. Provide the thumbnail width for the images.  
 8.1.3 Slideshow  
 Theme. Select the theme to be applied to this Photo Gallery view.  
 Gallery. Select the gallery.   
-Sort by. Choose the option to use for image sequence.   
+Sort by. Choose the option to use for the gallery image sequence.   
 Slideshow Effect. Select the effect to be applied to the slideshow.  
 Time interval. Specify the time interval between the images.  
 Slideshow dimensions. Define the width and height of the slideshow.  
@@ -956,9 +982,9 @@ Enable Twitter button. Choose whether to have Twitter social sharing button enab
 Enable Google+ button. Choose whether to have Google+ social sharing button enabled in the pop-up or not.  
   
 (for Slideshow View only)  
-Enable image title. Choose whether to display image titles during the slideshow or not.  
+Enable image title. Choose whether to display gallery image titles during the slideshow or not.  
 Title position. Set the position of the title using the available options.   
-Enable image description. Choose whether to display image description during the slideshow or not.  
+Enable image description. Choose whether to display gallery image description during the slideshow or not.  
 Description position. Set the position of the description using the available options.   
 Enable slideshow music. Choose whether to have background audio track during the slideshow or not.  
 Music URL. Provide the URL of the audio track to play during the slideshow.  
@@ -988,47 +1014,48 @@ Go to Appearance>Widgets. Here select the widget option you want to add to a cus
 9.1.1 Title. Provide a title for the tag cloud.  
 9.1.2 Taxonomy. Select Photo Gallery from the provided options.  
   
-Go to Appearance>Widgets. Here select the widget option you want to add to a custom location. Afterwards drag and drop the selected widget into the custom location, fill in the options and press Save button.  
-9.2 Photo Gallery Tags Cloud. This dynamic widget allows having rotating tags or images. After clicking on the tag a separate page will be opened displaying images corresponding to the tag. In case of images, the images will display with a pop-up.   
+Go to Appearance>Widgets. Here select the gallery widget option you want to add to a custom location. Afterwards drag and drop the selected gallery widget into the custom location, fill in the options and press Save button.
+  
+9.2 Photo Gallery Tags Cloud. This dynamic widget allows having rotating tags or gallery images. After clicking on the tag a separate page will be opened displaying the gallery images corresponding to the tag. In case of the gallery images, the images will display with a pop-up.   
 9.2.1 Title. Provide a title for the dynamic tag cloud.  
 9.2.2 Choosing Text type:  
-Number. Provide the number of tags you want to display. If you leave it to 0 all tags will be displayed.  
+Number. Provide the number of tags you want to display. If you leave it to 0 all gallery tags will be displayed.  
 Dimensions. Specify the width and height for the dynamic tag cloud.  
-Transparent background. Choose whether to have a transparent background or not.  
+Transparent background. Choose whether to have a transparent background or not for the gallery widget or not.  
 Background color. Choose the background color for the tag cloud.  
 Text color. Choose the tag text color.  
-Theme. Choose the theme, which will be applied to the gallery/album corresponding to the tag.  
+Theme. Choose the theme, which will be applied to the gallery or album corresponding to the tag.  
 9.2.3 Choosing Image type:  
 Show tag names. Choose whether to display tag names or not.  
-Number. Provide the number of images you want to display. If you leave it to 0 all images will be displayed.  
+Number. Provide the number of gallery images you want to display. If you leave it to 0 all gallery images will be displayed.  
 Dimensions. Specify the width and height for the dynamic image cloud.  
 Background color. Choose the background color for the image cloud.  
 Text color. Choose the tag text color.  
 Theme. Choose the theme, which will be applied to the gallery/album corresponding to the image/tag.  
   
 9.3 Photo Gallery Slideshow.  
-9.3.1 Title. Provide a title for the slideshow.  
+9.3.1 Title. Provide a title for the gallery slideshow.  
 9.3.2 Select Gallery. Specify the gallery you want to use for the slideshow.  
-9.3.3 Dimensions. Specify the width and height for the slideshow.  
+9.3.3 Dimensions. Specify the width and height for the gallery slideshow.  
 9.3.4 Slideshow effect. Select the effect to apply to the slideshow.   
-9.3.5 Time interval. Define the time interval between the images in seconds.  
+9.3.5 Time interval. Define the time interval between the change of gallery images in seconds.  
 9.3.6 Enable shuffle. Choose whether to have shuffle for the slideshow images or not.  
-9.3.7 Theme. Choose the theme to be applied to the image slideshow.  
+9.3.7 Theme. Choose the theme to be applied to the gallery image slideshow.  
   
-9.4 Photo Gallery Widget. You can add album and gallery images into a custom location. After click the users will be redirected into compact album view, if it is an album. If it is a gallery included in the album it will open up in Thumbnails view. The images will be displayed in a lightbox.  
-9.4.1 Title. Provide a title for the widget.  
+9.4 Photo Gallery Widget. You can add album and gallery images into a custom location as a gallery widget. After click the users will be redirected into compact album view, if it is an album. If it is a gallery included in the album it will open up in Thumbnails view. The gallery images will be displayed in a lightbox.  
+9.4.1 Title. Provide a title for the gallery widget.  
 9.4.2 Choose whether to display an album or gallery.  
-9.4.3 Select Gallery/Select Album. Select the gallery/album to be displayed with the widget.  
+9.4.3 Select Gallery/Select Album. Select the gallery or album to be displayed with the widget.  
 9.4.4 Choose whether to display random or the last few images of the gallery or album.   
-9.4.5 Number. Provide the number of images to be displayed with the widget.  
-9.4.6 Dimensions. Specify the width and height of the widget.  
-9.4.7 Theme. Choose the theme, which will be applied to the gallery/album.  
+9.4.5 Number. Provide the number of gallery images to be displayed with the widget.  
+9.4.6 Dimensions. Specify the width and height of the gallery widget.  
+9.4.7 Theme. Choose the theme, which will be applied to the gallery or album.  
 
 
 
 = Step 10: Generating shortcode for the Photo Gallery. =    
  
-To use the created galleries and albums for the custom location, you can generate custom shortcodes and edit the created shortcodes.    
+To use the created galleries and albums for the custom location, you can generate custom gallery shortcodes and edit the exisiting gallery shortcodes.    
 
-10.1 Generate. Clicking this button you will be able to create a special shortcode based on your option choices. The created shortcode will appear in the box below. It can be copied/cut and pasted into a post/page.     
-10.2 Import.Pasting the shortcode in the box below and pressing the button, you will be able to edit and make changes in the shortcode.The final shortcode can be copied/cut and pasted into a post/page.     
+10.1 Generate. Clicking this button you will be able to create a special gallery shortcode based on your option choices. The created shortcode will appear in the box below. It can be copied/cut and pasted into a post/page for gallery/album display.   
+10.2 Import.Pasting the gallery shortcode in the box below and pressing the button, you will be able to edit and make changes in the gallery shortcode.The final shortcode can be copied/cut and pasted into a post/page for the gallery or album display.     

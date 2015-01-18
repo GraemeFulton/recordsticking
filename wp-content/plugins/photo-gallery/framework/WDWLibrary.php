@@ -225,8 +225,8 @@ class WDWLibrary {
     }
     ?>
     <script type="text/javascript">
-      function spider_page(x, y) {
-        var items_county = <?php echo $items_county; ?>;
+      var items_county = <?php echo $items_county; ?>;
+      function spider_page(x, y) {       
         switch (y) {
           case 1:
             if (x >= items_county) {
@@ -254,6 +254,19 @@ class WDWLibrary {
             document.getElementById('page_number').value = 1;
         }
         document.getElementById('<?php echo $form_id; ?>').submit();
+      }
+      function check_enter_key(e) {
+        var key_code = (e.keyCode ? e.keyCode : e.which);
+        if (key_code == 13) { /*Enter keycode*/
+          if (jQuery('#current_page').val() >= items_county) {
+           document.getElementById('page_number').value = items_county;
+          }
+          else {
+           document.getElementById('page_number').value = jQuery('#current_page').val();
+          }
+          document.getElementById('<?php echo $form_id; ?>').submit();
+        }
+        return true;
       }
     </script>
     <div class="tablenav-pages">
@@ -287,7 +300,10 @@ class WDWLibrary {
         <a class="<?php echo $first_page; ?>" title="Go to the first page" href="javascript:spider_page(<?php echo $page_number; ?>,-2);">«</a>
         <a class="<?php echo $prev_page; ?>" title="Go to the previous page" href="javascript:spider_page(<?php echo $page_number; ?>,-1);">‹</a>
         <span class="paging-input">
-          <span class="total-pages"><?php echo $page_number; ?></span> of <span class="total-pages">
+          <span class="total-pages">
+          <input class="current_page" id="current_page" name="current_page" value="<?php echo $page_number; ?>" onkeypress="return check_enter_key(event)" title="Go to the page" type="text" size="1" />
+        </span> of 
+        <span class="total-pages">
             <?php echo $items_county; ?>
           </span>
         </span>
@@ -346,8 +362,8 @@ class WDWLibrary {
     }
     ?>
     <script type="text/javascript">
+      var items_county = <?php echo $items_county; ?>;
       function spider_page(x, y) {
-        var items_county = <?php echo $items_county; ?>;
         switch (y) {
           case 1:
             if (x >= items_county) {
@@ -375,6 +391,20 @@ class WDWLibrary {
             document.getElementById('page_number').value = 1;
         }
         spider_ajax_save('<?php echo $form_id; ?>');
+      }
+      function check_enter_key(e) { 	  
+        var key_code = (e.keyCode ? e.keyCode : e.which);
+        if (key_code == 13) { /*Enter keycode*/
+          if (jQuery('#current_page').val() >= items_county) {
+           document.getElementById('page_number').value = items_county;
+          }
+          else {
+           document.getElementById('page_number').value = jQuery('#current_page').val();
+          }
+          spider_ajax_save('<?php echo $form_id; ?>');
+          return false;
+        }
+       return true;		 
       }
     </script>
     <div id="tablenav-pages" class="tablenav-pages">
@@ -408,7 +438,10 @@ class WDWLibrary {
         <a class="<?php echo $first_page; ?>" title="Go to the first page" onclick="spider_page(<?php echo $page_number; ?>,-2)">«</a>
         <a class="<?php echo $prev_page; ?>" title="Go to the previous page" onclick="spider_page(<?php echo $page_number; ?>,-1)">‹</a>
         <span class="paging-input">
-          <span class="total-pages"><?php echo $page_number; ?></span> of <span class="total-pages">
+          <span class="total-pages">
+          <input class="current_page" id="current_page" name="current_page" value="<?php echo $page_number; ?>" onkeypress="return check_enter_key(event)" title="Go to the page" type="text" size="1" />
+        </span> of 
+        <span class="total-pages">
             <?php echo $items_county; ?>
           </span>
         </span>

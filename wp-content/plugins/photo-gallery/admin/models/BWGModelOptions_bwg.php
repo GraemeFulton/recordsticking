@@ -70,6 +70,7 @@ class BWGModelOptions_bwg {
       $row->slideshow_filmstrip_height = 90;
       $row->slideshow_enable_title = 0;
       $row->slideshow_title_position = 'top-right';
+	  $row->slideshow_title_full_width = 0;
       $row->slideshow_enable_description = 0;
       $row->slideshow_description_position = 'bottom-right';
       $row->slideshow_enable_music = 0;
@@ -139,6 +140,8 @@ class BWGModelOptions_bwg {
       $row->show_album_name = 0;
       $row->show_image_counts = 0;
       $row->play_icon = 1;
+      $row->show_masonry_thumb_description = 0;
+      $row->popup_info_full_width = 0;
     }
     return $row;
   }

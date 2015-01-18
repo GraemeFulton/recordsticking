@@ -52,11 +52,18 @@ function spider_isunsupporteduseragent() {
 
 function spider_destroypopup(duration) {
   if (document.getElementById("spider_popup_wrap") != null) {
-    jQuery(".spider_popup_wrap").remove();
-    jQuery(".spider_popup_loading").css({display: "none"});
-    jQuery(".spider_popup_overlay").css({display: "none"});
-    jQuery(document).off("keydown");
-    jQuery("html").attr("style", "overflow:auto !important");
+    if (typeof jQuery().fullscreen !== 'undefined' && jQuery.isFunction(jQuery().fullscreen)) {
+      if (jQuery.fullscreen.isFullScreen()) {
+        jQuery.fullscreen.exit();
+      }
+    }
+    setTimeout(function () {
+      jQuery(".spider_popup_wrap").remove();
+      jQuery(".spider_popup_loading").css({display: "none"});
+      jQuery(".spider_popup_overlay").css({display: "none"});
+      jQuery(document).off("keydown");
+      jQuery("html").attr("style", "overflow:auto !important");
+    }, 20);
   }
   isPopUpOpened = false;
   var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));

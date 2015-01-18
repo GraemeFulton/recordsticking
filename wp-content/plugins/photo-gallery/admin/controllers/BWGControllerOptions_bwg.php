@@ -120,6 +120,7 @@ class BWGControllerOptions_bwg {
     $slideshow_filmstrip_height = (isset($_POST['slideshow_filmstrip_height']) ? esc_html(stripslashes($_POST['slideshow_filmstrip_height'])) : 70);
     $slideshow_enable_title = (isset($_POST['slideshow_enable_title']) ? esc_html(stripslashes($_POST['slideshow_enable_title'])) : 0);
     $slideshow_title_position = (isset($_POST['slideshow_title_position']) ? esc_html(stripslashes($_POST['slideshow_title_position'])) : 'top-right');
+	$slideshow_title_full_width = (isset($_POST['slideshow_title_full_width']) ? esc_html(stripslashes($_POST['slideshow_title_full_width'])) : 0);
     $slideshow_enable_description = (isset($_POST['slideshow_enable_description']) ? esc_html(stripslashes($_POST['slideshow_enable_description'])) : 1);
     $slideshow_description_position = (isset($_POST['slideshow_description_position']) ? esc_html(stripslashes($_POST['slideshow_description_position'])) : 'bottom-right');
     $slideshow_enable_music = (isset($_POST['slideshow_enable_music']) ? esc_html(stripslashes($_POST['slideshow_enable_music'])) : 0);
@@ -185,6 +186,8 @@ class BWGControllerOptions_bwg {
     $show_album_name = (isset($_POST['show_album_name_enable']) ? esc_html(stripslashes($_POST['show_album_name_enable'])) : 1);
     $show_image_counts = (isset($_POST['show_image_counts']) ? esc_html(stripslashes($_POST['show_image_counts'])) : 0);
     $play_icon = (isset($_POST['play_icon']) ? esc_html(stripslashes($_POST['play_icon'])) : 1);
+    $show_masonry_thumb_description = (isset($_POST['show_masonry_thumb_description']) ? esc_html(stripslashes($_POST['show_masonry_thumb_description'])) : 0);
+    $popup_info_full_width = (isset($_POST['popup_info_full_width']) ? esc_html(stripslashes($_POST['popup_info_full_width'])) : 0);
 
     $save = $wpdb->update($wpdb->prefix . 'bwg_option', array(
       'images_directory' => $images_directory,
@@ -225,6 +228,7 @@ class BWGControllerOptions_bwg {
       'slideshow_filmstrip_height' => $slideshow_filmstrip_height,
       'slideshow_enable_title' => $slideshow_enable_title,
       'slideshow_title_position' => $slideshow_title_position,
+	  'slideshow_title_full_width' => $slideshow_title_full_width,
       'slideshow_enable_description' => $slideshow_enable_description,
       'slideshow_description_position' => $slideshow_description_position,
       'slideshow_enable_music' => $slideshow_enable_music,
@@ -290,6 +294,8 @@ class BWGControllerOptions_bwg {
       'show_album_name' => $show_album_name,
       'show_image_counts' => $show_image_counts,
       'play_icon' => $play_icon,
+      'show_masonry_thumb_description' => $show_masonry_thumb_description,
+      'popup_info_full_width' => $popup_info_full_width,
       ), array('id' => 1));
 
     if ($save !== FALSE) {      

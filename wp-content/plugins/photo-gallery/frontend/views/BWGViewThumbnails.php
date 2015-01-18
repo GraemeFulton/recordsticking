@@ -58,6 +58,9 @@ class BWGViewThumbnails {
     if (!isset($params['popup_info_always_show'])) {
       $params['popup_info_always_show'] = 0;
     }
+	if (!isset($params['popup_info_full_width'])) {
+      $params['popup_info_full_width'] = 0;
+    }
     if (!isset($params['popup_enable_rate'])) {
       $params['popup_enable_rate'] = 0;
     }
@@ -100,6 +103,7 @@ class BWGViewThumbnails {
       $params['popup_enable_fullscreen'] = $options_row->popup_enable_fullscreen;
       $params['popup_enable_info'] = $options_row->popup_enable_info;
       $params['popup_info_always_show'] = $options_row->popup_info_always_show;
+	  $params['popup_info_full_width'] = $options_row->popup_info_full_width;
       $params['popup_hit_counter'] = $options_row->popup_hit_counter;
       $params['popup_enable_rate'] = $options_row->popup_enable_rate;
       $params['popup_interval'] = $options_row->popup_interval;
@@ -201,6 +205,7 @@ class BWGViewThumbnails {
         text-align: <?php echo $theme_row->thumb_align; ?>;
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_standart_thumbnails_<?php echo $bwg; ?> a {
+        border: none;
         cursor: pointer;
         text-decoration: none;
       }
@@ -393,6 +398,7 @@ class BWGViewThumbnails {
                   'enable_image_fullscreen' => $params['popup_enable_fullscreen'],
                   'popup_enable_info' => $params['popup_enable_info'],
                   'popup_info_always_show' => $params['popup_info_always_show'],
+				  'popup_info_full_width' => $params['popup_info_full_width'],				  
                   'popup_hit_counter' => $params['popup_hit_counter'],
                   'popup_enable_rate' => $params['popup_enable_rate'],
                   'slideshow_interval' => $params['popup_interval'],

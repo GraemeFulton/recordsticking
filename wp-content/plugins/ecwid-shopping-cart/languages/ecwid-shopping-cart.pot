@@ -25,7 +25,7 @@ msgstr ""
 msgid "<strong>Ecwid shopping cart is almost ready</strong>. Please visit <a target=\"_blank\" href=\"%s\">the created page</a> to see your store with demo products. In order to finish the installation, please go to the <a href=\"admin.php?page=ecwid\"><strong>Ecwid settings</strong></a> and configure the plugin."
 msgstr ""
 
-msgid "Do you like your Ecwid online store? We'd appreciate it if you <a %s>add your review and vote</a> for the plugin on Wordpress site. (<a id=\"hide-vote-message\">Close</a> and do not show this message anymore)"
+msgid "Do you like your Ecwid online store? We'd appreciate it if you add your review and vote for the plugin on Wordpress site."
 msgstr ""
 
 msgid "Ecwid shopping cart settings"
@@ -53,6 +53,9 @@ msgid "Advanced"
 msgstr ""
 
 msgid "Setup"
+msgstr ""
+
+msgid "Hidden category"
 msgstr ""
 
 msgid "Your store's minicart"
@@ -100,7 +103,7 @@ msgstr ""
 msgid "Price"
 msgstr ""
 
-msgid "Ecwid Shopping Cart - Advanced settings"
+msgid "Ecwid Shopping Cart — Advanced settings"
 msgstr ""
 
 msgid "Category shown by default"
@@ -130,25 +133,25 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
-msgid "Ecwid Shopping Cart - Appearance settings"
+msgid "Ecwid Shopping Cart — Appearance settings"
 msgstr ""
 
 msgid "Display search box above products"
 msgstr ""
 
-msgid "Or you can add search box to your website's toolbar using <a href=\"widgets.php\">WordPress native widgets</a>."
+msgid "Or you can add search box to your website's toolbar using <a href=\"%s\">WordPress native widgets</a>"
 msgstr ""
 
 msgid "Display horizontal categories above products"
 msgstr ""
 
-msgid "Or you can add vertical categories to your website's toolbar using <a href=\"widgets.php\">WordPress native widgets</a>."
+msgid "Or you can add vertical categories to your website's toolbar using <a href=\"%s\">WordPress native widgets</a>"
 msgstr ""
 
 msgid "Enable minicart attached to horizontal categories"
 msgstr ""
 
-msgid "You should disable this option, if you added minicart to your website's&nbsp;sidebar."
+msgid "You should disable this option, if you added minicart to your website's&nbsp;sidebar"
 msgstr ""
 
 msgid "Number of categories per row"
@@ -184,10 +187,10 @@ msgstr ""
 msgid "Default view mode on search results"
 msgstr ""
 
-msgid "Ecwid Shopping Cart - General settings"
+msgid "Ecwid Shopping Cart — General settings"
 msgstr ""
 
-msgid "Thank you for choosing Ecwid to build your online store."
+msgid "Thank you for choosing Ecwid to build your online store"
 msgstr ""
 
 msgid "The first step towards opening your online business: <br />Let’s get started and add a store to your WordPress website in <strong>3</strong> simple steps."
@@ -205,7 +208,7 @@ msgstr ""
 msgid "I already have Ecwid account, sign in"
 msgstr ""
 
-msgid "You will be able to sign up through your exising Google, Facebook or PayPal profiles as well."
+msgid "You will be able to sign up through your existing Google, Facebook or PayPal profiles as well."
 msgstr ""
 
 msgid "Find your Store ID"
@@ -226,19 +229,19 @@ msgstr ""
 msgid "Save and connect your Ecwid store to the site"
 msgstr ""
 
-msgid "Questions? Visit <a href=\"http://help.ecwid.com/?source=wporg\">Ecwid support center</a>."
+msgid "Questions? Visit <a href=\"http://help.ecwid.com/?source=wporg\">Ecwid support center</a>"
 msgstr ""
 
 msgid "Congratulations!"
 msgstr ""
 
-msgid "Your Ecwid store is now connected to your WordPress website."
+msgid "Your Ecwid store is now connected to your WordPress website"
 msgstr ""
 
 msgid "Greetings!"
 msgstr ""
 
-msgid "Your Ecwid store is connected to your WordPress website."
+msgid "Your Ecwid store is connected to your WordPress website"
 msgstr ""
 
 msgid "Control panel"
@@ -256,7 +259,7 @@ msgstr ""
 msgid "Thank you for supporting Ecwid!"
 msgstr ""
 
-msgid "Upgrade to get access to cool premium features."
+msgid "Upgrade your account to get access to more Ecwid plugin features"
 msgstr ""
 
 msgid "Billing and plans"
@@ -268,3 +271,44 @@ msgstr ""
 msgid "If you want to connect another Ecwid store, you can <a %s>disconnect the current one and change Store ID</a>."
 msgstr ""
 
+msgid "Greetings! Your Ecwid store is now active."
+msgstr ""
+
+msgid "Take a few simple steps to complete store setup"
+msgstr ""
+
+msgid "Set up Ecwid Store"
+msgstr ""
+
+msgid "Never show this message again"
+msgstr ""
+
+msgid "Good job! Your store is set up and you're ready to sell."
+msgstr ""
+
+msgid "Now you can fine-tune your store's appearance"
+msgstr ""
+
+msgid "Visit Storefront"
+msgstr ""
+
+msgid "Configure Appearance"
+msgstr ""
+
+msgid "Your store is almost ready!"
+msgstr ""
+
+msgid "Connect your Ecwid account with this site to complete setup and start selling"
+msgstr ""
+
+msgid "Connect Your Ecwid Store"
+msgstr ""
+
+msgid "To add extra functions to your store, drag and drop Ecwid store elements on your site. When you're done, you can get back to modifying your settings."
+msgstr ""
+
+msgid "Back to Store Settings"
+msgstr ""
+
+msgid "Rate Ecwid at WordPress.org"
+msgstr ""

@@ -611,6 +611,32 @@ class  BWGViewThemes_bwg {
                     <label for="masonry_thumb_transition0" id="masonry_thumb_transition0_lbl">No</label>
                   </td>
                 </tr>
+		<tr>
+                  <td class="spider_label"><label for="masonry_description_font_size">Description font size: </label></td>
+                  <td>
+                    <input type="text" name="masonry_description_font_size" id="masonry_description_font_size" value="<?php echo $row->masonry_description_font_size; ?>" class="spider_int_input" onkeypress="return spider_check_isnum(event)"/> px
+                  </td>
+                </tr>
+                <tr>
+                  <td class="spider_label"><label for="masonry_description_color">Description font color: </label></td>
+                  <td>
+                    <input type="text" name="masonry_description_color" id="masonry_description_color" value="<?php echo $row->masonry_description_color; ?>" class="color" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="spider_label"><label for="masonry_description_font_style">Description font family: </label></td>
+                  <td>
+                    <select name="masonry_description_font_style" id="masonry_description_font_style">
+                      <?php
+                      foreach ($font_families as $key => $font_family) {
+                        ?>
+                        <option value="<?php echo $key; ?>" <?php echo (($row->masonry_description_font_style == $key) ? 'selected="selected"' : ''); ?>><?php echo $font_family; ?></option>
+                        <?php
+                      }
+                      ?>
+                    </select>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </fieldset>

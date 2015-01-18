@@ -1,0 +1,749 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery-Bank\n"
+"POT-Creation-Date: 2014-11-17 12:31+0530\n"
+"PO-Revision-Date: 2014-11-17 12:31+0530\n"
+"Last-Translator: \n"
+"Language-Team: Tech-Banker <support@tech-banker.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\Gallery-Testing\\wp-content\\plugins"
+"\\gallery-bank\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:27
+msgid "Select Album"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:63
+msgid "Gallery Format"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:65
+msgid "Select Gallery Format "
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:74 views/album-preview.php:47
+#: views/images-sorting.php:240
+msgid "Images in Row"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:79
+msgid "Image Width"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:86 views/album-sorting.php:190
+msgid "Albums in Row"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:91
+msgid "Text Format"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:93
+msgid "Select Format "
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:100
+msgid "Special Effects"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:122
+msgid "Animation Effects"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:175
+msgid "Show Responsive Gallery"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:179
+msgid "Show Album Title"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:184
+msgid "Insert Album"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:187
+msgid "Cancel"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:499
+msgid "Please select an Album"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:503
+msgid "Please select an Album Format"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:507
+msgid "Please select a Gallery Images Format"
+msgstr ""
+
+#: front_views/gallery-bank-shortcode.php:511
+msgid "Please select a Text Format for the Gallery"
+msgstr ""
+
+#: gallery-bank.php:100 gallery-bank.php:173 gallery-bank.php:246
+msgid "<img src=\""
+msgstr ""
+
+#: gallery-bank.php:102 gallery-bank.php:175 gallery-bank.php:248
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr ""
+
+#: gallery-bank.php:109 gallery-bank.php:182 gallery-bank.php:255
+#: lib/gallery-bank-class.php:16 lib/gallery-bank-class.php:31
+#: lib/gallery-bank-class.php:46 views/header.php:153 views/header.php:167
+#: views/header.php:181
+msgid "Dashboard"
+msgstr ""
+
+#: gallery-bank.php:117 gallery-bank.php:190 gallery-bank.php:263
+#: views/dashboard.php:129
+msgid "Add New Album"
+msgstr ""
+
+#: gallery-bank.php:125 gallery-bank.php:198 gallery-bank.php:271
+#: lib/gallery-bank-class.php:17 lib/gallery-bank-class.php:32
+#: lib/gallery-bank-class.php:47 views/dashboard.php:154 views/header.php:154
+#: views/header.php:168 views/header.php:182
+msgid "Short-Codes"
+msgstr ""
+
+#: gallery-bank.php:132 gallery-bank.php:205 gallery-bank.php:278
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:33
+#: lib/gallery-bank-class.php:48 views/header.php:155 views/header.php:169
+#: views/header.php:183
+msgid "Album Sorting"
+msgstr ""
+
+#: gallery-bank.php:139 gallery-bank.php:212 gallery-bank.php:285
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:34
+#: lib/gallery-bank-class.php:49 views/header.php:156 views/header.php:170
+#: views/header.php:184 views/settings.php:276
+msgid "Global Settings"
+msgstr ""
+
+#: gallery-bank.php:146 gallery-bank.php:219 gallery-bank.php:292
+#: lib/gallery-bank-class.php:20 lib/gallery-bank-class.php:35
+#: lib/gallery-bank-class.php:50 views/gallery-bank-system-report.php:29
+#: views/header.php:157 views/header.php:171
+msgid "System Status"
+msgstr ""
+
+#: gallery-bank.php:153 gallery-bank.php:226 gallery-bank.php:299
+#: lib/gallery-bank-class.php:21 lib/gallery-bank-class.php:36
+#: lib/gallery-bank-class.php:51 views/header.php:81 views/header.php:158
+#: views/header.php:172 views/header.php:185
+msgid "Recommendations"
+msgstr ""
+
+#: gallery-bank.php:160 gallery-bank.php:233 gallery-bank.php:306
+#: lib/gallery-bank-class.php:22 lib/gallery-bank-class.php:37
+#: lib/gallery-bank-class.php:52 views/header.php:159 views/header.php:173
+#: views/header.php:186 views/purchase_pro_version.php:34
+msgid "Premium Editions"
+msgstr ""
+
+#: gallery-bank.php:167 gallery-bank.php:240 gallery-bank.php:313
+#: lib/gallery-bank-class.php:23 lib/gallery-bank-class.php:38
+#: lib/gallery-bank-class.php:53 views/header.php:86 views/header.php:160
+#: views/header.php:174 views/header.php:187
+msgid "Our Other Services"
+msgstr ""
+
+#: gallery-bank.php:327
+msgid "View Gallery Bank Documentation"
+msgstr ""
+
+#: gallery-bank.php:327
+msgid "Docs"
+msgstr ""
+
+#: gallery-bank.php:328
+msgid "View Gallery Bank Premium Editions"
+msgstr ""
+
+#: gallery-bank.php:328
+msgid "Go for Premium!"
+msgstr ""
+
+#: lib/add-new-album-class.php:44 views/edit-album.php:346
+#: views/edit-album.php:353
+msgid " Set as Album Cover"
+msgstr ""
+
+#: lib/add-new-album-class.php:47 views/edit-album.php:294
+#: views/edit-album.php:359
+msgid "Enter your Title"
+msgstr ""
+
+#: lib/add-new-album-class.php:48 views/edit-album.php:299
+#: views/edit-album.php:364
+msgid "Enter your Description "
+msgstr ""
+
+#: lib/add-new-album-class.php:50 views/edit-album.php:305
+#: views/edit-album.php:370
+msgid "Enter your Tags"
+msgstr ""
+
+#: lib/add-new-album-class.php:54 views/edit-album.php:391
+msgid "Delete Image"
+msgstr ""
+
+#: lib/gallery-bank-class.php:15 lib/gallery-bank-class.php:30
+#: lib/gallery-bank-class.php:45 views/header.php:141
+msgid "Gallery Bank"
+msgstr ""
+
+#: lib/gallery-bank-class.php:332
+msgid "Add Gallery using Gallery Bank"
+msgstr ""
+
+#: views/album-preview.php:31
+msgid "Album Preview"
+msgstr ""
+
+#: views/album-preview.php:34 views/album-sorting.php:158
+#: views/edit-album.php:161 views/edit-album.php:415
+#: views/images-sorting.php:202 views/purchase_pro_version.php:38
+#: views/settings.php:279 views/shortcode.php:33
+msgid "Back to Albums"
+msgstr ""
+
+#: views/album-preview.php:52 views/album-sorting.php:195
+#: views/images-sorting.php:244
+msgid "Please Choose"
+msgstr ""
+
+#: views/album-sorting.php:154
+msgid "Re-Order Albums"
+msgstr ""
+
+#: views/album-sorting.php:160 views/images-sorting.php:204
+msgid "Update Order"
+msgstr ""
+
+#: views/album-sorting.php:163 views/images-sorting.php:207
+msgid "Sorting Order has been updated."
+msgstr ""
+
+#: views/album-sorting.php:275 views/dashboard.php:302 views/dashboard.php:306
+#: views/dashboard.php:310 views/edit-album.php:612 views/edit-album.php:628
+#: views/images-sorting.php:308
+msgid "This feature is only available in Paid Premium Version!"
+msgstr ""
+
+#: views/dashboard.php:118 views/shortcode.php:29
+msgid "Gallery Bank Short-Codes"
+msgstr ""
+
+#: views/dashboard.php:135
+msgid "Delete All Albums"
+msgstr ""
+
+#: views/dashboard.php:136
+msgid "Purge Images & Albums"
+msgstr ""
+
+#: views/dashboard.php:137
+msgid "Restore Factory Settings"
+msgstr ""
+
+#: views/dashboard.php:144
+msgid "Existing Albums Overview"
+msgstr ""
+
+#: views/dashboard.php:150 views/edit-album.php:253
+msgid "Thumbnail"
+msgstr ""
+
+#: views/dashboard.php:151
+msgid "Title"
+msgstr ""
+
+#: views/dashboard.php:152
+msgid "Total Images"
+msgstr ""
+
+#: views/dashboard.php:153
+msgid "Date"
+msgstr ""
+
+#: views/dashboard.php:218
+msgid "Edit Album"
+msgstr ""
+
+#: views/dashboard.php:223 views/images-sorting.php:198
+msgid "Re-Order Images"
+msgstr ""
+
+#: views/dashboard.php:228
+msgid "Preview Album"
+msgstr ""
+
+#: views/dashboard.php:233
+msgid "Delete Album"
+msgstr ""
+
+#: views/dashboard.php:289
+msgid "Are you sure you want to delete this Album?"
+msgstr ""
+
+#: views/edit-album.php:158
+msgid "Album"
+msgstr ""
+
+#: views/edit-album.php:162 views/edit-album.php:414
+msgid "Save Album"
+msgstr ""
+
+#: views/edit-album.php:166
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr ""
+
+#: views/edit-album.php:173
+msgid "Album Details"
+msgstr ""
+
+#: views/edit-album.php:177
+msgid "Album Title"
+msgstr ""
+
+#: views/edit-album.php:182
+msgid "Enter your Album Title"
+msgstr ""
+
+#: views/edit-album.php:189
+msgid "Description"
+msgstr ""
+
+#: views/edit-album.php:203
+msgid "Upload Images"
+msgstr ""
+
+#: views/edit-album.php:206
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr ""
+
+#: views/edit-album.php:213
+msgid "Upload Videos"
+msgstr ""
+
+#: views/edit-album.php:214 views/edit-album.php:260 views/settings.php:288
+#: views/settings.php:504 views/settings.php:734 views/settings.php:845
+#: views/settings.php:944 views/settings.php:1266 views/settings.php:1382
+#: views/settings.php:1433 views/settings.php:1485
+msgid " (Available in Premium Versions)"
+msgstr ""
+
+#: views/edit-album.php:219
+msgid "Video Url"
+msgstr ""
+
+#: views/edit-album.php:223
+msgid "Enter your Video Url"
+msgstr ""
+
+#: views/edit-album.php:229
+msgid "Upload Video"
+msgstr ""
+
+#: views/edit-album.php:240
+msgid "Your Gallery Bank Album"
+msgstr ""
+
+#: views/edit-album.php:250
+msgid "Delete"
+msgstr ""
+
+#: views/edit-album.php:256
+msgid "Title & Description"
+msgstr ""
+
+#: views/edit-album.php:259
+msgid "Tags (comma separated list)"
+msgstr ""
+
+#: views/edit-album.php:263
+msgid "Url to Redirect on click of an Image"
+msgstr ""
+
+#: views/edit-album.php:315
+msgid "Delete Video"
+msgstr ""
+
+#: views/edit-album.php:599
+msgid "Are you sure you want to delete this Image?"
+msgstr ""
+
+#: views/gallery-bank-system-report.php:32
+msgid "Get System Report"
+msgstr ""
+
+#: views/gallery-bank-system-report.php:36
+msgid "Close System Report"
+msgstr ""
+
+#: views/gallery-bank-system-report.php:132
+msgid "Default"
+msgstr ""
+
+#: views/header.php:18
+msgid "Get Started"
+msgstr ""
+
+#: views/header.php:21
+msgid "Watch Gallery Video!"
+msgstr ""
+
+#: views/header.php:25
+msgid "read documentation here"
+msgstr ""
+
+#: views/header.php:30
+msgid "Go Premium"
+msgstr ""
+
+#: views/header.php:34
+msgid "Features"
+msgstr ""
+
+#: views/header.php:39
+msgid "Online Demos"
+msgstr ""
+
+#: views/header.php:44
+msgid "Premium Pricing Plans"
+msgstr ""
+
+#: views/header.php:51
+msgid "Knowledge Base"
+msgstr ""
+
+#: views/header.php:56
+msgid "Support Forum"
+msgstr ""
+
+#: views/header.php:61
+msgid "FAQ's"
+msgstr ""
+
+#: views/header.php:66
+msgid "Detailed Features"
+msgstr ""
+
+#: views/header.php:72
+msgid "More Actions"
+msgstr ""
+
+#: views/header.php:76
+msgid "Plugin Customization"
+msgstr ""
+
+#: views/purchase_pro_version.php:43
+msgid "WP Gallery Bank is an one time Investment. Its Worth it!"
+msgstr ""
+
+#: views/settings.php:280
+msgid "Update Settings"
+msgstr ""
+
+#: views/settings.php:287
+msgid "Thumbnail Settings"
+msgstr ""
+
+#: views/settings.php:299
+msgid "Thumbnail Size"
+msgstr ""
+
+#: views/settings.php:306 views/settings.php:314 views/settings.php:522
+#: views/settings.php:530
+msgid "Original"
+msgstr ""
+
+#: views/settings.php:309 views/settings.php:317 views/settings.php:525
+#: views/settings.php:533
+msgid "Custom"
+msgstr ""
+
+#: views/settings.php:326 views/settings.php:542
+msgid "Width"
+msgstr ""
+
+#: views/settings.php:336 views/settings.php:552
+msgid "Height"
+msgstr ""
+
+#: views/settings.php:348 views/settings.php:563 views/settings.php:985
+msgid "Opacity"
+msgstr ""
+
+#: views/settings.php:360 views/settings.php:575 views/settings.php:996
+msgid "Border Size"
+msgstr ""
+
+#: views/settings.php:371 views/settings.php:587 views/settings.php:1007
+msgid "Border Radius"
+msgstr ""
+
+#: views/settings.php:382 views/settings.php:599 views/settings.php:1032
+msgid "Border Color"
+msgstr ""
+
+#: views/settings.php:396
+msgid "Margin Between Images"
+msgstr ""
+
+#: views/settings.php:406 views/settings.php:633 views/settings.php:1018
+msgid "Text Color"
+msgstr ""
+
+#: views/settings.php:420 views/settings.php:650 views/settings.php:1092
+msgid "Text-Align"
+msgstr ""
+
+#: views/settings.php:434 views/settings.php:664 views/settings.php:801
+#: views/settings.php:1106 views/settings.php:1314
+msgid "Font-Family"
+msgstr ""
+
+#: views/settings.php:457 views/settings.php:687 views/settings.php:1129
+msgid "Heading Font-Size"
+msgstr ""
+
+#: views/settings.php:474 views/settings.php:704 views/settings.php:1146
+msgid "Text Font-Size"
+msgstr ""
+
+#: views/settings.php:491 views/settings.php:721
+msgid "Description Length"
+msgstr ""
+
+#: views/settings.php:503
+msgid "Album Cover Settings"
+msgstr ""
+
+#: views/settings.php:515
+msgid "Cover Size"
+msgstr ""
+
+#: views/settings.php:613
+msgid "Margin Between Albums"
+msgstr ""
+
+#: views/settings.php:623
+msgid "Text for Album Click"
+msgstr ""
+
+#: views/settings.php:733
+msgid "Filter Settings"
+msgstr ""
+
+#: views/settings.php:745
+msgid "Filters"
+msgstr ""
+
+#: views/settings.php:752 views/settings.php:760 views/settings.php:1170
+#: views/settings.php:1178 views/settings.php:1196 views/settings.php:1203
+#: views/settings.php:1221 views/settings.php:1228 views/settings.php:1245
+#: views/settings.php:1252 views/settings.php:1360 views/settings.php:1367
+#: views/settings.php:1400 views/settings.php:1408 views/settings.php:1451
+#: views/settings.php:1459
+msgid "Enable"
+msgstr ""
+
+#: views/settings.php:755 views/settings.php:763 views/settings.php:1173
+#: views/settings.php:1181 views/settings.php:1198 views/settings.php:1206
+#: views/settings.php:1223 views/settings.php:1230 views/settings.php:1247
+#: views/settings.php:1254 views/settings.php:1362 views/settings.php:1370
+#: views/settings.php:1403 views/settings.php:1411 views/settings.php:1454
+#: views/settings.php:1462
+msgid "Disable"
+msgstr ""
+
+#: views/settings.php:773
+msgid "Filter Color"
+msgstr ""
+
+#: views/settings.php:787
+msgid "Filter Text Color"
+msgstr ""
+
+#: views/settings.php:824 views/settings.php:1337
+msgid "Font-Size"
+msgstr ""
+
+#: views/settings.php:844
+msgid "Roles & Capabilities"
+msgstr ""
+
+#: views/settings.php:856
+msgid "Privileges for Admin"
+msgstr ""
+
+#: views/settings.php:860 views/settings.php:876 views/settings.php:892
+#: views/settings.php:909 views/settings.php:927
+msgid "Full Control"
+msgstr ""
+
+#: views/settings.php:863 views/settings.php:879 views/settings.php:895
+#: views/settings.php:912 views/settings.php:930
+msgid "Read"
+msgstr ""
+
+#: views/settings.php:866 views/settings.php:882 views/settings.php:898
+#: views/settings.php:915 views/settings.php:933
+msgid "Write"
+msgstr ""
+
+#: views/settings.php:872
+msgid "Privileges for Editor"
+msgstr ""
+
+#: views/settings.php:888
+msgid "Privileges for Author"
+msgstr ""
+
+#: views/settings.php:904
+msgid "Privileges for Contributor"
+msgstr ""
+
+#: views/settings.php:921
+msgid "Privileges for Subscriber"
+msgstr ""
+
+#: views/settings.php:943
+msgid "Lightbox Settings"
+msgstr ""
+
+#: views/settings.php:955
+msgid "Lightbox Type"
+msgstr ""
+
+#: views/settings.php:1046
+msgid "Inline Background"
+msgstr ""
+
+#: views/settings.php:1060
+msgid "Overlay Background"
+msgstr ""
+
+#: views/settings.php:1074
+msgid "Fade In Time"
+msgstr ""
+
+#: views/settings.php:1083
+msgid "Fade Out Time"
+msgstr ""
+
+#: views/settings.php:1163
+msgid "Facebook Comments"
+msgstr ""
+
+#: views/settings.php:1190
+msgid "Social Sharing"
+msgstr ""
+
+#: views/settings.php:1215
+msgid "Image Title"
+msgstr ""
+
+#: views/settings.php:1239
+msgid "Image Description"
+msgstr ""
+
+#: views/settings.php:1265
+msgid "Front - End Layout Settings"
+msgstr ""
+
+#: views/settings.php:1277
+msgid "Text for Back Button"
+msgstr ""
+
+#: views/settings.php:1287
+msgid "Button Color"
+msgstr ""
+
+#: views/settings.php:1300
+msgid "Button Text Color"
+msgstr ""
+
+#: views/settings.php:1354
+msgid "Album Seperator"
+msgstr ""
+
+#: views/settings.php:1381
+msgid "Pagination Settings for Images"
+msgstr ""
+
+#: views/settings.php:1393
+msgid "Paging"
+msgstr ""
+
+#: views/settings.php:1420
+msgid "No. of Images Per Page "
+msgstr ""
+
+#: views/settings.php:1432
+msgid "Slide Show Settings"
+msgstr ""
+
+#: views/settings.php:1444
+msgid "Auto Play"
+msgstr ""
+
+#: views/settings.php:1471
+msgid "Interval"
+msgstr ""
+
+#: views/settings.php:1484
+msgid "Language Direction Settings"
+msgstr ""
+
+#: views/settings.php:1496
+msgid "Language Direction"
+msgstr ""
+
+#: views/settings.php:1653
+msgid "This Feature is only available in Paid Premium Version!"
+msgstr ""

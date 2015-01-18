@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bestwebsoft\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 12:14+0200\n"
-"PO-Revision-Date: 2013-09-12 12:14+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-11-05 16:32+0300\n"
+"PO-Revision-Date: 2014-11-05 16:48+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <http://support.bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -13,211 +13,339 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: bws_menu.php:85
+#: bws_menu.php:351
 msgid "Not set"
-msgstr "Не завдано"
+msgstr "Не задано"
 
-#: bws_menu.php:87 bws_menu.php:91
+#: bws_menu.php:353
+#: bws_menu.php:354
 msgid "On"
 msgstr "Увімк."
 
-#: bws_menu.php:89 bws_menu.php:93
+#: bws_menu.php:353
+#: bws_menu.php:354
 msgid "Off"
 msgstr "Вимк."
 
-#: bws_menu.php:97 bws_menu.php:101 bws_menu.php:105 bws_menu.php:109
-#: bws_menu.php:113 bws_menu.php:139
+#: bws_menu.php:355
+#: bws_menu.php:356
+#: bws_menu.php:357
+#: bws_menu.php:358
+#: bws_menu.php:359
+#: bws_menu.php:371
 msgid "N/A"
 msgstr "Невідомо"
 
-#: bws_menu.php:111
+#: bws_menu.php:359
 msgid " Mb"
-msgstr "Mb"
+msgstr "Мб"
 
-#: bws_menu.php:115 bws_menu.php:119 bws_menu.php:123 bws_menu.php:134
+#: bws_menu.php:360
+#: bws_menu.php:361
+#: bws_menu.php:362
+#: bws_menu.php:367
 msgid "Yes"
 msgstr "Так"
 
-#: bws_menu.php:117 bws_menu.php:121 bws_menu.php:125 bws_menu.php:136
+#: bws_menu.php:360
+#: bws_menu.php:361
+#: bws_menu.php:362
+#: bws_menu.php:369
 msgid "No"
 msgstr "Ні"
 
-#: bws_menu.php:150
+#: bws_menu.php:379
 msgid "Operating System"
 msgstr "Операційна система"
 
-#: bws_menu.php:151
+#: bws_menu.php:380
 msgid "Server"
 msgstr "Тип серверу"
 
-#: bws_menu.php:152
+#: bws_menu.php:381
 msgid "Memory usage"
 msgstr "Пам’яті використано"
 
-#: bws_menu.php:153
+#: bws_menu.php:382
 msgid "MYSQL Version"
 msgstr "Версія MYSQL"
 
-#: bws_menu.php:154
+#: bws_menu.php:383
 msgid "SQL Mode"
 msgstr "Режим SQL"
 
-#: bws_menu.php:155
+#: bws_menu.php:384
 msgid "PHP Version"
 msgstr "Версія PHP"
 
-#: bws_menu.php:156
+#: bws_menu.php:385
 msgid "PHP Safe Mode"
 msgstr "PHP Безпечний режим"
 
-#: bws_menu.php:157
+#: bws_menu.php:386
 msgid "PHP Allow URL fopen"
-msgstr "PHP Allow URL fopen"
+msgstr "Дозволити PHP URL fopen"
 
-#: bws_menu.php:158
+#: bws_menu.php:387
 msgid "PHP Memory Limit"
 msgstr "Ліміт пам’яті"
 
-#: bws_menu.php:159
+#: bws_menu.php:388
 msgid "PHP Max Upload Size"
 msgstr "Макс. розмір файлу, що завантажується"
 
-#: bws_menu.php:160
+#: bws_menu.php:389
 msgid "PHP Max Post Size"
-msgstr "Макс. розмір запису"
+msgstr "Макс. розмір посту"
 
-#: bws_menu.php:161
+#: bws_menu.php:390
 msgid "PHP Max Script Execute Time"
 msgstr "Макс. час виконання сценарію"
 
-#: bws_menu.php:162
+#: bws_menu.php:391
 msgid "PHP Exif support"
 msgstr "Підтримка PHP Exif"
 
-#: bws_menu.php:163
+#: bws_menu.php:392
 msgid "PHP IPTC support"
 msgstr "Підтримка PHP IPTC"
 
-#: bws_menu.php:164
+#: bws_menu.php:393
 msgid "PHP XML support"
 msgstr "Підтримка PHP XML"
 
-#: bws_menu.php:165
+#: bws_menu.php:394
 msgid "Site URL"
 msgstr "Адреса сайту"
 
-#: bws_menu.php:166
+#: bws_menu.php:395
 msgid "Home URL"
-msgstr "Основна адреса сайту"
+msgstr "Адреса домашньої сторінки"
 
-#: bws_menu.php:167
+#: bws_menu.php:398
 msgid "WordPress Version"
 msgstr "Версія WordPress"
 
-#: bws_menu.php:168
+#: bws_menu.php:399
 msgid "WordPress DB Version"
 msgstr "Версія бази даних WordPress"
 
-#: bws_menu.php:169
+#: bws_menu.php:400
 msgid "Multisite"
-msgstr "Мультиблог"
+msgstr "Мультисайт"
 
-#: bws_menu.php:170
+#: bws_menu.php:401
 msgid "Active Theme"
-msgstr "Поточна тема"
+msgstr "Активна тема"
 
-#: bws_menu.php:185
+#: bws_menu.php:416
 msgid "Please enter a valid email address."
-msgstr "Будь ласка, введіть коректну електронну адресу."
+msgstr "Будь ласка, введіть коректний емейл."
 
-#: bws_menu.php:189
+#: bws_menu.php:420
 msgid "Email with system info is sent to "
-msgstr "Електронній лист з системною інформацією відправлено на"
+msgstr "Емейл з системною інформацією надіслано на"
 
-#: bws_menu.php:193
+#: bws_menu.php:424
 msgid "Thank you for contacting us."
-msgstr "Дякуємо, що звернулися до нас."
+msgstr "Дякуємо, що звернулись до нас."
 
-#: bws_menu.php:221
+#: bws_menu.php:457
 msgid "Sorry, email message could not be delivered."
-msgstr "Вибачте, ваше електронне повідомлення не може бути відправлено"
+msgstr "Вибачте, ваше емейл не може бути доставлено"
 
-#: bws_menu.php:229
-msgid "Pro plugins"
-msgstr "Плагіни про-версії"
+#: bws_menu.php:465
+msgid "Need help?"
+msgstr "Потрібна допомога?"
 
-#: bws_menu.php:232 bws_menu.php:258
-msgid "Activated plugins"
-msgstr "Активовані плагіни"
+#: bws_menu.php:466
+msgid "Client area"
+msgstr "Клієнтам"
 
-#: bws_menu.php:234 bws_menu.php:242 bws_menu.php:250 bws_menu.php:260
-#: bws_menu.php:268 bws_menu.php:276
-msgid "Read more"
-msgstr "Детальніше..."
-
-#: bws_menu.php:234 bws_menu.php:260
-msgid "Settings"
-msgstr "Установки"
-
-#: bws_menu.php:240 bws_menu.php:266
-msgid "Installed plugins"
-msgstr "Установлені плагіни"
-
-#: bws_menu.php:248 bws_menu.php:274
-msgid "Recommended plugins"
-msgstr "Рекомендовані до установки плагіни"
-
-#: bws_menu.php:250
-msgid "Purchase"
-msgstr "Купити"
-
-#: bws_menu.php:255
-msgid "Free plugins"
-msgstr "Безкоштовні плагіни"
-
-#: bws_menu.php:276
-msgid "Download"
-msgstr "Завантажити"
-
-#: bws_menu.php:276
-#, php-format
-msgid "Install %s"
-msgstr "Установлено %s"
-
-#: bws_menu.php:276
-msgid "Install now from wordpress.org"
-msgstr "Установити з wordpress.org"
-
-#: bws_menu.php:281
-msgid "If you have any questions, please contact us via"
-msgstr "Якщо у вас виникли будь-які питанні, будь ласка, звертайтеся на"
-
-#: bws_menu.php:288
+#: bws_menu.php:467
+#: bws_menu.php:778
 msgid "System status"
 msgstr "Системна інформація"
 
-#: bws_menu.php:292
+#: bws_menu.php:472
+msgid "Plugins"
+msgstr "Плагіни"
+
+#: bws_menu.php:474
+msgid "Themes"
+msgstr "Теми"
+
+#: bws_menu.php:479
+msgid "All"
+msgstr "Всі"
+
+#: bws_menu.php:480
+msgid "Installed"
+msgstr "Встановлені"
+
+#: bws_menu.php:481
+msgid "Recommended"
+msgstr "Рекомендовані "
+
+#: bws_menu.php:485
+msgid "Installed plugins"
+msgstr "Встановлені плагіни"
+
+#: bws_menu.php:514
+#: bws_menu.php:536
+#: bws_menu.php:563
+#: bws_menu.php:593
+#: bws_menu.php:639
+msgid "Learn more"
+msgstr "Дізнатись більше"
+
+#: bws_menu.php:517
+#: bws_menu.php:566
+msgid "Settings"
+msgstr "Налаштування"
+
+#: bws_menu.php:538
+#: bws_menu.php:595
+msgid "Activate this plugin"
+msgstr "Активувати плагін"
+
+#: bws_menu.php:538
+#: bws_menu.php:595
+msgid "Activate"
+msgstr "Активувати"
+
+#: bws_menu.php:553
+#: bws_menu.php:583
+#: bws_menu.php:629
+msgid "Go"
+msgstr "Перейти"
+
+#: bws_menu.php:557
+#: bws_menu.php:587
+#: bws_menu.php:633
+msgid "DONATE"
+msgstr "Підтримати нас"
+
+#: bws_menu.php:603
+msgid "Recommended plugins"
+msgstr "Рекомендовані плагіни"
+
+#: bws_menu.php:641
+msgid "Install now"
+msgstr "Встановити"
+
+#: bws_menu.php:662
+msgid "Try again"
+msgstr "Спробувати ще раз"
+
+#: bws_menu.php:680
+#, php-format
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Попередній перегляд &#8220;%s&#8221;"
+
+#: bws_menu.php:711
+#, php-format
+msgid "Install %s"
+msgstr "Встановити %s"
+
+#: bws_menu.php:711
+msgid "Install Now"
+msgstr "Встановити"
+
+#: bws_menu.php:714
+#, php-format
+msgid "Update to version %s"
+msgstr "Оновити до версії %s"
+
+#: bws_menu.php:714
+msgid "Update"
+msgstr "Оновити"
+
+#: bws_menu.php:721
+#, php-format
+msgid "Preview %s"
+msgstr "Попередній перегляд %s"
+
+#: bws_menu.php:721
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+#: bws_menu.php:727
+#: bws_menu.php:759
+#, php-format
+msgid "By %s"
+msgstr "За %s"
+
+#: bws_menu.php:733
+msgid "Details"
+msgstr "Деталі"
+
+#: bws_menu.php:765
+msgid "Already Installed"
+msgstr "Уже встановлено %s"
+
+#: bws_menu.php:781
 msgid "Environment"
 msgstr "Системне оточення"
 
-#: bws_menu.php:303
+#: bws_menu.php:792
 msgid "Active Plugins"
-msgstr "Активовані плагіни"
+msgstr "Активні плагіни"
 
-#: bws_menu.php:314
+#: bws_menu.php:805
 msgid "Inactive Plugins"
-msgstr "Неактивовані плагіни"
+msgstr "Не активні плагіни"
 
-#: bws_menu.php:328
+#: bws_menu.php:821
 msgid "Send to support"
-msgstr "Відправити до служби тех. підтримки"
+msgstr "Відправити службі тех. підтримки"
 
-#: bws_menu.php:335
+#: bws_menu.php:828
 msgid "Send to custom email &#187;"
 msgstr "Відправити на електронну адресу &#187;"
+
+#~ msgid "Pro plugins"
+#~ msgstr "Плагіни про-версії"
+
+#~ msgid "Activated plugins"
+#~ msgstr "Активовані плагіни"
+
+#~ msgid "Read more"
+#~ msgstr "Детальніше..."
+
+#~ msgid "Purchase"
+#~ msgstr "Купити"
+
+#~ msgid "Free plugins"
+#~ msgstr "Безкоштовні плагіни"
+
+#~ msgid "Download"
+#~ msgstr "Завантажити"
+
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "Установити з wordpress.org"
+
+#, fuzzy
+#~ msgid "Activated theme"
+#~ msgstr "Поточна тема"
+
+#, fuzzy
+#~ msgid "Installed themes"
+#~ msgstr "Установлено %s"
+
+#, fuzzy
+#~ msgid "Recommended themes"
+#~ msgstr "Рекомендовані до установки плагіни"
+
+#~ msgid "If you have any questions, please contact us via"
+#~ msgstr "Якщо у вас виникли будь-які питанні, будь ласка, звертайтеся на"
+
+#, fuzzy
+#~ msgid "installed"
+#~ msgstr "Установлено %s"
 
 #~ msgid "Login form"
 #~ msgstr "Форма логина"
@@ -448,6 +576,3 @@ msgstr "Відправити на електронну адресу &#187;"
 
 #~ msgid "null"
 #~ msgstr "ноль"
-
-#~ msgid "Install Now"
-#~ msgstr "Установить сейчас"

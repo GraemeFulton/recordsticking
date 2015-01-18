@@ -2,7 +2,8 @@ div.available-theme {
     padding-top: 0;
     padding-bottom: 40px;
 }
-.available-theme em {
+.available-theme em,
+.available-theme small {
 	color: #555;
 	font-size: 10px;
 	font-style: italic;
@@ -28,7 +29,7 @@ div.available-theme {
 	font-weight: bold;
 	display: block;
 	padding: 5px;
-	background: #f0f0f0;
+	background: #fefefe;
 	position: relative;
 	top: -4px;
 }
@@ -36,5 +37,6 @@ div.available-theme {
 p.submit input#submit {
     margin-left: 230px;
 }
+
 
 

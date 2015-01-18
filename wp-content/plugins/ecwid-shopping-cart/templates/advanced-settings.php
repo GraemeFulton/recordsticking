@@ -1,13 +1,14 @@
 <div class="wrap">
 <form class="pure-form pure-form-aligned ecwid-settings advanced-settings" method="POST" action="options.php">
 
-	<h2><?php _e('Ecwid Shopping Cart - Advanced settings', 'ecwid-shopping-cart'); ?></h2>
+	<h2><?php _e('Ecwid Shopping Cart — Advanced settings', 'ecwid-shopping-cart'); ?></h2>
 
 	<?php settings_fields('ecwid_options_page'); ?>
 	<input type="hidden" name="settings_section" value="advanced" />
 
 	<fieldset>
 
+		<?php if (get_option('ecwid_hide_appearance_menu') != 'Y'): ?>
 		<div class="pure-control-group bottom-border">
 
 			<?php if (ecwid_is_paid_account()): ?>
@@ -57,6 +58,9 @@
 		</div>
 
 		<hr />
+
+		<?php endif; ?>
+
 
 		<div class="pure-control-group last">
 			<label for="ecwid_sso_secret_key">

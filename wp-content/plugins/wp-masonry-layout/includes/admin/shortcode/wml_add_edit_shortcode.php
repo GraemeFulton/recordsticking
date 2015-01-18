@@ -22,7 +22,8 @@
 						  'modified'		=> 'Modified',
 						  'parent'			=> 'Parent',
 						  'comment_count'	=> 'Comment Count',
-						  'menu_order'		=> 'Menu Order'
+						  'menu_order'		=> 'Menu Order',
+						  'rand'			=> 'Random'
 					  );
 	
 	// EDIT SHORTCODE
@@ -99,7 +100,14 @@
                     <tr id="post_category_holder" class="hidden">
                     	<td>Post Category</td>
                         <td>
-                        	<?php wp_dropdown_categories(array('hide_empty' => 0, 'class' => 'medium', 'name' => 'wmlo_post_category', 'hierarchical' => true, 'show_option_none' => 'None', 'selected'=> @$shortcodeDetails['wmlo_post_category'])); ?>
+                        	<?php wp_dropdown_categories(array('hide_empty' => 0, 'class' => 'medium', 'name' => 'wmlo_post_category', 'hierarchical' => true, 'show_option_none' => 'All', 'selected'=> @$shortcodeDetails['wmlo_post_category'])); ?>
+                        </td>
+                    </tr>
+                    
+                    <tr id="product_category_holder" class="hidden">
+                    	<td>Product Category</td>
+                        <td>
+                        	<?php wp_dropdown_categories(array('hide_empty' => 0, 'class' => 'medium', 'name' => 'wmlo_product_category', 'hierarchical' => true, 'show_option_none' => 'All', 'taxonomy' => 'product_cat', 'selected'=> @$shortcodeDetails['wmlo_product_category'])); ?>
                         </td>
                     </tr>
                     
@@ -123,9 +131,10 @@
                     </tr>
                     
                     <tr>
-                    	<td>Post Count</td>
+                    	<td>Post Per Load</td>
                         <td>
-                        	<input type="number" maxlength="2" name="wmlo_post_count" value="<?php echo wml_fill_up_form($shortcodeDetails, 'wmlo_post_count'); ?>" class="required small digits" />
+                        	<input type="number" maxlength="2" name="wmlo_post_count" value="<?php echo wml_fill_up_form($shortcodeDetails, 'wmlo_post_count'); ?>" class="required small digits" /><br/>
+                            <em>No of post you want to load at first. Same number of more <br/>posts are loaded when Load More btn is clicked.</em>
                         </td>
                     </tr>
                     
@@ -148,6 +157,7 @@
                             	<option value="0" <?php echo wml_fill_up_form($shortcodeDetails, 'wmlo_order', '0'); ?>> Default </option>
                                	<option value="ASC" <?php echo wml_fill_up_form($shortcodeDetails, 'wmlo_order', 'ASC'); ?>>Ascending</option>
                                 <option value="DESC" <?php echo wml_fill_up_form($shortcodeDetails, 'wmlo_order', 'DESC'); ?>>Descending</option>
+                                
                             </select>
                         </td>
                     </tr>
@@ -197,6 +207,15 @@
 					} else {
 						jQuery('#page_parent_holder').slideUp('slow');
 					}
+					
+					if (jQuery('#wmlo_post_type').val() == 'product'){
+						jQuery('#product_category_holder').slideDown('slow');
+					} else {
+						jQuery('#product_category_holder').slideUp('slow');
+					}
+					
+					
+					product_category_holder
 				}
 				openHidePostCategory();
             </script>

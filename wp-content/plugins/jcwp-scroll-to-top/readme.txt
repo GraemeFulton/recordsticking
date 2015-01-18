@@ -4,9 +4,9 @@ Plugin URI: http://jaspreetchahal.org/wordpress-scroll-to-top-plugin
 Donate link:  http://jaspreetchahal.org/wordpress-scroll-to-top-plugin
 Tags: link to top,scroll,scroll with callback, scroll to top
 Requires at least: 2.8
-Version: 1.6
-Tested up to: 3.5.1
-Stable tag: 1.6
+Version: 1.7
+Tested up to: 3.9.2
+Stable tag: 1.7
 
 This plugin gives you granular control on styles and positioning of your 'Scroll to top' text. Many variety of easing animations supported. Supports mobile and tablet detection.
 
@@ -57,6 +57,9 @@ Yes, Whenever I get some time. Please support me by donating a penny to assure c
 
 = 1.6.0 =
 * Tested Compatibility with WP 3.5.1 and optional link back text will be picked from set of values
+
+= 1.7.0 =
+* Tested Compatibility with WP 3.9.x
 
 
 == Screenshots ==-

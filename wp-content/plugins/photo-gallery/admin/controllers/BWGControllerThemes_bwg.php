@@ -455,6 +455,9 @@ class BWGControllerThemes_bwg {
     $lightbox_hit_font_style = (isset($_POST['lightbox_hit_font_style']) ?  esc_html(stripslashes( $_POST['lightbox_hit_font_style'])) : 'segoe ui');
     $lightbox_hit_font_weight = (isset($_POST['lightbox_hit_font_weight']) ?  esc_html(stripslashes( $_POST['lightbox_hit_font_weight'])) : 'normal');
     $lightbox_hit_font_size = (isset($_POST['lightbox_hit_font_size']) ?  esc_html(stripslashes( $_POST['lightbox_hit_font_size'])) : 14);
+    $masonry_description_font_size = (isset($_POST['masonry_description_font_size']) ? (int) esc_html(stripslashes( $_POST['masonry_description_font_size'])) : 12);
+    $masonry_description_color = (isset($_POST['masonry_description_color']) ? esc_html(stripslashes( $_POST['masonry_description_color'])) : 'CCCCCC');
+    $masonry_description_font_style = (isset($_POST['masonry_description_font_style']) ? esc_html(stripslashes( $_POST['masonry_description_font_style'])) : 'segoe ui');
 
     $default_theme = (isset($_POST['default_theme']) ? esc_html(stripslashes( $_POST['default_theme'])) : 0);
     if ($id != 0) {
@@ -826,6 +829,9 @@ class BWGControllerThemes_bwg {
         'lightbox_hit_font_style' => $lightbox_hit_font_style,
         'lightbox_hit_font_weight' => $lightbox_hit_font_weight,
         'lightbox_hit_font_size' => $lightbox_hit_font_size,
+        'masonry_description_font_size' => $masonry_description_font_size,
+				'masonry_description_color' => $masonry_description_color,
+				'masonry_description_font_style' => $masonry_description_font_style,
 
         'default_theme' => $default_theme,
       ), array('id' => $id));
@@ -1198,6 +1204,9 @@ class BWGControllerThemes_bwg {
         'lightbox_hit_font_style' => $lightbox_hit_font_style,
         'lightbox_hit_font_weight' => $lightbox_hit_font_weight,
         'lightbox_hit_font_size' => $lightbox_hit_font_size,
+        'masonry_description_font_size' => $masonry_description_font_size,
+				'masonry_description_color' => $masonry_description_color,
+				'masonry_description_font_style' => $masonry_description_font_style,
 
         'default_theme' => $default_theme,
       ), array(
@@ -1572,6 +1581,9 @@ class BWGControllerThemes_bwg {
         '%s',
         '%s',
         '%d',
+        '%d',
+        '%s',
+        '%s',
 
         '%d',
       ));

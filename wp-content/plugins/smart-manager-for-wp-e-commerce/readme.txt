@@ -3,8 +3,8 @@ Contributors: storeapps, niravmehta, ratnakar.dubey, rupali, Tarun.Parswani, sun
 Donate link: http://www.storeapps.org/
 Tags: administration, wp e-commerce, woo commerce, woocommerce, wpec, wpsc, jigoshop, ecommerce, management, batch update, bulk edit, mass update, wp ecommerce, productivity, products, variations, orders, customers, manager, pro, manager pro, pro manager, extension, premium, free, download
 Requires at least: 2.0.2
-Tested up to: 3.7.1
-Stable tag: 3.5.1
+Tested up to: 4.0
+Stable tag: 3.9.2
 
 10x productivity gains with WP e-Commerce & WooCommerce store administration. 
 Manage products, variations, orders and customers reliably using a fast and familiar interface.
@@ -61,9 +61,9 @@ Smart Manager works with WooCommerce latest versions and both WP e-Commerce 3.7 
 
 Thousands of customers like you are extremely happy with Smart Manager! Checkout our website for more details.
 
-**More than 75,000 downloads and counting**
+**More than 1,00,000 downloads and counting**
 
-Available Translations: Dutch, Brazilian Portugese, French
+Available Translations: Dutch, Brazilian Portugese, French, Romanian, German(Austria)
 
 
 == Installation ==
@@ -116,6 +116,79 @@ It also gives the warm feeling of supporting further development of the plugin.
 4. Column selection for display
 
 == Changelog ==
+
+= 3.9.2 =
+* New: Batch Update entire search result
+* Update: Compatibility with latest versions of WordPress, WPeC & WooCommerce (v2.2 or greater)
+* Fix: Weights not getting saved (WooCommerce)
+* Fix: Fixes related to advanced and simple search (WooCommerce)
+* Fix: Fixes related batch update of custom fields (WooCommerce)
+* Fix: Some minor fixes
+
+= 3.9.1 =
+* New: Simple & Advanced Search Switch for Products Dashboard
+* Fix: Some minor fixes
+
+= 3.9 =
+* New: Support for display, batch update, export and search of custom fields for Products Dashboard (WooCommerce)
+* Fix: Issue related to mysql object being used
+* Fix: In some cases, products dashboard not getting loaded (WPeC)
+* Fix: Issue of Increase and Decrease by % in batch update (WooCommerce)
+* Fix: Some minor fixes
+
+= 3.8 =
+* New: Advanced Search functionality for Products Dashboard (WPeC)
+* Update: Performance related improvements in products loading (WPeC)
+* Update: Compatibility with latest versions of WordPress, WPeC & WooCommerce
+* Update: 'Used for variations' checkbox will not get checked by default on add attribute (WooCommerce)
+* Fix: Pagination not working for advanced search results (WooCommerce)
+* Fix: Autocomplete not working for values in advanced search box (WooCommerce)
+* Fix: 'Shipping Method' not getting exported (WooCommerce)
+* Fix: Removed major WP-Debug Warnings
+* Fix: Some minor fixes
+
+= 3.7.1 =
+* Fix: "Parse error: syntax error"
+* Fix: Some minor fixes related to advanced search functionality (WooCommerce)
+
+= 3.7 =
+* New: Advanced Search functionality for Products Dashboard (WooCommerce)
+* Update: Performance related improvements in products loading and batch update functionality (WooCommerce)
+* Update: Compatibility with latest versions of WordPress & WooCommerce
+* Fix: Shipping Method not getting displayed in Orders Dashboard (WooCommerce)
+* Fix: Set to Regular Price and Set to Sales Price batch update options not working (WooCommerce)
+* Fix: Some minor fixes
+
+= 3.6.2 =
+* Fix: Removed major WP-Debug Warnings
+* Fix: Some minor fixes
+
+= 3.6.1 =
+* Update: Compatibility with latest versions of WooCommerce & WPeC
+* Fix: Attributes not getting displayed properly (WooCommerce)
+* Fix: Coupons not getting displayed in coupons dashboard (WooCommerce)
+* Fix: Unexpected Token
+* Fix: Some minor fixes
+
+= 3.6 =
+* Update: Compatibility with latest versions of WordPress & WooCommerce (2.1 or greater)
+* Update: Updation of stock status on updation of stock (WooCommerce) 
+* Fix: Upload images functionality of Wysija Newsletter not working when Smart Manager is active
+* Fix: Some minor fixes
+* New: Included translation files for Romania German (Austria)
+
+= 3.5.4 =
+* Update: Compatibility with latest versions of WordPress & WooCommerce
+* Fix: Export CSV of Orders not working with large data (WooCommerce)
+* Fix: Removed all the WP-Debug Warnings (WooCommerce)
+* Fix: Some minor fixes
+
+= 3.5.3 =
+* Fix: Resolved 'Sale Price From and To Date not getting enabled for Simple Products' issue
+
+= 3.5.2 =
+* Fix: Resolved 'Duplication of the Product Not Successful' issue
+* Update: Some minor fixes
 
 = 3.5.1 =
 * Fix: Resolved inline editing not working issue
@@ -468,6 +541,42 @@ It also gives the warm feeling of supporting further development of the plugin.
 * Product administration features
 
 == Upgrade Notice ==
+
+= 3.9.2 =
+New feature of Batch Updating entire search result at single click, compatibility with latest version of WooCommerce (v2.2 or greater) and some important fixes. Recommended upgrade.
+
+= 3.9.1 =
+New feature of Simple & Advanced Search Switch for Products Dashboard, compatibility with latest version of WooCommerce and some important fixes. Recommended upgrade.
+
+= 3.9 =
+New feature of support for custom fields for Products Dashboard of WooCommerce, compatibility with latest versions of WooCommerce & WPeC and important fixes. Recommended upgrade.
+
+= 3.8 =
+New feature of Advanced Search functionality for Products Dashboard of WPeC along with some performance improvements, compatibility with latest versions of WooCommerce & WPeC and important fixes. Recommended upgrade.
+
+= 3.7.1 =
+Important fixes related to Smart Manager v3.7. Recommended upgrade.
+
+= 3.7 =
+New feature of Advanced Search functionality for Products Dashboard of WooCommerce along with some performance improvements and minor fixes. Recommended upgrade.
+
+= 3.6.2 =
+Removed major WP-Debug warnings along with some important fixes. Recommended upgrade.
+
+= 3.6.1 =
+Compatibility with latest versions of WooCommerce & WPeC along with some important fixes. Recommended upgrade.
+
+= 3.6 =
+Compatibility with WooCommerce 2.1 or greater along with some minor fixes. Recommended upgrade.
+
+= 3.5.4 =
+Resolved Export CSV of Orders not working with large data issue along with some minor fixes. Recommended upgrade.
+
+= 3.5.3 =
+Resolved 'Sale Price From and To Date not getting enabled for Simple Products' issue. Recommended upgrade.
+
+= 3.5.2 =
+Resolved 'Duplication of the Product Not Successful' issue along with some minor fixes. Recommended upgrade.
 
 = 3.5.1 =
 Resolved inline editing not working issue along with some minor fixes. Recommended upgrade.

@@ -62,3 +62,87 @@
 .ecwid-badge .image {
 	text-align: center;
 }
+
+div.ecwid-message {
+	padding: 27px 29px 20px 30px;
+}
+
+.ecwid-message a {
+	color: #0074A2;
+}
+
+.ecwid-message a:hover {
+	color: #2EA2CC;
+}
+
+.ecwid-message .ecwid-message-title {
+	font-size: 18px;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+.ecwid-message .ecwid-message-content {
+	line-height: 20px;
+}
+
+.ecwid-message .ecwid-message-buttons {
+	margin-top: 19px;
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+.ecwid-message .ecwid-message-buttons > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ecwid-message .ecwid-message-buttons > div:not(:first-child) {
+	padding-left: 9px;
+}
+
+.ecwid-message .ecwid-message-buttons > div:last-child {
+	text-align: right;
+	width: 100%;
+}
+
+.ecwid-message .ecwid-message-buttons > div a{
+	text-decoration: none;
+}
+
+.ecwid-message .ecwid-message-hide:not(:hover) {
+	color: #bbb;
+}
+
+.ecwid-message .ecwid-message-hide {
+	font-size: 12px;
+	font-weight: 100;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.ecwid-message .ecwid-message-hide:before {
+	content: "X";
+	font-family: ecwid-icons;
+	font-size: 26px;
+	position: relative;
+	left: 1px;
+	top: 6px;
+}
+
+.ecwid-message.dev {
+	outline: 2px solid red;
+	width: 434px;
+}
+
+.ecwid-message.dev .ecwid-message-title {
+	letter-spacing: -0.4px;
+}
+
+.ecwid-message.dev .ecwid-message-content {
+	letter-spacing: -0.62px;
+}
+
+.ecwid-message.dev .ecwid-message-hide {
+  letter-spacing: -0.22px;
+}

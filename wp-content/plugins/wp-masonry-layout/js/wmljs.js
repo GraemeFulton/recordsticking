@@ -10,12 +10,13 @@ jQuery(document).ready( function() {
 		e.preventDefault();
 		url 				= jQuery(this).attr("href");
 		containerDivId  	= jQuery(this).attr("rel")
-		pageNumber 		= jQuery("#"+containerDivId).attr("data-page");
+		pageNumber 			= jQuery("#"+containerDivId).attr("data-page");
+		randSeed 			= jQuery("#"+containerDivId).attr("data-seed");
 		jQuery("#"+containerDivId).attr("data-load-status",'no');
 		if (pageNumber == null){
 		  pageNumber = 1;
 		}
-		url = url + '&pageNumber=' + pageNumber;
+		url = url + '&pageNumber=' + pageNumber + '&randSeed=' + randSeed ;
 		jQuery.ajax({
 			dataType : "json",
 			url : url,

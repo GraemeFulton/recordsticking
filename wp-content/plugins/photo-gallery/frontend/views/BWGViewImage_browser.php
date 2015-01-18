@@ -52,6 +52,9 @@ class BWGViewImage_browser {
     if (!isset($params['popup_info_always_show'])) {
       $params['popup_info_always_show'] = 0;
     }
+	if (!isset($params['popup_info_full_width'])) {
+      $params['popup_info_full_width'] = 0;
+    }
     if (!isset($params['popup_enable_rate'])) {
       $params['popup_enable_rate'] = 0;
     }
@@ -110,6 +113,7 @@ class BWGViewImage_browser {
       'enable_image_fullscreen' => $params['popup_enable_fullscreen'],
       'popup_enable_info' => $params['popup_enable_info'],
       'popup_info_always_show' => $params['popup_info_always_show'],
+	  'popup_info_full_width' => $params['popup_info_full_width'],
       'popup_hit_counter' => $params['popup_hit_counter'],
       'popup_enable_rate' => $params['popup_enable_rate'],
       'slideshow_interval' => $params['popup_interval'],

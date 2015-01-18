@@ -1,10 +1,10 @@
 <?php
 /* 
-Plugin Name: Acurax Social Media Widget
+Plugin Name: Social Media Widget by Acurax
 Plugin URI: http://www.acurax.com/products/floating-social-media-icon-plugin-wordpress/
 Description: A Simple Wordpress Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus. You can define icon style size for each widget.
 Author: Acurax 
-Version: 1.3.1
+Version: 2.2
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
@@ -35,15 +35,17 @@ function enqueue_acx_social_widget_icon_script()
 function Acurax_Widget_Links($links, $file) {
 	$plugin = plugin_basename(__FILE__);
 	// create link
+	$acx_installation_domain = $_SERVER['HTTP_HOST'];
+	$acx_installation_domain = str_replace("www.","",$acx_installation_domain);
+	$acx_installation_domain = str_replace(".","_",$acx_installation_domain);
+	if($acx_installation_domain == "") { $acx_installation_domain = "not_defined";}
 	if ($file == $plugin) {
 	
 		return array_merge( $links, array( 
-			'<div id="plugin_page_links">',
-			'<a href="https://twitter.com/#!/acuraxdotcom" target="_blank">' . __('Follow us on Twitter') . '</a>',
-			'<a href="http://www.facebook.com/AcuraxInternational" target="_blank">' . __('Like us on Facebook') . '</a>',
-			'<a href="http://www.acurax.com/services/web-designing.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Need Your Website Redesigned?') . '</a>',
-			'<a href="http://www.acurax.com/services/blog-design.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Need a Custom Blog Design?') . '</a>',
-			'<a href="http://www.acurax.com/contact.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank" style="border:0px;">' . __('Contact Acurax') . '</a></div>' 
+			'<div id="plugin_page_links"><a href="http://www.acurax.com?utm_source=wp&utm_medium=link&utm_campaign=plugin-page&ref=' . $acx_installation_domain . '" target="_blank">' . __('Acurax International') . '</a>',
+			'<a href="https://twitter.com/#!/acuraxdotcom" target="_blank">' . __('Acurax on Twitter') . '</a>',
+			'<a href="http://www.facebook.com/AcuraxInternational" target="_blank">' . __('Acurax on Facebook') . '</a>',
+			'<a href="http://www.acurax.com/services/wordpress-designing-experts.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page&ref=' . $acx_installation_domain . '" target="_blank">' . __('Wordpress Expert Support') . '</a>'
 		));
 	}
 	return $links;
@@ -63,18 +65,28 @@ function acx_social_widget_icon_premium()
 {
 	include('premium.php');
 }
+function acx_social_widget_troubleshoot() 
+{
+	include('troubleshoot.php');
+}
 function acx_social_widget_icon_misc() 
 {
 	include('smw-misc.php');
 }
+$acx_si_smw_hide_expert_support_menu = get_option('acx_si_smw_hide_expert_support_menu');
+if ($acx_si_smw_hide_expert_support_menu == "") {	$acx_si_smw_hide_expert_support_menu = "no"; }
 function acx_social_widget_icon_admin_actions()
 {
-	add_menu_page(  'Acx Social Media Widget Configuration', 'Acx Social Media Widget Settings', 8, 'Acurax-Social-Widget-Settings','acx_social_widget_icon_admin',plugin_dir_url( __FILE__ ).'/images/acurax_international.png' ); // 8 for admin
+global $acx_si_smw_hide_expert_support_menu;
+	add_menu_page(  'Acurax Social Media Widget Configuration', 'Social Media Widget Settings', 8, 'Acurax-Social-Widget-Settings','acx_social_widget_icon_admin',plugin_dir_url( __FILE__ ).'/images/acurax_international.png' ); // 8 for admin
 	
 	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Icon Premium', 'Premium', 8, 'Acurax-Social-Widget-Premium' ,'acx_social_widget_icon_premium');
 	
 	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Icon Misc Settings', 'Misc', 8, 'Acurax-Social-Widget-Misc' ,'acx_social_widget_icon_misc');
-	
+	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Troubleshooter', 'Troubleshoot', 8, 'Acurax-Social-Widget-Troubleshooter' ,'acx_social_widget_troubleshoot');
+	if($acx_si_smw_hide_expert_support_menu == "no") {
+	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Expert Support', 'Expert Support', 8, 'Acurax-Social-Widget-Expert-Support' ,'acx_social_widget_troubleshoot');
+	}
 	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Widget Help and Support', 'Help', 8, 'Acurax-Social-Widget-Help' ,'acx_social_widget_icon_help');
 }
 	

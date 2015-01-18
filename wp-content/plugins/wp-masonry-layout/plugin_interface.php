@@ -112,9 +112,11 @@ function wml_shortcode($atts){
 add_action("wp_ajax_nopriv_wml_load_posts", "wml_ajax_load_posts");
 add_action("wp_ajax_wml_load_posts", "wml_ajax_load_posts");
 function wml_ajax_load_posts(){
+	global $randSeed;
 	$returnData			= array();
 	$shortcodeId 		= $_GET['shortcodeId'];
 	$pageNumber 		= $_GET['pageNumber'];
+	$randSeed			= $_GET['randSeed'];
 	$shortcodesRawData 	= get_option('wmlo_shortcodes_data');
 	$shortcodesData		= json_decode($shortcodesRawData, true);
 	if (array_key_exists($shortcodeId, $shortcodesData)){ // Check if requested shortcode is in our record.
@@ -132,12 +134,23 @@ function wml_ajax_load_posts(){
 			$query_arg['cat']	= $shortcodeData['wmlo_post_category'];
 		}
 		
+		if (($shortcodeData['wmlo_post_type'] == 'product') && ($shortcodeData['wmlo_product_category'] > 0)){ // If post type is post and category is selected
+			$product_cat_term = get_term( $shortcodeData['wmlo_product_category'], 'product_cat' );
+			$product_cat_slug = $product_cat_term->slug;
+			
+			$query_arg['product_cat']		= $product_cat_slug;
+		}
+		
 		if (($shortcodeData['wmlo_post_type'] == 'page') && ($shortcodeData['wmlo_page_parent'] > 0)){ // If post type is page and page parent is selected
 			$query_arg['post_parent']	= $shortcodeData['wmlo_page_parent'];
 		}
 		
 		if ($shortcodeData['wmlo_order_by'] != '0'){
-			$query_arg['orderby']	= $shortcodeData['wmlo_order_by'];
+			if ($shortcodeData['wmlo_order_by'] == 'rand'){
+				add_filter('posts_orderby', 'wml_post_orderby');
+			} else {
+				$query_arg['orderby']	= $shortcodeData['wmlo_order_by'];
+			}
 		}
 		
 		if ($shortcodeData['wmlo_order'] != '0'){
@@ -154,4 +167,11 @@ function wml_ajax_load_posts(){
 	}
 	echo json_encode($returnData);
 	die();
+}
+
+// RANDOM UNIQUE POST FILTER
+function wml_post_orderby($orderby_statement) {
+    global $randSeed;
+	$orderby_statement = 'RAND('.$randSeed.')';
+    return $orderby_statement;
 }

@@ -1,12 +1,13 @@
-=== FB Comment and Share For WooCommerce ===
-Contributors: TheAnuvhuti
+=== ExNet FB Comment and Share For WooCommerce ===
+Contributors: TheAnuvhuti, extraperson,
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7V7GRJBM8J4KJ&lc=US&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Plugin Name: FB Comment and Share For WooCommerce
-Plugin URI: http://shameemreza/download/woocommerce-fb-comment.zip/
+Plugin URI: http://exnetbd.com
 Tags: comments, woocommerce, Facebook, share
 Author URI: http://shameemreza.info/
 Author: Shameem Reza
 Requires at least: 3.0.1
-Tested up to: 3.7
+Tested up to: 3..81
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,15 +17,6 @@ Facebook Commenter and Share allow you integrate woocommerce reviewing and comme
 Allow your customer give you review/comment from their facebook account.
 It also integrated with social share, so you and your customer can share your woocommerce product to your/their facebook timeline easy.
 So lets share/and be reviewed product through face book and other social media
-
-<h3>Credits</h3>
-ExNet Group (http://exnetbd.com)
-
-<h3>Thanks For Supporting</h3>
-Al-amien Gazi, Aminur Islam, Omar FaRuk, Zamil Hossain Sezan, S M Mishkatul Islam, Nazmoon Munny, Rabby Shaied Shikder, Sohel Rana.
-
-<h3>Any Bug or Help:</h3> support@shameemreza.info
-
 
 
 == Installation ==
@@ -56,3 +48,8 @@ Enjoy
 == Screenshots ==
 1. FBC Setting (Main)
 2. Product Page Setting
+
+== Changelog ==
+
+= 1.5.0 =
+Color swiping option problem solve.

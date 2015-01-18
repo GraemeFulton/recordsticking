@@ -1,7 +1,7 @@
 <div class="wrap">
 
 	<form method="POST" action="options.php" class="pure-form ecwid-settings general-settings">
-		<h2><?php _e('Ecwid Shopping Cart - General settings', 'ecwid-shopping-cart'); ?></h2>
+		<h2><?php _e('Ecwid Shopping Cart — General settings', 'ecwid-shopping-cart'); ?></h2>
 		<?php settings_fields('ecwid_options_page'); ?>
 		<fieldset>
 
@@ -16,7 +16,7 @@
 				<div class="messages-container">
 					<div class="main-message">
 
-						<?php _e('Thank you for choosing Ecwid to build your online store.', 'ecwid-shopping-cart'); ?>
+						<?php _e('Thank you for choosing Ecwid to build your online store', 'ecwid-shopping-cart'); ?>
 					</div>
 					<div class="secondary-message">
 						<?php _e('The first step towards opening your online business: <br />Let’s get started and add a store to your WordPress website in <strong>3</strong> simple steps.', 'ecwid-shopping-cart'); ?>
@@ -69,7 +69,7 @@
 				</li>
 			</ol>
 			<hr />
-			<p><?php _e('Questions? Visit <a href="http://help.ecwid.com/?source=wporg">Ecwid support center</a>.', 'ecwid-shopping-cart'); ?></p>
+			<p><?php _e('Questions? Visit <a href="http://help.ecwid.com/?source=wporg">Ecwid support center</a>', 'ecwid-shopping-cart'); ?></p>
 		</fieldset>
 	</form>
 </div>

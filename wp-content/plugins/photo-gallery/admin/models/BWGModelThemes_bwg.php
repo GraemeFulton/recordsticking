@@ -270,6 +270,9 @@ class BWGModelThemes_bwg {
           $row->masonry_thumb_hover_effect = 'scale';
           $row->masonry_thumb_hover_effect_value = '1.1';
           $row->masonry_thumb_transition = 0;
+          $row->masonry_description_font_size = 12;
+					$row->masonry_description_color = 'CCCCCC';
+					$row->masonry_description_font_style = 'segoe ui';
 
           $row->slideshow_cont_bg_color = '000000';
           $row->slideshow_close_btn_transparent = 100;

@@ -49,7 +49,10 @@ class BWGModelGalleryBox {
     elseif (($sort_by != 'alt') && ($sort_by != 'date') && ($sort_by != 'filetype')) {
       $sort_by = 't1.`order`';
     }
-    $row = $wpdb->get_results($wpdb->prepare('SELECT t1.*,t2.rate FROM ' . $wpdb->prefix . 'bwg_image as t1 LEFT JOIN (SELECT rate, image_id FROM ' . $wpdb->prefix . 'bwg_image_rate WHERE ip="%s") as t2 ON t1.id=t2.image_id WHERE t1.published=1 AND t1.gallery_id="%d" ORDER BY ' . $sort_by . ' ' . $order_by, $_SERVER['REMOTE_ADDR'], $gallery_id));
+    if ($order_by != 'asc') {
+      $order_by = 'desc';
+    }
+    $row = $wpdb->get_results($wpdb->prepare('SELECT t1.*,t2.rate FROM ' . $wpdb->prefix . 'bwg_image as t1 LEFT JOIN (SELECT rate, image_id FROM ' . $wpdb->prefix . 'bwg_image_rate WHERE ip="%s") as t2 ON t1.id=t2.image_id WHERE t1.published=1 AND t1.gallery_id="%d" ORDER BY %s %s', $_SERVER['REMOTE_ADDR'], $gallery_id, $sort_by, $order_by));
     return $row;
   }
 
@@ -61,7 +64,10 @@ class BWGModelGalleryBox {
     elseif (($sort_by != 'alt') && ($sort_by != 'date') && ($sort_by != 'filetype')) {
       $sort_by = '`order`';
     }
-    $row = $wpdb->get_results($wpdb->prepare('SELECT t1.*,t2.rate FROM (SELECT image.* FROM ' . $wpdb->prefix . 'bwg_image as image INNER JOIN ' . $wpdb->prefix . 'bwg_image_tag as tag ON image.id=tag.image_id WHERE image.published=1 AND tag.tag_id="%d" ORDER BY ' . $sort_by . ' ' . $order_by . ') as t1 LEFT JOIN (SELECT rate, image_id FROM ' . $wpdb->prefix . 'bwg_image_rate WHERE ip="%s") as t2 ON t1.id=t2.image_id ', $tag_id, $_SERVER['REMOTE_ADDR']));
+    if ($order_by != 'asc') {
+      $order_by = 'desc';
+    }
+    $row = $wpdb->get_results($wpdb->prepare('SELECT t1.*,t2.rate FROM (SELECT image.* FROM ' . $wpdb->prefix . 'bwg_image as image INNER JOIN ' . $wpdb->prefix . 'bwg_image_tag as tag ON image.id=tag.image_id WHERE image.published=1 AND tag.tag_id="%d" ORDER BY %s %s) as t1 LEFT JOIN (SELECT rate, image_id FROM ' . $wpdb->prefix . 'bwg_image_rate WHERE ip="%s") as t2 ON t1.id=t2.image_id ', $tag_id, $sort_by, $order_by, $_SERVER['REMOTE_ADDR']));
     return $row;
   }
 

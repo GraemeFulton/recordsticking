@@ -29,7 +29,6 @@ class EcwidSitemapBuilder implements JsonStreamingParser_Listener {
 					$parser->parse();
 				} catch (Exception $e) {
 					fclose($stream);
-					throw $e;
 				}
 			}
 		}
@@ -55,11 +54,13 @@ class EcwidSitemapBuilder implements JsonStreamingParser_Listener {
 	}
 
 	public function end_object() {
+
 		$obj = array_pop($this->_stack);
-		if (is_array($obj) && array_key_exists('id', $obj)) {
+		if (is_array($obj) && array_key_exists('url', $obj)) {
 			$callback = $this->callback;
+
 			$callback(
-				$this->base_url . '#!/~/' . ($this->type == 'products' ? 'product' : 'category') . '/id=' . $obj['id'],
+				ecwid_get_entity_url($obj, $this->type == 'products' ? 'p' : 'c'),
 				$this->type == 'products' ? 0.6 : 0.5,
 				'weekly'
 			);
@@ -77,8 +78,8 @@ class EcwidSitemapBuilder implements JsonStreamingParser_Listener {
 	}
 
 	public function value($value) {
-		if ($this->_key == 'id') {
-			array_push($this->_stack, array('id' => $value));
+		if ($this->_key == 'url') {
+			$this->_stack[0]['url'] = $value;
 		}
 	}
 }

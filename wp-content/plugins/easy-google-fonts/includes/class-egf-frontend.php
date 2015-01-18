@@ -11,7 +11,7 @@
  * @license   GPL-2.0+
  * @link      http://wordpress.org/plugins/easy-google-fonts/
  * @copyright Copyright (c) 2014, Titanium Themes
- * @version   1.3.2
+ * @version   1.3.3
  * 
  */
 if ( ! class_exists( 'EGF_Frontend' ) ) :
@@ -42,7 +42,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * settings page and menu.
 		 *
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		function __construct() {
@@ -62,7 +62,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * @return    object    A single instance of this class.
 		 *
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public static function get_instance() {
@@ -84,7 +84,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * possible.
 		 * 
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function register_actions() {
@@ -98,7 +98,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * Add any custom filters in this function.
 		 * 
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function register_filters() {
@@ -114,13 +114,14 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * the page once. 
 		 * 
 		 * Update: This function now combines the call to 
-		 *     google in one http request.
+		 *     google in one http request. It now uses 
+		 *     esc_url_raw()
 		 *
 		 * @link http://codex.wordpress.org/Function_Reference/wp_register_style 	wp_register_style()
 		 *
 		 * @global $wp_customize
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function enqueue_stylesheets() {
@@ -128,7 +129,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 
 			$transient         = isset( $wp_customize ) ? false : true;
 			$options           = EGF_Register_Options::get_options( $transient );
-			$stylesheet_handle = 'tt-easy-google-fonts-css';
+			$stylesheet_handle = 'tt-easy-google-fonts';
 			$font_families     = array();
 			$font_family_sets  = array();
 			$subsets           = array();
@@ -227,7 +228,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 					$request_url = add_query_arg( $query_args, "{$protocol}://fonts.googleapis.com/css" );
 
 					wp_deregister_style( $stylesheet_handle );
-					wp_register_style( $stylesheet_handle, esc_url( $request_url ) );
+					wp_register_style( $stylesheet_handle, esc_url_raw( $request_url ) );
 					wp_enqueue_style( $stylesheet_handle );
 				}
 			}
@@ -242,7 +243,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * @link http://codex.wordpress.org/Function_Reference/add_action 	add_action()
 		 *
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function output_styles() {
@@ -289,7 +290,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * @return string $output 	Inline styles
 		 *
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function generate_css( $option, $force_styles = false ) {
@@ -417,7 +418,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * @return string $output 	Inline styles
 		 *
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function generate_customizer_css( $option, $selector, $id = '', $force_styles = false ) {
@@ -577,7 +578,7 @@ if ( ! class_exists( 'EGF_Frontend' ) ) :
 		 * @return array $arr The object converted into an associative array
 		 *
 		 * @since 1.2
-		 * @version 1.3.2
+		 * @version 1.3.3
 		 * 
 		 */
 		public function object_to_array( $obj ) {

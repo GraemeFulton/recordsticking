@@ -16,6 +16,7 @@ if(isset($_POST['submit-wmp-shortcode'])){
 						   'wmlo_columns'				=> $_POST['wmlo_columns'],
 						   'wmlo_post_type'				=> $_POST['wmlo_post_type'],
 						   'wmlo_post_category'			=> $_POST['wmlo_post_category'],
+						   'wmlo_product_category'		=> $_POST['wmlo_product_category'],
 						   'wmlo_page_parent'			=> $_POST['wmlo_page_parent'],
 						   'wmlo_image_size'			=> $_POST['wmlo_image_size'],
 						   'wmlo_post_count'			=> $_POST['wmlo_post_count'],

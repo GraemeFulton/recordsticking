@@ -407,6 +407,12 @@ display: none;
 	width: 640px;
 }
 
+.general-settings .section.account-section {
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+
 .general-settings .section .left {
 	display: table-cell;
 	vertical-align: middle;

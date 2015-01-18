@@ -64,7 +64,7 @@ exit('<h1>Not Found</h1>The requested URL '.$_SERVER['SCRIPT_NAME'].' was not fo
 									<td>
 										<select name="fbc_color_scheme" id="fbc_color_scheme">
 												<option selected="selected" value="">-- <?php _e('Select Scheme', 'fbc' ); ?> --</option>
-												<option value="default" <?php if(get_option('fbc_color_scheme') == 'default') echo 'selected="selected"';?>><?php _e('Default', 'fbc' ); ?></option>
+												<option value="light" <?php if(get_option('fbc_color_scheme') == 'light') echo 'selected="selected"';?>><?php _e('Light', 'fbc' ); ?></option>
 												<option value="dark" <?php if(get_option('fbc_color_scheme') == 'dark') echo 'selected="selected"';?>><?php _e('Dark', 'fbc' ); ?></option>
 										</select>
 									</td>

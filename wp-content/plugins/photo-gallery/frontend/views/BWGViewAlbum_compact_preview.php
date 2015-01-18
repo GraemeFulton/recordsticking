@@ -61,6 +61,9 @@ class BWGViewAlbum_compact_preview {
     if (!isset($params['popup_info_always_show'])) {
       $params['popup_info_always_show'] = 0;
     }
+	if (!isset($params['popup_info_full_width'])) {
+      $params['popup_info_full_width'] = 0;
+    }
     if (!isset($params['popup_enable_rate'])) {
       $params['popup_enable_rate'] = 0;
     }
@@ -76,11 +79,15 @@ class BWGViewAlbum_compact_preview {
     if (!isset($params['order_by'])) {
       $params['order_by'] = ' ASC ';
     }
+    $options_row = $this->model->get_options_row_data();
+    if (!isset($params['show_album_name'])) {
+      $params['show_album_name'] = $options_row->show_album_name;
+    }
     $from = (isset($params['from']) ? esc_html($params['from']) : 0);
     $type = (isset($_POST['type_' . $bwg]) ? esc_html($_POST['type_' . $bwg]) : (isset($params['type']) ? $params['type'] : 'album'));
     $bwg_search = ((isset($_POST['bwg_search_' . $bwg]) && esc_html($_POST['bwg_search_' . $bwg]) != '') ? esc_html($_POST['bwg_search_' . $bwg]) : '');
     $sort_direction = ' ' . $params['order_by'] . ' ';
-    $options_row = $this->model->get_options_row_data();
+    
     $play_icon = $options_row->play_icon;
     if ($from === "widget") {
       $params['album_id'] = $params['id'];
@@ -106,6 +113,7 @@ class BWGViewAlbum_compact_preview {
       $params['popup_enable_fullscreen'] = $options_row->popup_enable_fullscreen;
       $params['popup_enable_info'] = $options_row->popup_enable_info;
       $params['popup_info_always_show'] = $options_row->popup_info_always_show;
+	  $params['popup_info_full_width'] = $options_row->popup_info_full_width;
       $params['popup_hit_counter'] = $options_row->popup_hit_counter;
       $params['popup_enable_rate'] = $options_row->popup_enable_rate;
       $params['popup_interval'] = $options_row->popup_interval;
@@ -247,6 +255,7 @@ class BWGViewAlbum_compact_preview {
         max-width: <?php echo $items_col_num * ($params['compuct_album_thumb_width'] + 2 * (2 + $theme_row->album_compact_thumb_margin + $theme_row->album_compact_thumb_padding + $theme_row->album_compact_thumb_border_width)); ?>px;
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_album_thumbnails_<?php echo $bwg; ?> a {
+        border: none;
         cursor: pointer;
         text-decoration: none;
       }
@@ -305,6 +314,7 @@ class BWGViewAlbum_compact_preview {
         max-width: <?php echo $items_col_num * ($params['compuct_album_thumb_width'] + 2 * (2 + $theme_row->album_compact_thumb_margin + $theme_row->album_compact_thumb_padding + $theme_row->album_compact_thumb_border_width)); ?>px;
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_album_thumbnails_<?php echo $bwg; ?> a {
+        border: none;
         cursor: pointer;
         text-decoration: none;
       }
@@ -355,6 +365,7 @@ class BWGViewAlbum_compact_preview {
         text-align: <?php echo $theme_row->thumb_align; ?>;
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_standart_thumbnails_<?php echo $bwg; ?> a {
+        border: none;
         cursor: pointer;
         text-decoration: none;
       }
@@ -498,7 +509,10 @@ class BWGViewAlbum_compact_preview {
         margin: 0 auto;
       }
     </style>
-
+		<?php
+			$album_row = $this->model->get_album_row_data($album_gallery_id);
+		?>
+				
     <div id="bwg_container1_<?php echo $bwg; ?>">
       <div id="bwg_container2_<?php echo $bwg; ?>">
         <form id="gal_front_form_<?php echo $bwg; ?>" method="post" action="#">
@@ -527,9 +541,16 @@ class BWGViewAlbum_compact_preview {
               <?php
             }
             if ($options_row->show_album_name) {
+	      if ($type == 'gallery') {
               ?>
-              <div class="bwg_back_<?php echo $bwg; ?>" ><?php echo isset($_POST['title_' . $bwg]) ? esc_html($_POST['title_' . $bwg]) : $album_row_data->name; ?></div>
+              <div class="bwg_back_<?php echo $bwg; ?>" ><?php echo isset($_POST['title_' . $bwg]) ? esc_html($_POST['title_' . $bwg]) : ''; ?></div>
               <?php
+	      }
+	      else {
+	        ?>
+	      <div class="bwg_back_<?php echo $bwg; ?>"><?php	echo $album_row->name; ?></div>
+	      	<?php
+	      }
             }
             ?>
             <div id="<?php echo $album_gallery_div_id; ?>" class="<?php echo $album_gallery_div_class; ?>" >
@@ -659,20 +680,22 @@ class BWGViewAlbum_compact_preview {
                     'image_height' => $params['popup_height'],
                     'image_effect' => $params['popup_effect'],
                     'sort_by' => $params['sort_by'],
+                    'order_by' => $params['order_by'],
                     'enable_image_filmstrip' => $params['popup_enable_filmstrip'],
                     'image_filmstrip_height' => $params['popup_filmstrip_height'],
                     'enable_image_ctrl_btn' => $params['popup_enable_ctrl_btn'],
-                  'enable_image_fullscreen' => $params['popup_enable_fullscreen'],
+                    'enable_image_fullscreen' => $params['popup_enable_fullscreen'],
                     'popup_enable_info' => $params['popup_enable_info'],
-                  'popup_info_always_show' => $params['popup_info_always_show'],
-		  'popup_hit_counter' => $params['popup_hit_counter'],
-		    'popup_enable_rate' => $params['popup_enable_rate'],
+                    'popup_info_always_show' => $params['popup_info_always_show'],
+		    'popup_info_full_width' => $params['popup_info_full_width'],
+                    'popup_hit_counter' => $params['popup_hit_counter'],
+                    'popup_enable_rate' => $params['popup_enable_rate'],
                     'slideshow_interval' => $params['popup_interval'],
                     'enable_comment_social' => $params['popup_enable_comment'],
                     'enable_image_facebook' => $params['popup_enable_facebook'],
                     'enable_image_twitter' => $params['popup_enable_twitter'],
                     'enable_image_google' => $params['popup_enable_google'],
-		    'enable_image_pinterest' => $params['popup_enable_pinterest'],
+                    'enable_image_pinterest' => $params['popup_enable_pinterest'],
                     'enable_image_tumblr' => $params['popup_enable_tumblr'],
                     'watermark_type' => $params['watermark_type'],
                     'current_url' => $current_url

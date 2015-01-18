@@ -63,6 +63,9 @@ class BWGViewAlbum_extended_preview {
     if (!isset($params['popup_info_always_show'])) {
       $params['popup_info_always_show'] = 0;
     }
+	if (!isset($params['popup_info_full_width'])) {
+      $params['popup_info_full_width'] = 0;
+    }
     if (!isset($params['popup_enable_rate'])) {
       $params['popup_enable_rate'] = 0;
     }
@@ -156,6 +159,7 @@ class BWGViewAlbum_extended_preview {
         max-width: inherit;
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_album_extended_thumbnails_<?php echo $bwg; ?> a {
+        border: none;
         cursor: pointer;
         text-decoration: none;
       }
@@ -334,6 +338,7 @@ class BWGViewAlbum_extended_preview {
         text-align: <?php echo $theme_row->thumb_align; ?>;
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_standart_thumbnails_<?php echo $bwg; ?> a {
+        border: none;
         cursor: pointer;
         text-decoration: none;
       }
@@ -627,7 +632,7 @@ class BWGViewAlbum_extended_preview {
                     <?php
                   }
                   else {
-		    ?>
+                    ?>
                     <span class="bwg_back_<?php echo $bwg; ?>"><?php echo __('Gallery is empty.', 'bwg'); ?></span>
                     <?php
                   }
@@ -647,20 +652,22 @@ class BWGViewAlbum_extended_preview {
                     'image_height' => $params['popup_height'],
                     'image_effect' => $params['popup_effect'],
                     'sort_by' => $params['sort_by'],
+                    'order_by' => $params['order_by'],
                     'enable_image_filmstrip' => $params['popup_enable_filmstrip'],
                     'image_filmstrip_height' => $params['popup_filmstrip_height'],
                     'enable_image_ctrl_btn' => $params['popup_enable_ctrl_btn'],
-                  'enable_image_fullscreen' => $params['popup_enable_fullscreen'],
+                    'enable_image_fullscreen' => $params['popup_enable_fullscreen'],
                     'popup_enable_info' => $params['popup_enable_info'],
-                  'popup_info_always_show' => $params['popup_info_always_show'],
-		  'popup_hit_counter' => $params['popup_hit_counter'],
-		    'popup_enable_rate' => $params['popup_enable_rate'],
+                    'popup_info_always_show' => $params['popup_info_always_show'],
+		    'popup_info_full_width' => $params['popup_info_full_width'],
+                    'popup_hit_counter' => $params['popup_hit_counter'],
+                    'popup_enable_rate' => $params['popup_enable_rate'],
                     'slideshow_interval' => $params['popup_interval'],
                     'enable_comment_social' => $params['popup_enable_comment'],
                     'enable_image_facebook' => $params['popup_enable_facebook'],
                     'enable_image_twitter' => $params['popup_enable_twitter'],
                     'enable_image_google' => $params['popup_enable_google'],
-		    'enable_image_pinterest' => $params['popup_enable_pinterest'],
+                    'enable_image_pinterest' => $params['popup_enable_pinterest'],
                     'enable_image_tumblr' => $params['popup_enable_tumblr'],
                     'watermark_type' => $params['watermark_type'],
                     'current_url' => $current_url
@@ -717,7 +724,7 @@ class BWGViewAlbum_extended_preview {
                             <?php
                           }
                           ?>
-			  <img style="max-height:none; max-width:none; width:<?php echo $image_thumb_width; ?>px; height:<?php echo $image_thumb_height; ?>px; margin-left: <?php echo $thumb_left; ?>px; margin-top: <?php echo $thumb_top; ?>px;" id="<?php echo $image_row->id; ?>" src="<?php echo ($is_video ? "" : site_url() . '/' . $WD_BWG_UPLOAD_DIR) . $image_row->thumb_url; ?>" alt="<?php echo $image_row->alt; ?>" />
+                          <img style="max-height:none; max-width:none; width:<?php echo $image_thumb_width; ?>px; height:<?php echo $image_thumb_height; ?>px; margin-left: <?php echo $thumb_left; ?>px; margin-top: <?php echo $thumb_top; ?>px;" id="<?php echo $image_row->id; ?>" src="<?php echo ($is_video ? "" : site_url() . '/' . $WD_BWG_UPLOAD_DIR) . $image_row->thumb_url; ?>" alt="<?php echo $image_row->alt; ?>" />
                         </span>
                       </span>
                       <?php

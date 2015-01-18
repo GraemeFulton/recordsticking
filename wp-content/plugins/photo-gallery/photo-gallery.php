@@ -4,7 +4,7 @@
  * Plugin Name: Photo Gallery
  * Plugin URI: http://web-dorado.com/products/wordpress-photo-gallery-plugin.html
  * Description: This plugin is a fully responsive gallery plugin with advanced functionality.  It allows having different image galleries for your posts and pages. You can create unlimited number of galleries, combine them into albums, and provide descriptions and tags.
- * Version: 1.2.3
+ * Version: 1.2.8
  * Author: WebDorado
  * Author URI: http://web-dorado.com/
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -23,13 +23,13 @@ else {
 
 // Plugin menu.
 function bwg_options_panel() {
-  $galleries_page = add_menu_page('Photo Gallery', 'Photo Gallery', 'publish_posts', 'galleries_bwg', 'bw_gallery', WD_BWG_URL . '/images/best-wordpress-gallery.png');
+  $galleries_page = add_menu_page('Photo Gallery', 'Photo Gallery', 'manage_options', 'galleries_bwg', 'bw_gallery', WD_BWG_URL . '/images/best-wordpress-gallery.png');
 
-  $galleries_page = add_submenu_page('galleries_bwg', 'Add Galleries/Images', 'Add Galleries/Images', 'publish_posts', 'galleries_bwg', 'bw_gallery');
+  $galleries_page = add_submenu_page('galleries_bwg', 'Add Galleries/Images', 'Add Galleries/Images', 'manage_options', 'galleries_bwg', 'bw_gallery');
   add_action('admin_print_styles-' . $galleries_page, 'bwg_styles');
   add_action('admin_print_scripts-' . $galleries_page, 'bwg_scripts');
 
-  $albums_page = add_submenu_page('galleries_bwg', 'Albums', 'Albums', 'publish_posts', 'albums_bwg', 'bw_gallery');
+  $albums_page = add_submenu_page('galleries_bwg', 'Albums', 'Albums', 'manage_options', 'albums_bwg', 'bw_gallery');
   add_action('admin_print_styles-' . $albums_page, 'bwg_styles');
   add_action('admin_print_scripts-' . $albums_page, 'bwg_scripts');
 
@@ -45,13 +45,12 @@ function bwg_options_panel() {
   add_action('admin_print_styles-' . $themes_page, 'bwg_styles');
   add_action('admin_print_scripts-' . $themes_page, 'bwg_options_scripts');
 
-  $generate_shortcode = add_submenu_page('galleries_bwg', 'Generate Shortcode', 'Generate Shortcode', 'manage_options', 'BWGShortcode', 'bw_gallery');
+  add_submenu_page('galleries_bwg', 'Generate Shortcode', 'Generate Shortcode', 'manage_options', 'BWGShortcode', 'bw_gallery');
 
   $licensing_plugins_page = add_submenu_page('galleries_bwg', 'Licensing', 'Licensing', 'manage_options', 'licensing_bwg', 'bw_gallery');
   add_action('admin_print_styles-' . $licensing_plugins_page, 'bwg_licensing_styles');
 
-  $featured_plugins_page = add_submenu_page('galleries_bwg', 'Featured Plugins', 'Featured Plugins', 'manage_options', 'featured_plugins_bwg', 'bw_gallery');
-  add_action('admin_print_styles-' . $featured_plugins_page, 'bwg_featured_plugins_styles');
+  add_submenu_page('galleries_bwg', 'Featured Plugins', 'Featured Plugins', 'manage_options', 'featured_plugins_bwg', 'bwg_featured');
 
   $uninstall_page = add_submenu_page('galleries_bwg', 'Uninstall', 'Uninstall', 'manage_options', 'uninstall_bwg', 'bw_gallery');
   add_action('admin_print_styles-' . $uninstall_page, 'bwg_styles');
@@ -63,12 +62,27 @@ function bw_gallery() {
   global $wpdb;
   require_once(WD_BWG_DIR . '/framework/WDWLibrary.php');
   $page = WDWLibrary::get('page');
-  if (($page != '') && (($page == 'galleries_bwg') || ($page == 'albums_bwg') || ($page == 'tags_bwg') || ($page == 'options_bwg') || ($page == 'themes_bwg') || ($page == 'licensing_bwg') || ($page == 'featured_plugins_bwg') || ($page == 'uninstall_bwg') || ($page == 'BWGShortcode'))) {
+  if (($page != '') && (($page == 'galleries_bwg') || ($page == 'albums_bwg') || ($page == 'tags_bwg') || ($page == 'options_bwg') || ($page == 'themes_bwg') || ($page == 'licensing_bwg') || ($page == 'uninstall_bwg') || ($page == 'BWGShortcode'))) {
     require_once(WD_BWG_DIR . '/admin/controllers/BWGController' . (($page == 'BWGShortcode') ? $page : ucfirst(strtolower($page))) . '.php');
     $controller_class = 'BWGController' . ucfirst(strtolower($page));
     $controller = new $controller_class();
     $controller->execute();
   }
+}
+
+function bwg_featured() {
+  if (function_exists('current_user_can')) {
+    if (!current_user_can('manage_options')) {
+      die('Access Denied');
+    }
+  }
+  else {
+    die('Access Denied');
+  }
+  require_once(WD_BWG_DIR . '/featured/featured.php');
+  wp_register_style('bwg_featured', WD_BWG_URL . '/featured/style.css', array(), get_option("wd_bwg_version"));
+  wp_print_styles('bwg_featured');
+  spider_featured('photo-gallery');
 }
 
 function bwg_ajax_frontend() {
@@ -102,7 +116,7 @@ function bwg_UploadHandler() {
 
 function bwg_filemanager_ajax() {
   if (function_exists('current_user_can')) {
-    if (!current_user_can('publish_posts')) {
+    if (!current_user_can('manage_options')) {
       die('Access Denied');
     }
   }
@@ -121,6 +135,14 @@ function bwg_filemanager_ajax() {
 }
 
 function bwg_edit_tag() {
+  if (function_exists('current_user_can')) {
+    if (!current_user_can('manage_options')) {
+      die('Access Denied');
+    }
+  }
+  else {
+    die('Access Denied');
+  }
   require_once(WD_BWG_DIR . '/admin/controllers/BWGControllerTags_bwg.php');
   $controller_class = 'BWGControllerTags_bwg';
   $controller = new $controller_class();
@@ -129,7 +151,7 @@ function bwg_edit_tag() {
 
 function bwg_ajax() {
   if (function_exists('current_user_can')) {
-    if (!current_user_can('publish_posts')) {
+    if (!current_user_can('manage_options')) {
       die('Access Denied');
     }
   }
@@ -164,11 +186,13 @@ function bwg_shortcode($params) {
   if (isset($params['id'])) {
     global $wpdb;
     $shortcode = $wpdb->get_var($wpdb->prepare("SELECT tagtext FROM " . $wpdb->prefix . "bwg_shortcode WHERE id='%d'", $params['id']));
-    $shortcode_params = explode('" ', $shortcode);
-    foreach ($shortcode_params as $shortcode_param) {
-      $shortcode_param = str_replace('"', '', $shortcode_param);
-      $shortcode_elem = explode('=', $shortcode_param);
-      $params[str_replace(' ', '', $shortcode_elem[0])] = $shortcode_elem[1];
+    if ($shortcode) {
+      $shortcode_params = explode('" ', $shortcode);
+      foreach ($shortcode_params as $shortcode_param) {
+        $shortcode_param = str_replace('"', '', $shortcode_param);
+        $shortcode_elem = explode('=', $shortcode_param);
+        $params[str_replace(' ', '', $shortcode_elem[0])] = $shortcode_elem[1];
+      }
     }
   }
   shortcode_atts(array(
@@ -220,6 +244,7 @@ function bwg_shortcode($params) {
         'enable_slideshow_filmstrip' => 1,
         'slideshow_filmstrip_height' => 70,
         'slideshow_enable_title' => 0,
+        'slideshow_title_full_width' => 0,
         'slideshow_title_position' => 'top-right',
         'slideshow_enable_description' => 0,
         'slideshow_description_position' => 'bottom-right',
@@ -308,6 +333,7 @@ function bwg_shortcode($params) {
         'popup_enable_ctrl_btn' => 1,
         'popup_enable_fullscreen' => 1,
         'popup_enable_info' => 1,
+        'popup_info_full_width' => 0,
         'popup_info_always_show' => 0,
         'popup_hit_counter' => 0,
         'popup_enable_rate' => 0,
@@ -414,7 +440,7 @@ if (class_exists('WP_Widget')) {
 function bwg_activate() {
   global $wpdb;
   $bwg_shortcode = "CREATE TABLE IF NOT EXISTS `" . $wpdb->prefix . "bwg_shortcode` (
-    `id` bigint(20) NOT NULL AUTO_INCREMENT,
+    `id` bigint(20) NOT NULL,
     `tagtext` mediumtext NOT NULL,
     PRIMARY KEY (`id`)
   ) DEFAULT CHARSET=utf8;";
@@ -601,6 +627,9 @@ function bwg_activate() {
     `upload_img_width` int(4) NOT NULL,
     `upload_img_height` int(4) NOT NULL,
     `play_icon` tinyint(1) NOT NULL,
+    `show_masonry_thumb_description` tinyint(1) NOT NULL,
+    `slideshow_title_full_width` tinyint(1) NOT NULL,
+    `popup_info_full_width` tinyint(1) NOT NULL,
     PRIMARY KEY (`id`)
   ) DEFAULT CHARSET=utf8;";
   $wpdb->query($bwg_option);
@@ -976,6 +1005,37 @@ function bwg_activate() {
     `lightbox_hit_font_style` varchar(16) NOT NULL,
     `lightbox_hit_font_weight` varchar(8) NOT NULL,
     `lightbox_hit_font_size` int(4) NOT NULL,
+    `masonry_description_font_size` int(4) NOT NULL,
+    `masonry_description_color` varchar(8) NOT NULL,
+    `masonry_description_font_style` varchar(16) NOT NULL,
+
+    `album_masonry_back_font_color` varchar(8) NOT NULL,
+    `album_masonry_back_font_style` varchar(16) NOT NULL,
+    `album_masonry_back_font_size` int(4) NOT NULL,
+    `album_masonry_back_font_weight` varchar(8) NOT NULL,
+    `album_masonry_back_padding` varchar(32) NOT NULL,
+    `album_masonry_title_font_color` varchar(8) NOT NULL,
+    `album_masonry_title_font_style` varchar(16) NOT NULL,
+    `album_masonry_thumb_title_pos`  varchar(8) NOT NULL,
+    `album_masonry_title_font_size` int(4) NOT NULL,
+    `album_masonry_title_font_weight` varchar(8) NOT NULL,
+    `album_masonry_title_margin` varchar(32) NOT NULL,
+    `album_masonry_title_shadow` varchar(32) NOT NULL,
+    `album_masonry_thumb_margin` int(4) NOT NULL,
+    `album_masonry_thumb_padding` int(4) NOT NULL,
+    `album_masonry_thumb_border_radius` varchar(32) NOT NULL,
+    `album_masonry_thumb_border_width` int(4) NOT NULL,
+    `album_masonry_thumb_border_style` varchar(8) NOT NULL,
+    `album_masonry_thumb_border_color` varchar(8) NOT NULL,
+    `album_masonry_thumb_bg_color` varchar(8) NOT NULL,
+    `album_masonry_thumbs_bg_color` varchar(8) NOT NULL,
+    `album_masonry_thumb_bg_transparent` int(4) NOT NULL,
+    `album_masonry_thumb_box_shadow` varchar(32) NOT NULL,
+    `album_masonry_thumb_transparent` int(4) NOT NULL,
+    `album_masonry_thumb_align` varchar(8) NOT NULL,
+    `album_masonry_thumb_hover_effect` varchar(64) NOT NULL,
+    `album_masonry_thumb_hover_effect_value` varchar(64) NOT NULL,
+    `album_masonry_thumb_transition` tinyint(1) NOT NULL,
 
     `default_theme` tinyint(1) NOT NULL,
     PRIMARY KEY (`id`)
@@ -1124,6 +1184,9 @@ function bwg_activate() {
       'upload_img_width' => 1200,
       'upload_img_height' => 1200,
       'play_icon'=> 1,
+      'show_masonry_thumb_description' => 0,
+      'slideshow_title_full_width' => 0,
+      'popup_info_full_width' => 0,
     ), array(
       '%d',
       '%s',
@@ -1227,6 +1290,9 @@ function bwg_activate() {
       '%d',
       '%d',
       '%s',
+      '%d',
+      '%d',
+      '%d',
       '%d',
       '%d',
       '%d',
@@ -1613,6 +1679,37 @@ function bwg_activate() {
       'lightbox_hit_font_style' => 'segoe ui',
       'lightbox_hit_font_weight' => 'normal',
       'lightbox_hit_font_size' => 14,
+      'masonry_description_font_size' => 12,
+			'masonry_description_color' => 'CCCCCC',
+			'masonry_description_font_style' => 'segoe ui',
+
+			'album_masonry_back_font_color' => '000000',
+      'album_masonry_back_font_style' => 'segoe ui',
+      'album_masonry_back_font_size' => 16,
+      'album_masonry_back_font_weight' => 'bold',
+      'album_masonry_back_padding' => '0',
+      'album_masonry_title_font_color' => 'CCCCCC',
+      'album_masonry_title_font_style' => 'segoe ui',
+      'album_masonry_thumb_title_pos' => 'bottom',
+      'album_masonry_title_font_size' => 16,
+      'album_masonry_title_font_weight' => 'bold',
+      'album_masonry_title_margin' => '2px',
+      'album_masonry_title_shadow' => '0px 0px 0px #888888',
+      'album_masonry_thumb_margin' => 4,
+      'album_masonry_thumb_padding' => 0,
+      'album_masonry_thumb_border_radius' => '0',
+      'album_masonry_thumb_border_width' => 0,
+      'album_masonry_thumb_border_style' => 'none',
+      'album_masonry_thumb_border_color' => 'CCCCCC',
+      'album_masonry_thumb_bg_color' => 'FFFFFF',
+      'album_masonry_thumbs_bg_color' => 'FFFFFF',
+      'album_masonry_thumb_bg_transparent' => 0,
+      'album_masonry_thumb_box_shadow' => '0px 0px 0px #888888',
+      'album_masonry_thumb_transparent' => 100,
+      'album_masonry_thumb_align' => 'center',
+      'album_masonry_thumb_hover_effect' => 'scale',
+      'album_masonry_thumb_hover_effect_value' => '1.1',
+      'album_masonry_thumb_transition' => 0,
 
       'default_theme' => 1
     ), array(
@@ -1982,6 +2079,37 @@ function bwg_activate() {
       '%s',
       '%s',
       '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%d',
+			'%s',
+			'%s',
+
+      '%s',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%d',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%s',
+      '%d',
       '%s',
       '%s',
       '%s',
@@ -2361,6 +2489,37 @@ function bwg_activate() {
       'lightbox_hit_font_style' => 'segoe ui',
       'lightbox_hit_font_weight' => 'normal',
       'lightbox_hit_font_size' => 14,
+      'masonry_description_font_size' => 12,
+			'masonry_description_color' => 'CCCCCC',
+			'masonry_description_font_style' => 'segoe ui',
+
+			'album_masonry_back_font_color' => '000000',
+      'album_masonry_back_font_style' => 'segoe ui',
+      'album_masonry_back_font_size' => 14,
+      'album_masonry_back_font_weight' => 'normal',
+      'album_masonry_back_padding' => '0',
+      'album_masonry_title_font_color' => 'CCCCCC',
+      'album_masonry_title_font_style' => 'segoe ui',
+      'album_masonry_thumb_title_pos' => 'bottom',
+      'album_masonry_title_font_size' => 16,
+      'album_masonry_title_font_weight' => 'bold',
+      'album_masonry_title_margin' => '5px',
+      'album_masonry_title_shadow' => '',
+      'album_masonry_thumb_margin' => 4,
+      'album_masonry_thumb_padding' => 4,
+      'album_masonry_thumb_border_radius' => '0',
+      'album_masonry_thumb_border_width' => 1,
+      'album_masonry_thumb_border_style' => 'none',
+      'album_masonry_thumb_border_color' => '000000',
+      'album_masonry_thumb_bg_color' => 'E8E8E8',
+      'album_masonry_thumbs_bg_color' => 'FFFFFF',
+      'album_masonry_thumb_bg_transparent' => 100,
+      'album_masonry_thumb_box_shadow' => '',
+      'album_masonry_thumb_transparent' => 100,
+      'album_masonry_thumb_align' => 'center',
+      'album_masonry_thumb_hover_effect' => 'rotate',
+      'album_masonry_thumb_hover_effect_value' => '2deg',
+      'album_masonry_thumb_transition' => 1,
 
       'default_theme' => 0
     ), array(
@@ -2734,12 +2893,43 @@ function bwg_activate() {
       '%s',
       '%s',
       '%d',
+      '%d',
+			'%s',
+			'%s',
+
+      '%s',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%d',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
+      '%s',
+      '%d',
+      '%s',
+      '%s',
+      '%s',
+      '%d',
 
       '%d'
     ));
   }
   $version = get_option("wd_bwg_version");
-  $new_version = '1.2.3';
+  $new_version = '1.2.8';
   if ($version && version_compare($version, $new_version, '<')) {
     require_once WD_BWG_DIR . "/update/bwg_update.php";
     bwg_update($version);
@@ -2754,7 +2944,7 @@ register_activation_hook(__FILE__, 'bwg_activate');
 
 function bwg_update_hook() {
 	$version = get_option("wd_bwg_version");
-  $new_version = '1.2.3';
+  $new_version = '1.2.8';
   if ($version && version_compare($version, $new_version, '<')) {
     require_once WD_BWG_DIR . "/update/bwg_update.php";
     bwg_update($version);
@@ -2785,10 +2975,6 @@ function bwg_scripts() {
   }
   wp_enqueue_script('jquery');
   wp_enqueue_script('jquery-ui-sortable');
-}
-
-function bwg_featured_plugins_styles() {
-  wp_enqueue_style('Featured_Plugins', WD_BWG_URL . '/css/bwg_featured_plugins.css');
 }
 
 function bwg_licensing_styles() {

@@ -5,7 +5,7 @@
  */
 function wpvi_plugin_menu() {
 
-    add_plugins_page(
+    add_options_page(
         'WordPress Visual Icon Fonts',           // The title to be displayed in the browser window for this page.
         'Icon Fonts',           // The text to be displayed for this menu item
         'administrator',            // Which type of users can see this menu item
@@ -124,7 +124,7 @@ function wpvi_toggle_font_callback($args) {
 	$html .= '<label for="font_select_fa">Font Awesome 4.0.1</label>';
 	$html .= '<em>The iconic font designed for Bootstrap</em>';
 	$html .= '<p>Font Awesome - One font, 369 Icons, n a single collection, Font Awesome is a pictographic language of web-related actions.</p>';
-	$html .= '<small>Created by Dave Gandy</small><br/>';
+	$html .= '<small>Created by Dave Gandy</small>';
 	$html .= '<a href="http://fontawesome.io/">http://fontawesome.io/</a>';
 	$html .= '</div>';
 
@@ -135,7 +135,7 @@ function wpvi_toggle_font_callback($args) {
 	$html .= '<label for="font_select_gen">Genericons</label>';
 	$html .= '<em>a free, GPL, flexible icon font for blogs!</em>';
 	$html .= '<p>Genericons are vector icons embedded in a webfont designed to be clean and simple keeping with a generic aesthetic.</p>';
-	$html .= '<small>Created by Automatic</small><br/>';
+	$html .= '<small>Created by Automatic</small>';
 	$html .= '<a href="http://genericons.com/">http://genericons.com/</a>';
 	$html .= '</div>';
 
@@ -151,5 +151,8 @@ function wpvi_op_style() {
 	wp_enqueue_style( 'wpvi-ops' );
 }
 
-add_action('admin_print_styles-plugins_page_wpvi_plugin_options', 'wpvi_op_style' );
+add_action('admin_print_styles-settings_page_wpvi_plugin_options', 'wpvi_op_style' );
+
+
+
 

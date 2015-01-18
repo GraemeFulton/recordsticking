@@ -1,0 +1,767 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery-Bank\n"
+"POT-Creation-Date: 2014-11-17 12:34+0530\n"
+"PO-Revision-Date: 2014-11-17 17:15+0530\n"
+"Last-Translator: \n"
+"Language-Team: Tech-Banker <support@tech-banker.com>\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\Gallery-Testing\\wp-content\\plugins"
+"\\gallery-bank\\\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr "인서트- Gallery Bank 숏 코드"
+
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr "앨범 게시물 또는 페이지에 추가 를 선택합니다."
+
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr "갤러리 유형"
+
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr ".사진이있는 -앨범들"
+
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr "있는 이미지 만"
+
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr "앨범 포맷"
+
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr "를 선택앨범체재"
+
+#: front_views/gallery-bank-shortcode.php:27
+msgid "Select Album"
+msgstr "앨범 를 선택"
+
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr "자형의 것"
+
+#: front_views/gallery-bank-shortcode.php:63
+msgid "Gallery Format"
+msgstr "갤러리-서식"
+
+#: front_views/gallery-bank-shortcode.php:65
+msgid "Select Gallery Format "
+msgstr " 선택 갤러리-서식"
+
+#: front_views/gallery-bank-shortcode.php:74 views/album-preview.php:47
+#: views/images-sorting.php:240
+msgid "Images in Row"
+msgstr " 이미지를-에있는-단지내"
+
+#: front_views/gallery-bank-shortcode.php:79
+msgid "Image Width"
+msgstr "이미지 폭"
+
+#: front_views/gallery-bank-shortcode.php:86 views/album-sorting.php:190
+msgid "Albums in Row"
+msgstr " 앨범을-에있는 단지내"
+
+#: front_views/gallery-bank-shortcode.php:91
+msgid "Text Format"
+msgstr "텍스트 형식"
+
+#: front_views/gallery-bank-shortcode.php:93
+msgid "Select Format "
+msgstr "포맷 선택"
+
+#: front_views/gallery-bank-shortcode.php:100
+msgid "Special Effects"
+msgstr "특수 효과"
+
+#: front_views/gallery-bank-shortcode.php:122
+msgid "Animation Effects"
+msgstr "애니메이션 효과"
+
+#: front_views/gallery-bank-shortcode.php:175
+msgid "Show Responsive Gallery"
+msgstr "표시-Responsive갤러리"
+
+#: front_views/gallery-bank-shortcode.php:179
+msgid "Show Album Title"
+msgstr "쇼 앨범 권리 증서"
+
+#: front_views/gallery-bank-shortcode.php:184
+msgid "Insert Album"
+msgstr "앨범 에 삽입"
+
+#: front_views/gallery-bank-shortcode.php:187
+msgid "Cancel"
+msgstr "취소"
+
+#: front_views/gallery-bank-shortcode.php:499
+msgid "Please select an Album"
+msgstr "의 앨범 선택 해주세요"
+
+#: front_views/gallery-bank-shortcode.php:503
+msgid "Please select an Album Format"
+msgstr "의 앨범 선택 해주세요 체재"
+
+#: front_views/gallery-bank-shortcode.php:507
+msgid "Please select a Gallery Images Format"
+msgstr " 선택하세요  갤러  미지  포맷"
+
+#: front_views/gallery-bank-shortcode.php:511
+msgid "Please select a Text Format for the Gallery"
+msgstr "      텍스트 형식 선택하세요 용 갤러리"
+
+#: gallery-bank.php:100 gallery-bank.php:173 gallery-bank.php:246
+msgid "<img src=\""
+msgstr ""
+
+#: gallery-bank.php:102 gallery-bank.php:175 gallery-bank.php:248
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr ""
+
+#: gallery-bank.php:109 gallery-bank.php:182 gallery-bank.php:255
+#: lib/gallery-bank-class.php:16 lib/gallery-bank-class.php:31
+#: lib/gallery-bank-class.php:46 views/header.php:153 views/header.php:167
+#: views/header.php:181
+msgid "Dashboard"
+msgstr "계기판"
+
+#: gallery-bank.php:117 gallery-bank.php:190 gallery-bank.php:263
+#: views/dashboard.php:129
+msgid "Add New Album"
+msgstr " 에 추가-새 앨범"
+
+#: gallery-bank.php:125 gallery-bank.php:198 gallery-bank.php:271
+#: lib/gallery-bank-class.php:17 lib/gallery-bank-class.php:32
+#: lib/gallery-bank-class.php:47 views/dashboard.php:154 views/header.php:154
+#: views/header.php:168 views/header.php:182
+msgid "Short-Codes"
+msgstr "짧은 코드"
+
+#: gallery-bank.php:132 gallery-bank.php:205 gallery-bank.php:278
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:33
+#: lib/gallery-bank-class.php:48 views/header.php:155 views/header.php:169
+#: views/header.php:183
+msgid "Album Sorting"
+msgstr "앨범을- 정렬"
+
+#: gallery-bank.php:139 gallery-bank.php:212 gallery-bank.php:285
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:34
+#: lib/gallery-bank-class.php:49 views/header.php:156 views/header.php:170
+#: views/header.php:184 views/settings.php:276
+msgid "Global Settings"
+msgstr "전역 설정"
+
+#: gallery-bank.php:146 gallery-bank.php:219 gallery-bank.php:292
+#: lib/gallery-bank-class.php:20 lib/gallery-bank-class.php:35
+#: lib/gallery-bank-class.php:50 views/gallery-bank-system-report.php:29
+#: views/header.php:157 views/header.php:171
+msgid "System Status"
+msgstr "시스템 상태"
+
+#: gallery-bank.php:153 gallery-bank.php:226 gallery-bank.php:299
+#: lib/gallery-bank-class.php:21 lib/gallery-bank-class.php:36
+#: lib/gallery-bank-class.php:51 views/header.php:81 views/header.php:158
+#: views/header.php:172 views/header.php:185
+msgid "Recommendations"
+msgstr "권고 사항"
+
+#: gallery-bank.php:160 gallery-bank.php:233 gallery-bank.php:306
+#: lib/gallery-bank-class.php:22 lib/gallery-bank-class.php:37
+#: lib/gallery-bank-class.php:52 views/header.php:159 views/header.php:173
+#: views/header.php:186 views/purchase_pro_version.php:34
+msgid "Premium Editions"
+msgstr "보험료 에디션"
+
+#: gallery-bank.php:167 gallery-bank.php:240 gallery-bank.php:313
+#: lib/gallery-bank-class.php:23 lib/gallery-bank-class.php:38
+#: lib/gallery-bank-class.php:53 views/header.php:86 views/header.php:160
+#: views/header.php:174 views/header.php:187
+msgid "Our Other Services"
+msgstr "우리의 기타 서비스"
+
+#: gallery-bank.php:327
+msgid "View Gallery Bank Documentation"
+msgstr "보기 갤러리 은행 문서조사"
+
+#: gallery-bank.php:327
+msgid "Docs"
+msgstr "문서 도구"
+
+#: gallery-bank.php:328
+msgid "View Gallery Bank Premium Editions"
+msgstr "를 볼 갤러리 은행 프리미엄 에디션"
+
+#: gallery-bank.php:328
+msgid "Go for Premium!"
+msgstr "가서 용 할증금 "
+
+#: lib/add-new-album-class.php:44 views/edit-album.php:346
+#: views/edit-album.php:353
+msgid " Set as Album Cover"
+msgstr "앨범 커버로서 설정"
+
+#: lib/add-new-album-class.php:47 views/edit-album.php:294
+#: views/edit-album.php:359
+msgid "Enter your Title"
+msgstr " 입력하십시오 당신표제"
+
+#: lib/add-new-album-class.php:48 views/edit-album.php:299
+#: views/edit-album.php:364
+msgid "Enter your Description "
+msgstr " 입력하십시오-당신 서술"
+
+#: lib/add-new-album-class.php:50 views/edit-album.php:305
+#: views/edit-album.php:370
+msgid "Enter your Tags"
+msgstr " 입력하십시오당신 태그"
+
+#: lib/add-new-album-class.php:54 views/edit-album.php:391
+msgid "Delete Image"
+msgstr "를 삭제-이미지"
+
+#: lib/gallery-bank-class.php:15 lib/gallery-bank-class.php:30
+#: lib/gallery-bank-class.php:45 views/header.php:141
+msgid "Gallery Bank"
+msgstr "Gallery Bank"
+
+#: lib/gallery-bank-class.php:332
+msgid "Add Gallery using Gallery Bank"
+msgstr "Gallery Bank사용하여 갤러리를 추가 "
+
+#: views/album-preview.php:31
+msgid "Album Preview"
+msgstr "앨범 미리보기"
+
+#: views/album-preview.php:34 views/album-sorting.php:158
+#: views/edit-album.php:161 views/edit-album.php:415
+#: views/images-sorting.php:202 views/purchase_pro_version.php:38
+#: views/settings.php:279 views/shortcode.php:33
+msgid "Back to Albums"
+msgstr "돌아 에게 이미지 앨범"
+
+#: views/album-preview.php:52 views/album-sorting.php:195
+#: views/images-sorting.php:244
+msgid "Please Choose"
+msgstr "주십시오-선택할"
+
+#: views/album-sorting.php:154
+msgid "Re-Order Albums"
+msgstr " 다시 주문- 이미지 앨범"
+
+#: views/album-sorting.php:160 views/images-sorting.php:204
+msgid "Update Order"
+msgstr "업데이트-순서"
+
+#: views/album-sorting.php:163 views/images-sorting.php:207
+msgid "Sorting Order has been updated."
+msgstr "정렬-순서있다되었습니다업데이트 된"
+
+#: views/album-sorting.php:275 views/dashboard.php:302 views/dashboard.php:306
+#: views/dashboard.php:310 views/edit-album.php:612 views/edit-album.php:628
+#: views/images-sorting.php:308
+msgid "This feature is only available in Paid Premium Version!"
+msgstr "이 기능은 유료 프리미엄 버전에서만 사용할 수 있습니다!"
+
+#: views/dashboard.php:118 views/shortcode.php:29
+msgid "Gallery Bank Short-Codes"
+msgstr "갤러리 은행 단기 코드"
+
+#: views/dashboard.php:135
+msgid "Delete All Albums"
+msgstr "모든 이미지 앨범 을 삭제"
+
+#: views/dashboard.php:136
+msgid "Purge Images & Albums"
+msgstr "Purge 이미지를 과 이미지 앨범"
+
+#: views/dashboard.php:137
+msgid "Restore Factory Settings"
+msgstr "을 복원-공장 설정"
+
+#: views/dashboard.php:144
+msgid "Existing Albums Overview"
+msgstr "기존 이미지 앨범-개요를"
+
+#: views/dashboard.php:150 views/edit-album.php:253
+msgid "Thumbnail"
+msgstr "섬네일"
+
+#: views/dashboard.php:151
+msgid "Title"
+msgstr "표제"
+
+#: views/dashboard.php:152
+msgid "Total Images"
+msgstr "총 이미지"
+
+#: views/dashboard.php:153
+msgid "Date"
+msgstr "날짜"
+
+#: views/dashboard.php:218
+msgid "Edit Album"
+msgstr "편집 할 앨범"
+
+#: views/dashboard.php:223 views/images-sorting.php:198
+msgid "Re-Order Images"
+msgstr "를 다시 주문 이미지를"
+
+#: views/dashboard.php:228
+msgid "Preview Album"
+msgstr "미리보기 앨범"
+
+#: views/dashboard.php:233
+msgid "Delete Album"
+msgstr "앨범 삭제를"
+
+#: views/dashboard.php:289
+msgid "Are you sure you want to delete this Album?"
+msgstr "당신은 당신이이 앨범을 삭제 하시겠습니까?"
+
+#: views/edit-album.php:158
+msgid "Album"
+msgstr "앨범"
+
+#: views/edit-album.php:162 views/edit-album.php:414
+msgid "Save Album"
+msgstr "저장 앨범"
+
+#: views/edit-album.php:166
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr "앨범 저장. 친절하게 리디렉션 발생하는 기다립니다."
+
+#: views/edit-album.php:173
+msgid "Album Details"
+msgstr "앨범 의 자세한 사항"
+
+#: views/edit-album.php:177
+msgid "Album Title"
+msgstr "앨범 타이틀"
+
+#: views/edit-album.php:182
+msgid "Enter your Album Title"
+msgstr "입력하십시오 당신의 앨범-타이틀"
+
+#: views/edit-album.php:189
+msgid "Description"
+msgstr "서술"
+
+#: views/edit-album.php:203
+msgid "Upload Images"
+msgstr "이미지를 업로드"
+
+#: views/edit-album.php:206
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr ""
+"있다  하지 않습니다  브라우저  당신의 플래시, 실버 라이트 또는 HTML5를 지원합"
+"니다."
+
+#: views/edit-album.php:213
+msgid "Upload Videos"
+msgstr "동영상을 올릴"
+
+#: views/edit-album.php:214 views/edit-album.php:260 views/settings.php:288
+#: views/settings.php:504 views/settings.php:734 views/settings.php:845
+#: views/settings.php:944 views/settings.php:1266 views/settings.php:1382
+#: views/settings.php:1433 views/settings.php:1485
+msgid " (Available in Premium Versions)"
+msgstr "(프리미엄 버전에서 에 사용 가능)"
+
+#: views/edit-album.php:219
+msgid "Video Url"
+msgstr "동영상 URL"
+
+#: views/edit-album.php:223
+msgid "Enter your Video Url"
+msgstr "입력하십시오 당신의동영상 URL"
+
+#: views/edit-album.php:229
+msgid "Upload Video"
+msgstr "동영상 업로드"
+
+#: views/edit-album.php:240
+msgid "Your Gallery Bank Album"
+msgstr "귀하의 갤러리-뱅크 앨범"
+
+#: views/edit-album.php:250
+msgid "Delete"
+msgstr "삭제를"
+
+#: views/edit-album.php:256
+msgid "Title & Description"
+msgstr "권리 증서 및 설명"
+
+#: views/edit-album.php:259
+msgid "Tags (comma separated list)"
+msgstr "태그 (쉼표구분 된 목록)"
+
+#: views/edit-album.php:263
+msgid "Url to Redirect on click of an Image"
+msgstr " URL-에게- 리디렉션"
+
+#: views/edit-album.php:315
+msgid "Delete Video"
+msgstr "을 삭제 동영상"
+
+#: views/edit-album.php:599
+msgid "Are you sure you want to delete this Image?"
+msgstr "당신은 당신이이 이미지를 삭제 하시겠습니까?"
+
+#: views/gallery-bank-system-report.php:32
+msgid "Get System Report"
+msgstr "시스템 보고서 얻으십시오"
+
+#: views/gallery-bank-system-report.php:36
+msgid "Close System Report"
+msgstr "닫기 시스템 보고서"
+
+#: views/gallery-bank-system-report.php:132
+msgid "Default"
+msgstr "디폴트 값"
+
+#: views/header.php:18
+msgid "Get Started"
+msgstr "얻을 시작했다"
+
+#: views/header.php:21
+msgid "Watch Gallery Video!"
+msgstr "손목 시계 갤러리 비디오 !"
+
+#: views/header.php:25
+msgid "read documentation here"
+msgstr "읽기 문서조사 여기에"
+
+#: views/header.php:30
+msgid "Go Premium"
+msgstr "가기 프리미엄"
+
+#: views/header.php:34
+msgid "Features"
+msgstr "특징"
+
+#: views/header.php:39
+msgid "Online Demos"
+msgstr "온라인 데모"
+
+#: views/header.php:44
+msgid "Premium Pricing Plans"
+msgstr "프리미엄 가격 설정 계획"
+
+#: views/header.php:51
+msgid "Knowledge Base"
+msgstr "기술 자료의"
+
+#: views/header.php:56
+msgid "Support Forum"
+msgstr "지원 포럼"
+
+#: views/header.php:61
+msgid "FAQ's"
+msgstr "자주 묻는 질문"
+
+#: views/header.php:66
+msgid "Detailed Features"
+msgstr "상세한 특징"
+
+#: views/header.php:72
+msgid "More Actions"
+msgstr "작업 더보기"
+
+#: views/header.php:76
+msgid "Plugin Customization"
+msgstr "플러그인 커스터마이즈"
+
+#: views/purchase_pro_version.php:43
+msgid "WP Gallery Bank is an one time Investment. Its Worth it!"
+msgstr "WP Gallery Bank 하나 타임 투자입니다. 그것이 그것의 가치!"
+
+#: views/settings.php:280
+msgid "Update Settings"
+msgstr "업데이트 설정"
+
+#: views/settings.php:287
+msgid "Thumbnail Settings"
+msgstr "섬네일 설정을"
+
+#: views/settings.php:299
+msgid "Thumbnail Size"
+msgstr "엄지 손톱 크기"
+
+#: views/settings.php:306 views/settings.php:314 views/settings.php:522
+#: views/settings.php:530
+msgid "Original"
+msgstr "독창적 인"
+
+#: views/settings.php:309 views/settings.php:317 views/settings.php:525
+#: views/settings.php:533
+msgid "Custom"
+msgstr "사용자 지정"
+
+#: views/settings.php:326 views/settings.php:542
+msgid "Width"
+msgstr "폭"
+
+#: views/settings.php:336 views/settings.php:552
+msgid "Height"
+msgstr "신장"
+
+#: views/settings.php:348 views/settings.php:563 views/settings.php:985
+msgid "Opacity"
+msgstr "불투명"
+
+#: views/settings.php:360 views/settings.php:575 views/settings.php:996
+msgid "Border Size"
+msgstr "국경 크기"
+
+#: views/settings.php:371 views/settings.php:587 views/settings.php:1007
+msgid "Border Radius"
+msgstr "국경 반경"
+
+#: views/settings.php:382 views/settings.php:599 views/settings.php:1032
+msgid "Border Color"
+msgstr "테두리 색상"
+
+#: views/settings.php:396
+msgid "Margin Between Images"
+msgstr "난외-이미지 사이의 "
+
+#: views/settings.php:406 views/settings.php:633 views/settings.php:1018
+msgid "Text Color"
+msgstr "텍스트 색상"
+
+#: views/settings.php:420 views/settings.php:650 views/settings.php:1092
+msgid "Text-Align"
+msgstr "원본-에 맞 춥니 다"
+
+#: views/settings.php:434 views/settings.php:664 views/settings.php:801
+#: views/settings.php:1106 views/settings.php:1314
+msgid "Font-Family"
+msgstr "글꼴 가족"
+
+#: views/settings.php:457 views/settings.php:687 views/settings.php:1129
+msgid "Heading Font-Size"
+msgstr "향하고 글꼴 크기"
+
+#: views/settings.php:474 views/settings.php:704 views/settings.php:1146
+msgid "Text Font-Size"
+msgstr "텍스트 글꼴 크기"
+
+#: views/settings.php:491 views/settings.php:721
+msgid "Description Length"
+msgstr "설명을 길이"
+
+#: views/settings.php:503
+msgid "Album Cover Settings"
+msgstr "앨범 커버-설정-"
+
+#: views/settings.php:515
+msgid "Cover Size"
+msgstr "커버 사이즈"
+
+#: views/settings.php:613
+msgid "Margin Between Albums"
+msgstr "이익률 사이에 이미지 앨범"
+
+#: views/settings.php:623
+msgid "Text for Album Click"
+msgstr "원본-용-앨범-클릭"
+
+#: views/settings.php:733
+msgid "Filter Settings"
+msgstr "필터 설정을"
+
+#: views/settings.php:745
+msgid "Filters"
+msgstr "일남"
+
+#: views/settings.php:752 views/settings.php:760 views/settings.php:1170
+#: views/settings.php:1178 views/settings.php:1196 views/settings.php:1203
+#: views/settings.php:1221 views/settings.php:1228 views/settings.php:1245
+#: views/settings.php:1252 views/settings.php:1360 views/settings.php:1367
+#: views/settings.php:1400 views/settings.php:1408 views/settings.php:1451
+#: views/settings.php:1459
+msgid "Enable"
+msgstr "을 허용"
+
+#: views/settings.php:755 views/settings.php:763 views/settings.php:1173
+#: views/settings.php:1181 views/settings.php:1198 views/settings.php:1206
+#: views/settings.php:1223 views/settings.php:1230 views/settings.php:1247
+#: views/settings.php:1254 views/settings.php:1362 views/settings.php:1370
+#: views/settings.php:1403 views/settings.php:1411 views/settings.php:1454
+#: views/settings.php:1462
+msgid "Disable"
+msgstr "무능하게 "
+
+#: views/settings.php:773
+msgid "Filter Color"
+msgstr "필터- 색상"
+
+#: views/settings.php:787
+msgid "Filter Text Color"
+msgstr "필터- 텍스트 색상"
+
+#: views/settings.php:824 views/settings.php:1337
+msgid "Font-Size"
+msgstr "글꼴 크기"
+
+#: views/settings.php:844
+msgid "Roles & Capabilities"
+msgstr "역할 과 능력"
+
+#: views/settings.php:856
+msgid "Privileges for Admin"
+msgstr "사용 권한-에 대한- 관리자"
+
+#: views/settings.php:860 views/settings.php:876 views/settings.php:892
+#: views/settings.php:909 views/settings.php:927
+msgid "Full Control"
+msgstr "전체 제어"
+
+#: views/settings.php:863 views/settings.php:879 views/settings.php:895
+#: views/settings.php:912 views/settings.php:930
+msgid "Read"
+msgstr "읽기"
+
+#: views/settings.php:866 views/settings.php:882 views/settings.php:898
+#: views/settings.php:915 views/settings.php:933
+msgid "Write"
+msgstr "에 작성해"
+
+#: views/settings.php:872
+msgid "Privileges for Editor"
+msgstr "사용 권한-에 대한-편집기"
+
+#: views/settings.php:888
+msgid "Privileges for Author"
+msgstr "사용 권한-에 대한-저작권자"
+
+#: views/settings.php:904
+msgid "Privileges for Contributor"
+msgstr "사용 권한-에 대한-리뷰어"
+
+#: views/settings.php:921
+msgid "Privileges for Subscriber"
+msgstr "사용 권한-에 대한-가입자"
+
+#: views/settings.php:943
+msgid "Lightbox Settings"
+msgstr "라이트-박스 설정을"
+
+#: views/settings.php:955
+msgid "Lightbox Type"
+msgstr "라이트 박스 타입"
+
+#: views/settings.php:1046
+msgid "Inline Background"
+msgstr "인라인으로- 배경"
+
+#: views/settings.php:1060
+msgid "Overlay Background"
+msgstr "오버레이 배경"
+
+#: views/settings.php:1074
+msgid "Fade In Time"
+msgstr "페이드 인 시간"
+
+#: views/settings.php:1083
+msgid "Fade Out Time"
+msgstr "시간페이드 아웃"
+
+#: views/settings.php:1163
+msgid "Facebook Comments"
+msgstr "페이스 북의 댓글"
+
+#: views/settings.php:1190
+msgid "Social Sharing"
+msgstr "사회적 나눔"
+
+#: views/settings.php:1215
+msgid "Image Title"
+msgstr "이미지-타이틀"
+
+#: views/settings.php:1239
+msgid "Image Description"
+msgstr "이미지 설명"
+
+#: views/settings.php:1265
+msgid "Front - End Layout Settings"
+msgstr "프론트 - 엔드 레이아웃 설정을"
+
+#: views/settings.php:1277
+msgid "Text for Back Button"
+msgstr "뒤로 단추용 텍스트를"
+
+#: views/settings.php:1287
+msgid "Button Color"
+msgstr "단추 색"
+
+#: views/settings.php:1300
+msgid "Button Text Color"
+msgstr "단추 텍스트 색상"
+
+#: views/settings.php:1354
+msgid "Album Seperator"
+msgstr "앨범 분리기"
+
+#: views/settings.php:1381
+msgid "Pagination Settings for Images"
+msgstr " 페이지 매김 설정을- 용 이미지를"
+
+#: views/settings.php:1393
+msgid "Paging"
+msgstr "페이징"
+
+#: views/settings.php:1420
+msgid "No. of Images Per Page "
+msgstr "페이지 당 이미지 번호"
+
+#: views/settings.php:1432
+msgid "Slide Show Settings"
+msgstr "슬라이드 쇼 설정을"
+
+#: views/settings.php:1444
+msgid "Auto Play"
+msgstr "자동 재생"
+
+#: views/settings.php:1471
+msgid "Interval"
+msgstr "간격"
+
+#: views/settings.php:1484
+msgid "Language Direction Settings"
+msgstr "언어 방향-설정"
+
+#: views/settings.php:1496
+msgid "Language Direction"
+msgstr "언어 방향"
+
+#: views/settings.php:1653
+msgid "This Feature is only available in Paid Premium Version!"
+msgstr "이 기능은 유료 프리미엄 버전에서만 사용할 수 있습니다!"
+
+#~ msgid "Purchase Pro Version"
+#~ msgstr "프로 버전 구입"
+
+#~ msgid "Save and Submit Changes"
+#~ msgstr "저장 및 제출할 - 변경"
+
+#~ msgid "Album Published. Kindly wait for the redirect to happen."
+#~ msgstr " 간행앨범.  리디렉션친절하게 기다려-에게 일어날"
+
+#~ msgid ""
+#~ "You will be only allowed to add 2 galleries. Kindly purchase Premium "
+#~ "Version for full access!"
+#~ msgstr ""
+#~ "당신은 단지 2 갤러리를 추가 할 수됩니다. 친절하게 가득 차있는 접근위한 프"
+#~ "리미엄 버전 구입!"

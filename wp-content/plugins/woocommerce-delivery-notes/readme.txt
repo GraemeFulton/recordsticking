@@ -1,255 +1,399 @@
-=== WooCommerce Print Invoices & Delivery Notes ===
-Contributors: chabis, daveshine
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=wartamau%40gmail%2ecom&lc=US&item_name=piffpaffpuff&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
-Tags: delivery notes, delivery, shipping, print, order, invoice, invoices, woocommerce, woothemes, shop, shop manager, deckerweb
-Requires at least: 3.5 and WooCommerce 2.0
-Tested up to: 3.5.1 and WooCommerce 2.0.8
+=== WooCommerce Print Invoice & Delivery Note ===
+
+Contributors: piffpaffpuff
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=K2JKYEASQBBSQ&lc=US&item_name=WooCommerce%20Print%20Invoice%20%26%20Delivery%20Note&item_number=WCDN&amount=20%2e00&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest
+Tags: delivery note, packing slip, invoice, delivery, shipping, print, order, woocommerce, woothemes, shop
+Requires at least: 3.8
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv3 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
-Print order invoices & delivery notes for WooCommerce shop. You can add company/shop info as well as personal notes & policies to print pages.
+Print invoices and delivery notes for WooCommerce orders.  
 
 == Description ==
 
-With this plugin you can print out **simple invoices and delivery notes** for the orders **via the WooCommerce Shop Plugin**. You can edit the Company/Shop name, Company/Shop postal address and also add personal notes, conditions/policies (like a refund policy) and a footer imprint/branding.
+You can print out invoices and delivery notes for the [WooCommerce](http://wordpress.org/plugins/woocommerce/) orders. You can edit the Company/Shop name, Company/Shop postal address and also add personal notes, conditions/policies (like a refund policy) and a footer imprint.
 
-The plugin adds a new side panel on the order page to allow shop administrators to print out delivery notes. This is useful for a lot of shops that sell goods which need delivery notes for shipping or with added refund policies etc. In some countries (e.g. in the European Union) such refund policies are required so this plugin could help to combine this with the order info for the customer.
+The plugin adds a new side panel on the order page to allow shop administrators to print out the invoice or delivery note. Registered customers can also can also print their order with a button that is added to the order screen.
 
 = Features =
-* The plugin comes with an attached template for the invoice and delivery note (printing) page - you could also copy this to your theme and customize it to your needs! The plugin will recognize the new place. (See under [FAQ here](http://wordpress.org/extend/plugins/woocommerce-delivery-notes/faq/))
-* All setting fields on the plugin's settings pages are optional - you can leave them empty to not use them at all or only apply what you need.
-* If the company/shop name field is left empty then the regular website/blog title is used (defined via regular WordPress options)
-* If there are added "Customer Notes" (regular WooCommerce feature) for an order these will automatically displayed at the bottom of the delivery note.
-* Custom order numbering via the free [WooCommerce Sequential Order Numbers](http://wordpress.org/extend/plugins/woocommerce-sequential-order-numbers/) plugin.
-* Included help tab system.
-* Localized in English, German, Dutch, Swedish, Spanish, French, Italian, Polish, Russian, Turkish, Slovakian, Finnish and Portuguese (BR). (thanks to all translators, submit your translation) - some of them only partial yet (we'd love to see you [complete them](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/woocommerce-delivery-notes) :).
 
-Credit where credit is due: This plugin here is inspired and based on the work of Steve Clark, Trigvvy Gunderson and the awesome "Jigoshop Delivery Notes" plugin! See below how you can contribute to the further development of both:
+* Print invoices and delivery notes via the side panel on the "Order Edit" page
+* Quickly print invoices and delivery notes on the "Orders" page
+* Bulk print invoices and delivery notes
+* Customers can print an invoice on the "My Account" and "Order Details" page
+* Add a company address, a logo and many other information to the invoice and delivery note
+* Intelligent invoice and delivery note template system with hooks and functions.php support  
+* Completely customize the invoice and delivery note template
+* Simple invoice numbering
+* Supports sequential order numbers
 
-= Translations =
-* Translate and submit files with our [GlotPress](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/woocommerce-delivery-notes) tool. Read to the [translation](http://wordpress.org/extend/plugins/woocommerce-delivery-notes/other_notes/) section to learn more.
+= Support =
 
-= Feedback =
-* We are open for your suggestions and feedback! Use the [plugin's forum](http://wordpress.org/tags/woocommerce-delivery-notes?forum_id=10) or [report & contribute on GitHub](https://github.com/piffpaffpuff/woocommerce-delivery-notes/issues)
+Support can take place in the [public support forums](http://wordpress.org/support/plugin/woocommerce-delivery-notes), where the community can help each other out.
 
-= More =
-* [Other plugins by main plugin author](http://github.com/piffpaffpuff)
+= Contributing =
+
+If you have a patch, or stumbled upon an issue with the source code that isn't a [WooCommerce issue](https://github.com/woothemes/woocommerce/issues?labels=Bug&milestone=22&state=open), you can contribute this back [on GitHub](https://github.com/piffpaffpuff/woocommerce-delivery-notes).
+
+= Translating =
+
+When your language is missing you can contribute a translation to the [GitHub repository](https://github.com/piffpaffpuff/woocommerce-delivery-notes#translating).
 
 == Installation ==
 
-1. Upload the entire `woocommerce-delivery-notes` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Look under the regular WooCommerce settings menu: "WooCommerce > Settings > Tab "Print" and adjust them to your needs
-4. On single order pages you'll find a new meta box on the right side where it says "Order Print" you can open the invoice or delivery note for the actual order and print it out directly
-5. Go and manage your orders - good luck with sales :)
+= Minimum Requirements =
+
+* WooCommerce 2.2 or later
+* WordPress 3.8 or later
+
+= Automatic installation =
+
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To do an automatic install of WooCommerce, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+
+In the search field type “WooCommerce Print Invoice” and click Search Plugins. Once you’ve found the plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking “Install Now”.
+
+= Manual installation =
+
+The manual installation method involves downloading the plugin and uploading it to your webserver via your favourite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
 == Frequently Asked Questions ==
 
-= Why is my company logo not displayed at the size I've uploaded it? =
-Printed paper needs a higher pixel density for images than the screen. To make your printed logo look nice and crisp it will be resized via CSS to a fourth of the uploaded pixel size. This means: An image of 400p x 400px will be displayed as a 100px x 100px image but will be printed with the original amount of pixels. With the resizing, 288 pixels of the original image width correspond to about 1 printed inch.
+= How to prevent that the Website URL and page numbers are printed? =
 
-= How can I change the address format of the recipient? =
-WooCommerce includes address formats for many different countries. But maybe your country format isn't included. For such cases you can define your own format with a filter in your `functions.php` if you know your country code (ie `LI`).
+You can find an option in the print window of your browser to hide those. This is a browser specific option that can't be controlled by the plugin. Please read the browser help for more information.
+
+= Why are my bulk printed orders not splited to separate pages? =
+
+Your browser is to old to create the page breaks correctly. Try to update it to the latest version or use another browser.
+
+= Even though the shipping and billing address is the same, both are still shown, why? =
+
+It depends on your WooCommerce settings. Addresses are displayed the same way as on the WooCommerce account page. Only one address is printed in case you disabled alternative shipping addresses or the whole shipping. In all other cases both addresses are shown.
+
+= It prints the 404 page instead of the order, how to correct that? =
+
+This is most probably due to the permalink settings. Go either to the WordPress Permalink or the WooCommerce Print Settings and save them again.
+
+If that didn't help, go to the WooCommerce 'Accounts' settings tab and make sure that for 'My Account Page' a page is selected.  
+
+= How do I quickly change the font of the invoice and delivery note? =
+
+You can change the font with CSS. Use the `wcdn_head` hook and then write your own CSS code. It's best to place the code in the `functions.php` file of your theme. 
+
+An example that changes the font and makes the addresses very large. Paste the code in the `functions.php` file of your theme:
 
 `
-function custom_localisation_address_formats($formats) {
-	$formats['LI'] = "{company}\n{name}\n{address_1}\n{address_2}\n{postcode} {city}\n{country}";
-	return $formats;
+function my_serif_font_and_large_address() {
+	?>
+		<style>
+			#page {
+				font-size: 1em;
+				font-family: Georgia, serif;
+			}
+			
+			.order-addresses address {
+				font-size: 2.5em;
+				line-height: 125%;
+			}
+		</style>
+	<?php
 }
-add_filter('woocommerce_localisation_address_formats', 'custom_localisation_address_formats');
+add_action( 'wcdn_head', 'my_serif_font_and_large_address', 20 );
 `
 
-= How can I use a custom CSS file for the printing page without copying and editing the template files? =
-Copy the `style.css` (and no other file) from the `/wp-content/plugins/woocommerce-delivery-notes/templates/print` folder and paste it inside your `/wp-content/themes/your-theme-name/woocommerce/print` folder (if not there just create it). You can modify CSS to fit your own needs. 
+= Can I hide the prices on the delivery note? =
 
-*Note:* There is automatically a class assigned to the html tag that helps you to target the template-type in your CSS.
+Sure, the easiest way is to hide them with some CSS that is hooked in with `wcdn_head`.
 
-= How can I use a custom template for the printing page? =
-If you want to use your own template then all you need to do is copy the the files you want to edit from `/wp-content/plugins/woocommerce-delivery-notes/templates/print` folder and paste them inside your `/wp-content/themes/your-theme-name/woocommerce/print` folder (if not there just create it). The folder from the plugin comes with the default templates and the basic CSS files. You can modifiy those to fit your own needs.
+An example that hides the whole price column and the totals. Paste the code in the `functions.php` file of your theme:
 
-= What template functions can I use? =
-All WordPress and all functions from other plugins and themes can be used. There are also many many specific template functions. Open the `/wp-content/plugins/woocommerce-delivery-notes/woocommerce-delivery-notes.php` file to see all of them.
+`
+function my_price_free_delivery_note() {
+	?>
+		<style>
+			.delivery-note .head-item-price,
+			.delivery-note .head-price, 
+			.delivery-note .product-item-price,
+			.delivery-note .product-price,
+			.delivery-note .order-items tfoot {
+				display: none;
+			}
+			.delivery-note .head-name,
+			.delivery-note .product-name {
+				width: 50%;
+			}
+			.delivery-note .head-quantity,
+			.delivery-note .product-quantity {
+				width: 50%;
+			}
+			.delivery-note .order-items tbody tr:last-child {
+				border-bottom: 0.24em solid black;
+			}
+		</style>
+	<?php
+}
+add_action( 'wcdn_head', 'my_price_free_delivery_note', 20 );
+`
 
-= How do I add more info or custom fields to the templates? =
-Create a custom template (see questions above). Then edit the file to your needs. You can use all functions that are available in WordPress or any activated plugin or theme. 
+= I use the receipt in my POS, can I style it? =
 
-Example: Show an order custom field that was added by another plugin (e.g. `'_my_custom_field'`)
+Sure, you can style with CSS, very much the same way as the delivery note or invoice. 
 
-`echo wcdn_get_order_custom_field('_my_custom_field');` 
+An example that hides the addresses. Paste the code in the `functions.php` file of your theme:
 
-= What will actually get printed out? =
-The page will be printed as you see it in your browser when you enabled the preview. 
+`
+function my_address_free_receipt() {
+	?>
+		<style>
+			.content {
+				padding: 4% 6%;
+			}
+			.company-address,
+			.order-addresses {
+				display: none;
+			}
+			.order-info li span {
+				display: inline-block;
+				float: right;
+			}
+			.order-thanks {
+				margin-left: inherit;
+			}
+		</style>
+	<?php
+}
+add_action( 'wcdn_head', 'my_address_free_receipt', 20 );
+`
 
-Beyond the styling of the template be aware of any special features of the used browser. They may not print websites properly or add a pagination or website url. Use a "Print Preview" feature of your browser which all current versions of Firefox, Chrome, Safari and Opera support.
+= Is it possible to remove a field from the order info section? =
 
-= How can I translate the plugin with my own wording? =
-For custom and update-secure language files please upload them to `/wp-content/languages/woocommerce-delivery-notes/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `woocommerce-delivery-notes-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes"). And finally contact one of the developers if you would like to add your translation to the standard distribution. 
+Yes, use the `wcdn_order_info_fields` filter hook. It returns all the fields as array. Unset or rearrange the values as you like.
+
+An example that removes the 'Payment Method' field. Paste the code in the `functions.php` file of your theme:
+
+`
+function my_removed_payment_method( $fields ) {
+	unset( $fields['payment_method'] );
+	return $fields;
+}
+add_filter( 'wcdn_order_info_fields', 'my_removed_payment_method' );
+`
+
+=  How can I add some more fields to the order info section? =
+
+Use the `wcdn_order_info_fields` filter hook. It returns all the fields as array. Read the WooCommerce documentation to learn how you get custom checkout and order fields. Tip: To get custom meta field values you will most probably need the `get_post_meta( $order->id, 'your_meta_field_name', true);` function and of course the `your_meta_field_name`. 
+
+An example that adds a 'VAT' and 'Customer Number' field to the end of the list. Paste the code in the `functions.php` file of your theme:
+
+`
+function my_custom_order_fields( $fields, $order ) {
+	$new_fields = array();
+		
+	if( get_post_meta( $order->id, 'your_meta_field_name', true ) ) {
+		$new_fields['your_meta_field_name'] = array( 
+			'label' => 'VAT',
+			'value' => get_post_meta( $order->id, 'your_meta_field_name', true )
+		);
+	}
+	
+	if( get_post_meta( $order->id, 'your_meta_field_name', true ) ) {
+		$new_fields['your_meta_field_name'] = array( 
+			'label' => 'Customer Number',
+			'value' => get_post_meta( $order->id, 'your_meta_field_name', true )
+		);
+	}
+	
+	return array_merge( $fields, $new_fields );
+}
+add_filter( 'wcdn_order_info_fields', 'my_custom_order_fields', 10, 2 );
+`
+
+=  What about the product image, can I add it to the invoice and delivery note? =
+
+Yes, use the `wcdn_order_item_before` action hook. It allows you to add html content before the item name.
+
+An example that adds a 40px large product image. Paste the code in the `functions.php` file of your theme:
+
+`
+function my_product_image( $product ) {	
+	if( isset( $product->id ) && has_post_thumbnail( $product->id ) ) {
+		echo get_the_post_thumbnail( $product->id, array( 40, 40 ) );
+	}
+}
+add_action( 'wcdn_order_item_before', 'my_product_image' );
+`
+
+= How can I differentiate between invoice and delivery note through CSS? =
+
+The `body` tag contains a class that specifies the template type. The class can be `invoice` or `delivery-note`. You can prefix your style rules to only target one template. For example you could rise the font size for the addresses on the right side:
+
+`
+.invoice .billing-address {
+	font-size: 2em;
+}
+
+.delivery-note .shipping-address {
+	font-size: 2em;
+}
+`
+
+= How do I customize the look of the invoice and delivery note? =
+
+You can use the techniques from the questions above. Or you consider the `wcdn_head` hook to enqueue your own stylesheet. Or for full control, copy the file `style.css` from `woocommerce-delivery-notes/templates/print-order` to `yourtheme/woocommerce/print-order` and start editing it. 
+
+Note: Create the `woocommerce` and `print-order` folders if they do not exist. This way your changes won't be overridden on plugin updates.
+
+= I would like to move the logo to the bottom, put the products between the shipping and billing address and rotate it by 90 degrees, how can I do that? =
+
+Well, first try it with CSS and some filter/action hooks, maybe the questions above can help you. If this isn't enough, you are free to edit the HTML and CSS of the template. Consider this solution only, if you really know some HTML, CSS and PHP! Most probably you want to edit the `print-content.php` and `style.css`. Copy the files from `woocommerce-delivery-notes/templates/print-order` to `yourtheme/woocommerce/print-order` and start editing them. 
+
+Note: Create the `woocommerce` and `print-order` folders if they do not exists. This way your changes won't be overridden on plugin updates.
+
+= Is there a list of all action and filter hooks? =
+
+Unfortunately there isn't yet. But you can look directly at the template files to see what is available. 
+
+= Which template functions are available? =
+
+You can use the functions from WordPress, WooCommerce and every installed plugin or activated theme. You can find all plugin specific functions in the `wcdn-template-functions.php` file. In addition the `$order`variable in the template is just a normal `WC_Order` instance. 
+
+= Can I download the order as PDF instead of printing it out? =
+
+No, this isn't possible. Look for another plugin that can do this.
+
+= I need some more content on the order, how can I add it? =
+
+The plugin uses the exact same content as WooCommerce. If the content isn't available in WooCommerce, then it will neither be in the delivery note and invoice. In case you have some special needs, you first have to enhance WooCommerce to solve your issue. Afterwards you can integrate the solution into the invoice and delivery note template via hooks.
+
+= How can I translate the plugin? =
+
+Upload your language file to `/wp-content/languages/plugins/` (create this folder if it doesn't exist). WordPress will then load the language. Make sure you use the same locale as in your configuration and the correct plugin locale i.e. `woocommerce-delivery-notes-it_IT.mo/.po`. 
+
+Please [contribute your translation](https://github.com/piffpaffpuff/woocommerce-delivery-notes#translating) to include it in the distribution.
 
 == Screenshots ==
 
-1. Plugin's settings page where you can set up to five fields for the delivery note. [Click for larger image view](http://www.wordpress.org/extend/plugins/woocommerce-delivery-notes/screenshot-1.png)
-2. Single Order Edit page with the meta box and the print buttons.
-3. Invoice printing page with default template - and the five custom sections. [Click for larger image view](http://www.wordpress.org/extend/plugins/woocommerce-delivery-notes/screenshot-3.png)
-4. Delivery Note printing page with default template - and the five custom sections. [Click for larger image view](http://www.wordpress.org/extend/plugins/woocommerce-delivery-notes/screenshot-4.png)
-5. Help tabs on the plugin's settings page with some info and important plugin links. [Click for larger image view](http://www.wordpress.org/extend/plugins/woocommerce-delivery-notes/screenshot-5.png)
+1. The clean invoice print view. 
+2. Print panel.
+3. Quick print actions.
+4. Bulk print orders.
+5. Enter company and contact information.
+6. Customers can also print the order.
 
 == Changelog ==
 
-= 2.0.2 =
-* FIX: The print data is now generated with the order metadata. This solves a problem where the items weren't displayed when the product was deleted. (thanks MDesigner0)
-* UPDATE: Added some missing translations to the pot.
-* NEW: Added the telephone and email to the template.
-* DELETE: Removed the possibility to show the download links because the urls are always so long that most probably no one will ever use them.
+= 4.0.2 =
 
-= 2.0.1 =
-* FIX: Updated print functionality for better cross-browser support.
+* Tweak - Second attempt for better spacing between price columns
 
-= 2.0 =
-* FIX: Print privileges for WooCommerce 2.0.
-* FIX: The Hi-DPI resizing of the company logo is working better now.
-* FIX: Plugin activates correctly on a multisite installation.
-* UPDATE: More stable cross-browser print support.
-* UPDATE: Printing without thickbox.
-* UPDATE: Removed the thickbox preview
-* NEW: Template preview links in the settings page (only visible when there is at least one order).
-* NEW: Many template functions can now be filtered with `add_filter`.
-* NEW: In the template the payment method is now displayed via the `wcdn_payment_method` function.
-* NEW: In the template the today's date is now used as default instead of the order date.
+= 4.0.1 =
 
-= 1.4.6 =
-* FIX: Child theme template files are better loaded.
-* UPDATE: Translations are better loaded.
+* Tweak - Better spacing between price columns
 
-= 1.4.5 =
-* UPDATE: Better order number support for the sequential order numbers plugin. (thanks FoxRunSoftware)
-* NEW: Danish localization. (thanks brandt)
-* FIX: Logo uploader "Insert into Post" button works again.
+= 4.0 =
 
-= 1.4.4 =
-* FIX: Product variations are returned instead of echoed.
-* UPDATE: Better product meta data display.
+* The print page now also includes the item price
+* Customize titles with your own translation file (woocommerce-delivery-notes-xx_XX.mo). Place it in /wp-content/languages/plugins to override the plugin language. 
 
-= 1.4.3 =
-* FIX: Logo uploader tabs.
+= 3.4.2 =
 
-= 1.4.2 =
-* FIX: Display Product variations.
-* NEW: Icon buttons for the order actions.
+* Remove some left over developer comments from the print page
 
-= 1.4.1 =
-* FIX: Logo uploader button.
-* UPDATE: Indicate when the print page is loading.
+= 3.4.1 =
 
-= 1.4 =
-* ATTENTION: For custom template creators: This update breaks your custom template because of some new features. Please update your template PHP code and CSS.
-* NEW: Print buttons on the orders list page.
-* NEW: Print preview window opens in lightbox.
-* NEW: Print immediately, without preview window.
-* FIX: Order totals are now properly displayed again.
-* FIX: Close unclosed `<tr>` tag in the template.
+* Fix an issue where a blank page was printed in WooCommerce 2.1
 
-= 1.2.4 =
-* ATTENTION: This update breaks your custom template because many functions were renamed or removed. Please update your custom template.
-* NEW: The custom `style.css` is now loaded even when there is no `print.php` in your theme folder `yourthemename/woocommerce/delivery-notes`. Like this the look of the default template can be changed without editing the `print.php` file.
-* NEW: The company logo isn't resized anymore. Instead it is loaded with the original pixel dimensions but is then resized via CSS to a fourth. Make sure that your original image file has the desired pixel dimensions!
-* NEW: Removed the custom/sequential order number settings. They are now fully handled by the additional plugin.
-* UPDATE: Renamed or removed many template functions. Please update your custom template.
-* UPDATE: The print navigation is now separated from the template file. Please update your custom template.
+= 3.4 =
 
-= 1.2.3 =
-* UPDATE: Order totals are now displayed the same way as when the customer reviews the order online (Update custom template to use the feature).
-* UPDATE: Variations and Attributes are now properly displayed (Update custom template to use the feature).
+**Note: The template was modified. Please check your print-content.php if you copied it to your theme directory.**
 
-= 1.2.2 =
-* FIX: The media management button "Insert into Post" is now visible again. It was hidden by a the css.
+* Improved WooCommerce 2.2 compatibility
+* Fix an issue were shipping and billing addresses did not respect the WooCommerce settings
+* Better way to reset the invoice number counter
 
-= 1.2.1 =
-* NEW: Company logo upload.
-* NEW: Order numbering supports the sequential order numbers plugin. The offset field was removed because the plugin is much better. (thanks FoxRunSoftware, welovewordpress).
-* FIX: Print page doesn't block the user when get vars aren't set.
-* UPDATE: Template shows customer phone number (thanks welovewordpress).
-* UPDATE: Template item list contains more data fields (thanks welovewordpress).
+= 3.3.1 =
 
-= 1.2 =
-* IMPORTANT CHANGE: New main development and authorship now: [WordPress.org user "chabis"](http://profiles.wordpress.org/chabis/) - with daveshine (David Decker) remaining as a co-author.
-* *New features:*
- * NEW: Basic invoice template support.
- * NEW: Custom order number.
- * NEW: New cleaner looking print template.
-* CODE: Restructured classes - plugin now completely relies on classes!
-* CODE: General code cleanup and numerous improvements.
-* UPDATE: Settings are now part of the "WooCommerce" settings, now see: WooCommerce > Settings > Tab "Print"
-* UPDATE - IMPORTANT CHANGE: Template folder renaming -- custom templates must be renamed in order to work! -- See [FAQ section here](http://wordpress.org/extend/plugins/woocommerce-delivery-notes/faq/) for more info on that...
-* UPDATE: Updated all existing screenshots and added two new ones.
-* UPDATE: Updated readme.txt here with changed documentation and all other important new stuff, regarding authorship, plugin links etc.
-* NEW: Added new partial translations for: Dutch, French, Spanish - all user-submitted! Big thanks to Ramon, Olivier and @JAVidania
-* UPDATE: Updated German translations and also the .pot file for all translators!
-* UPDATE: Extended GPL License info in readme.txt as well as main plugin file.
-* NEW: Added banner image on WordPress.org for better plugin branding :)
-* NEW: Easy plugin translation platform with GlotPress tool: [Translate "WooCommerce Print Invoices & Delivery Notes"...](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/woocommerce-delivery-notes)
+* Small code improvements
 
-= 1.1 =
-* *Maintenance release*
-* UPDATE: Changed product price calculation due to changes in WooCommerce itself -- this led to **new required versions** for this plugin: **at least WordPress 3.3 and WooCommerce 1.4** or higher (Note: If you still have WooCommerc 1.3.x running then use version 1.0 of the Delivery Notes plugin!)
-* UPDATE: Custom fields on settings page now accept proper `img` tags, so you can add logo images or such via HTML IMG tag (for example: `<img src="your-image-url" width="100" height="100" alt="Logo" title="My Shop" />`)
-* UPDATE: Corrected readme.txt file
-* NEW: Added Swedish translation - Thanx to Christopher Anderton
-* UPDATE: Updated German translations and also the .pot file for all translators!
+= 3.3 =
 
-= 1.0 =
-* Initial release
-* Forked and extended from original plugin for Jigoshop ("Jigoshop Delivery Notes" at GitHub)
+* WordPress 4.0 and WooCommerce 2.2 compatibility
+* Fix an issue where the print buttons were hidden after the update
+
+= 3.2.3 =
+
+* WordPress 4.0 and WooCommerce 2.2 compatibility
+* Template: Improved the CSS to generate less blank pages
+* Fixed the settings link on the Plugins page
+
+= 3.2.2 =
+
+* Some language upadates. Old outdated languages were removed. Please [contribute your language](https://github.com/piffpaffpuff/woocommerce-delivery-notes#translating)!
+* Fix a print issue with not completed orders.
+* Tweaked JavaScript for the theme print button to gracefully handle non-modern browsers.
+
+= 3.2.1 =
+
+* New template function for the invoice date 
+* Fix invoice number display logic 
+* Fix slashes in the options fields
+
+= 3.2 =
+
+* Improved theme print button: Print the invoice only for completed orders and a receipt for all other order states. This can be changed via 'wcdn_theme_print_button_template_type' filter hook.
+* Fix the print button on the "Thank You" page for guest checkouts
+* Added CSS classes to the admin side panel
+
+= 3.1.1 =
+
+* Fix the hidden loading indicator on order edit screen
+* Other small visual optimizations
+* Later plugin load hook for better compatibility
+
+= 3.1 =
+
+**Note: Template changes had to be made. Please control your template after the update in case you applied some custom styling.**
+
+* By popular demand the 'Quantity' column is back in the template
+* Basic invoice numbering
+
+= 3.0.6 =
+
+* Fixed the known issue where the print button stopped working becuse of SSL
+* Fixed an issue where the print page was redirected to the account page 
+
+= 3.0.5 =
+
+**Known issue: Printing won't work when your account uses SSL and the rest of the page doesn't. The issue will be fixed in a future version.**
+
+* Added SKU to the template
+* Modified the alignment of product attributes in the template
+* Print buttons in the theme will print the invoice (can be changed with hook) 
+
+= 3.0.4 =
+
+* Save the endpoint at activation to not print a 404 page. (Note: Try to resave the print settings if the issue persists after the update.)
+
+= 3.0.3 =
+
+**Attention: This update works only with WooCommerce 2.1 (or later) and Wordpress 3.8 (or later). Install it only if your system meets the requirements.**
+
+* Supports only WooCommerce 2.1 (or later)
+* Bulk print actions
+* Print buttons in the front-end
+* Redesigned template look
+* New template structure and action hooks
 
 == Upgrade Notice ==
 
-= 1.5 =
-Update your custom style.css. Remove any width and height CSS properties that were assigned to the img tag.
+= 3.0.6 =
 
-= 1.2.4 =
-Many template functions were updated. Please update your custom template too or everything breaks!
+Thanks everybody to help fixing the SSL issue. Please report to the support forums if you still have SSL problems after the update.
 
-= 1.2.1 =
-The sequential order numbers plugin requires at least WooCommerce 1.5.3.
+= 3.0.3 =
 
-= 1.2 =
-Major additions & improvements: Now with basic invoice support. Code cleanup & improvements. Added new partial translations, updated German translations plus .pot file for translators. Also, new plugin authorship!
-
-= 1.1 =
-Several changes: Changed price calculation due to WC 1.4+ changes. Added img tag support for fields on settings page. Corrected readme.txt file, added Swedish translations, also updated .pot file together with German translations.
-
-= 1.0 =
-Just released into the wild.
-
-== Plugin Links ==
-* [Translations (GlotPress)](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/woocommerce-delivery-notes)
-* [User support forums](http://wordpress.org/tags/woocommerce-delivery-notes?forum_id=10)
-* [Developers: reports bugs & issues](https://github.com/piffpaffpuff/woocommerce-delivery-notes/issues)
-* [Developers: contribute](https://github.com/piffpaffpuff/woocommerce-delivery-notes)
-
-== Translations ==
-
-* English - default, always included
-* German (de_DE): Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/woocommerce-und-extensions/#woocommerce-delivery-notes)
-* Dutch (nl_NL): Nederlands - user-submitted by [Ramon van Belzen](http://profiles.wordpress.org/Ramoonus/)
-* Swedish (sv_SE): Svenska - user-submitted by [Christopher Anderton](http://www.deluxive.se/)
-* Spanish (es_ES): Español - user-submitted by @JAVidania
-* French (fr_FR): Français - user-submitted by Olivier
-* Danish (da_DK): Dansk - user-submitted by [boldt](http://boldt.325.dk/)
-* Polish (pl_PL): Polski - user-submitted
-* Russian (ru_RU): русский - user-submitted
-* Finnish (fi): Suomi - user-submitted
-* Italian (it_IT): Italiano - user-submitted
-* Portuguse, Brazilian (pt_BR): Português - user-submitted
-* Slovakian (sk_SK): Slovenčina - user-submitted
-* Turkish (tr_TR): Türk - user-submitted
-* For custom and update-secure language files please upload them to `/wp-content/languages/woocommerce-delivery-notes/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `woocommerce-delivery-notes-en_US.mo/.po` to achieve that.
-
-**Easy plugin translation platform with GlotPress tool:** [Translate the plugin here](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/woocommerce-delivery-notes)
-
-**Made your own translation?:** [Just send it in](http://genesisthemes.de/en/contact/)
-
-*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
-
-== Credits ==
-Thanks to WooThemes company and WooCommerce team for promoting this plugin on their official homepage as well as on the download page here on wordpress.org! ;-)
+* This update works only with WooCommerce 2.1 (or later) and Wordpress 3.8 (or later). Install it only if your system meets the requirements.
+* Prior print templates aren't compatible. Read the [FAQ](http://wordpress.org/plugins/woocommerce-delivery-notes/faq/) to customize the new template.
+* Translations aren't updated, except German.

@@ -677,6 +677,16 @@ class BWGViewOptions_bwg {
                         <div class="spider_description"></div>
                       </td>
                     </tr>
+                    <tr id="tr_popup_info_full_width">
+                      <td class="spider_label_options">
+                        <label>Full width info:</label>
+                      </td>
+                      <td>
+                        <input type="radio" name="popup_info_full_width" id="popup_info_full_width_1" value="1" <?php if ($row->popup_info_full_width) echo 'checked="checked"'; ?>  /><label for="popup_info_full_width_1">Yes</label>
+                        <input type="radio" name="popup_info_full_width" id="popup_info_full_width_0" value="0" <?php if (!$row->popup_info_full_width) echo 'checked="checked"'; ?>  /><label for="popup_info_full_width_0">No</label>
+                        <div class="spider_description">Display image information based on the lightbox dimensions.</div>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -1047,6 +1057,16 @@ class BWGViewOptions_bwg {
                         <div class="spider_description">Image title position on slideshow</div>
                       </td>
                     </tr>
+                    <tr id="tr_slideshow_full_width_title">
+                      <td class="spider_label_options">
+                        <label>Full width title:</label>
+                      </td>
+                      <td>
+                        <input type="radio" name="slideshow_title_full_width" id="slideshow_title_full_width_1" value="1" <?php if ($row->slideshow_title_full_width) echo 'checked="checked"'; ?>  /><label for="slideshow_title_full_width_1">Yes</label>
+                        <input type="radio" name="slideshow_title_full_width" id="slideshow_title_full_width_0" value="0" <?php if (!$row->slideshow_title_full_width) echo 'checked="checked"'; ?>  /><label for="slideshow_title_full_width_0">No</label>
+                        <div class="spider_description">Display image title based on the slideshow dimensions.</div>
+                      </td>
+                    </tr>
                     <tr>
                       <td class="spider_label_options"><label>Enable image description: </label></td>
                       <td>
@@ -1181,6 +1201,16 @@ class BWGViewOptions_bwg {
                   <input type="radio" name="thumb_name" id="thumb_name_yes" value="1" <?php if ($row->showthumbs_name) echo 'checked="checked"'; ?> /><label for="thumb_name_yes">Yes</label>
                   <input type="radio" name="thumb_name" id="thumb_name_no" value="0"  <?php if (!$row->showthumbs_name) echo 'checked="checked"'; ?> /><label for="thumb_name_no">No</label>
                   <div class="spider_description"></div>
+                </td>
+              </tr>
+              <tr>
+                <td class="spider_label_options spider_free_version_label">
+                  <label>Show description in Vertical Masonry view: </label>
+                </td>
+                <td>
+                  <input disabled="disabled" type="radio" name="show_masonry_thumb_description" id="masonry_thumb_desc_1" value="1" <?php if ($row->show_masonry_thumb_description) echo 'checked="checked"'; ?> /><label for="masonry_thumb_desc_1">Yes</label>
+                  <input disabled="disabled" type="radio" name="show_masonry_thumb_description" id="masonry_thumb_desc_0" value="0" <?php if (!$row->show_masonry_thumb_description) echo 'checked="checked"'; ?> /><label for="masonry_thumb_desc_0">No</label>
+                  <div style="width: 200px;" class="spider_description spider_free_version">This option is disabled in free version.</div>
                 </td>
               </tr>
               <tr>

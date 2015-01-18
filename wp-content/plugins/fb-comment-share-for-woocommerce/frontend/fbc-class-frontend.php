@@ -190,7 +190,7 @@ exit('<h1>Not Found</h1>The requested URL '.$_SERVER['SCRIPT_NAME'].' was not fo
 			if ( $fbc_wc_like['enabled'] != 'no' && get_option('fbc_enabled') != 'no'):
 				
 			?>
-			<div style="float:left; margin:5px; top:15px; left:21px; max-width:310px;" class="woocommerce-main-image"><div style="width:300px; background-color:#FFFFFF; opacity:0.90; filter:alpha(opacity=90); /* For IE8 and earlier */ border:1px dashed #CCCCCC;border-radius:3px; box-shadow: 1px 1px 1px #888888; padding:3px;">
+			<div style="float:left; position:absolute; top:15px; left:21px; max-width:310px;" class="woocommerce-main-image"><div style="width:300px; background-color:#FFFFFF; opacity:0.90; filter:alpha(opacity=90); /* For IE8 and earlier */ border:1px dashed #CCCCCC;border-radius:3px; box-shadow: 1px 1px 1px #888888; padding:3px;">
 			<?php	
 			if( get_option('fbc_fb_enabled') != 'no'){
 			?>

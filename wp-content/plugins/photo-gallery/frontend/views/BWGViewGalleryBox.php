@@ -42,6 +42,7 @@ class BWGViewGalleryBox {
     $enable_image_fullscreen = (isset($_GET['enable_image_fullscreen']) ? esc_html($_GET['enable_image_fullscreen']) : 0);
     $popup_enable_info = (isset($_GET['popup_enable_info']) ? esc_html($_GET['popup_enable_info']) : 1);
     $popup_info_always_show = (isset($_GET['popup_info_always_show']) ? esc_html($_GET['popup_info_always_show']) : 0);
+    $popup_info_full_width = (isset($_GET['popup_info_full_width']) ? esc_html($_GET['popup_info_full_width']) : 0);
     $popup_enable_rate = (isset($_GET['popup_enable_rate']) ? esc_html($_GET['popup_enable_rate']) : 0);
     $popup_hit_counter = (isset($_GET['popup_hit_counter']) ? esc_html($_GET['popup_hit_counter']) : 0);
 
@@ -108,6 +109,7 @@ class BWGViewGalleryBox {
       'enable_image_fullscreen' => $enable_image_fullscreen,
       'popup_enable_info' => $popup_enable_info,
       'popup_info_always_show' => $popup_info_always_show,
+      'popup_info_full_width' => $popup_info_full_width,
       'popup_hit_counter' => $popup_hit_counter,
       'popup_enable_rate' => $popup_enable_rate,
       'slideshow_interval' => $slideshow_interval,
@@ -667,7 +669,11 @@ class BWGViewGalleryBox {
         border: <?php echo $theme_row->lightbox_info_border_width; ?>px <?php echo $theme_row->lightbox_info_border_style; ?> #<?php echo $theme_row->lightbox_info_border_color; ?>;
         border-radius: <?php echo $theme_row->lightbox_info_border_radius; ?>;
         <?php echo ((!$enable_image_filmstrip || $theme_row->lightbox_filmstrip_pos != 'bottom') && $theme_row->lightbox_ctrl_btn_pos == 'bottom' && $theme_row->lightbox_info_pos == 'bottom') ? 'bottom: ' . ($theme_row->lightbox_ctrl_btn_height + 2 * $theme_row->lightbox_ctrl_btn_margin_top) . 'px;' : '' ?>
+        <?php if($params_array['popup_info_full_width']) { ?>
+        width: 100%;
+        <?php } else { ?>
         margin: <?php echo $theme_row->lightbox_info_margin; ?>;
+        <?php } ?>
         padding: <?php echo $theme_row->lightbox_info_padding; ?>;
         <?php echo ((!$enable_image_filmstrip || $theme_row->lightbox_filmstrip_pos != 'top') && $theme_row->lightbox_ctrl_btn_pos == 'top' && $theme_row->lightbox_info_pos == 'top') ? 'top: ' . ($theme_row->lightbox_ctrl_btn_height + 2 * $theme_row->lightbox_ctrl_btn_margin_top) . 'px;' : '' ?>
       }
@@ -908,12 +914,6 @@ class BWGViewGalleryBox {
               </span>
               <input type="hidden" id="bwg_current_image_key" value="<?php echo $key; ?>" />
               <?php
-              if ($key == 0) {?>
-                <script>jQuery("#spider_popup_left").hover().css({"display": "none"});</script><?php
-              }
-              if ($key == (count($image_rows) - 1)) {?>
-                <script>jQuery("#spider_popup_right").hover().css({"display": "none"});</script><?php
-              }
               break;
             }
 	  }
@@ -1301,13 +1301,6 @@ class BWGViewGalleryBox {
           }
           jQuery("#spider_popup_left").hover().css({"display": "inline"});
           jQuery("#spider_popup_right").hover().css({"display": "inline"});
-          /* Hide previous/next buttons on first/last images.*/
-          if (key == 0) {
-            jQuery("#spider_popup_left").hover().css({"display": "none"});
-          }
-          else if (key == (data.length - 1)) {
-            jQuery("#spider_popup_right").hover().css({"display": "none"});
-          }
           jQuery(".bwg_image_count").html(data[key]["number"]);
           /* Set filmstrip initial position.*/
           jQuery(".bwg_watermark").css({display: 'none'});
@@ -1649,11 +1642,11 @@ class BWGViewGalleryBox {
         var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
         var bwg_click = isMobile ? 'touchend' : 'click';
         jQuery("#spider_popup_left").on(bwg_click, function () {
-          bwg_change_image(parseInt(jQuery('#bwg_current_image_key').val()), parseInt(jQuery('#bwg_current_image_key').val()) - 1, data);
+          bwg_change_image(parseInt(jQuery('#bwg_current_image_key').val()), (parseInt(jQuery('#bwg_current_image_key').val()) - 1) >= 0 ? (parseInt(jQuery('#bwg_current_image_key').val()) - 1) % data.length : data.length - 1, data);
           return false;
         });
         jQuery("#spider_popup_right").on(bwg_click, function () {
-          bwg_change_image(parseInt(jQuery('#bwg_current_image_key').val()), parseInt(jQuery('#bwg_current_image_key').val()) + 1, data);
+          bwg_change_image(parseInt(jQuery('#bwg_current_image_key').val()), (parseInt(jQuery('#bwg_current_image_key').val()) + 1) % data.length, data);
           return false;
         });
         if (navigator.appVersion.indexOf("MSIE 10") != -1 || navigator.appVersion.indexOf("MSIE 9") != -1) {

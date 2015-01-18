@@ -14,12 +14,9 @@ $acx_widget_si_feed = get_option('acx_widget_si_feed');
 $acx_widget_si_icon_size = get_option('acx_widget_si_icon_size');
 $acx_si_smw_menu_highlight = get_option('acx_si_smw_menu_highlight');
 $acx_si_smw_float_fix = get_option('acx_si_smw_float_fix');
+$acx_si_smw_theme_warning_ignore = get_option('acx_si_smw_theme_warning_ignore');
 // *****************************************************
-// Check Credit Link
-function check_widget_acx_credit($yes,$no)
-{ 	$acx_widget_si_credit = get_option('acx_widget_si_credit');
-	if($acx_widget_si_credit != "no") { echo $yes; } else { echo $no; } 
-}
+
 // Options Value Checker
 function acx_widget_option_value_check($option_name,$yes,$no)
 { 	$acx_widget_si_option_set = get_option($option_name);
@@ -82,6 +79,11 @@ function acurax_si_widget_simple($theme = "")
 		else if ($value == 6) { echo $feed_link; }
 	}
 } //acurax_si_widget_simple()
+// Check Credit Link
+function check_widget_acx_credit($yes,$no)
+{ 	$acx_widget_si_credit = get_option('acx_widget_si_credit');
+	if($acx_widget_si_credit != "no") { echo $yes; } else { echo $no; } 
+}
 function acx_widget_theme_check_wp_head() {
 	$template_directory = get_template_directory();
 	// If header.php exists in the current theme, scan for "wp_head"
@@ -101,7 +103,10 @@ function acx_widget_theme_check_wp_head() {
 		echo "<div class=\"highlight\" style=\"width: 99%; margin-top: 10px; margin-bottom: 10px; border: 1px solid darkred;\">" . "Your theme needs to be fixed for plugins to work. To fix your theme, use the <a href=\"theme-editor.php\">Theme Editor</a> to insert <code>&lt;?php wp_head(); ?&gt;</code> just before the <code>&lt;/head&gt;</code> line of your theme's <code>header.php</code> file." . "</div>";
 	}
 } // theme check 
+if($acx_si_smw_theme_warning_ignore != "yes")
+{
 add_action('admin_notices', 'acx_widget_theme_check_wp_head');
+}
 function acurax_widget_icons()
 {
 	global $acx_widget_si_theme, $acx_widget_si_credit, $acx_widget_si_twitter, $acx_widget_si_facebook, $acx_widget_si_youtube, 		
@@ -186,7 +191,7 @@ function acx_widget_si_custom_admin_js()
 function acx_widget_si_pluign_upgrade_not_finished()
 {
     echo '<div class="error">
-		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings">Click Here Visit Social Icon Plugin Settings</a></b></p>
+		  <p><b>Thanks for updating Acurax Social Media Widget Plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings">Click Here Visit Social Icon Plugin Settings</a></b></p>
 		  </div>';
 }
 $total_arrays = 7; // Number Of Services
@@ -204,11 +209,11 @@ function enqueue_acx_widget_si_style()
 function acx_widget_si_pluign_finish_version_update()
 {
     echo '<div id="message" class="updated">
-		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Click Here Visit Social Icon Plugin Settings</a></b></p>
+		  <p><b>Thanks for updating Acurax Social Media Widget Plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Click Here Visit Social Icon Plugin Settings</a></b></p>
 		  </div>';
 }
 $acx_widget_si_current_version = get_option('acx_widget_si_current_version');
-if($acx_widget_si_current_version != '1.3.1') // Current Version
+if($acx_widget_si_current_version != '2.2') // Current Version
 {
 if (get_option('social_widget_icon_array_order') != "")
 {
@@ -377,236 +382,333 @@ function socialicons_widget_comparison($ad=2)
 {
 $ad_1 = '
 </hr>
-<p><b>This Plugin is the basic widget version of floating social media icon wordpress plugin. This plugin only support the icon pack and the widget. Premium Version of This plugin includes all the features of floating social media icon and a lot more. Premium version is same as the premium version of floating social media icon wordpress plugin.</b></p>
-<a name="compare"></a>
-<div id="fsmi_landing_holder">
-<div id="fsmi_lp_compare">
-<div class="row_1">
-<div class="fsmi_lp_compare_row_1_1"></div> <!-- fsmi_lp_compare_row_1_1 -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 173px;padding-bottom: 172px;">
-Display
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">More Sharp Quality Icons</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">20+ Icon Theme/Style</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Can Choose Icon Theme/Style</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Can Choose Icon Size</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Automatic/Manual Integration</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Set MouseOver text for each icon in Share Mode</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Set MouseOver text for each icon in Profile Link Mode</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Option to HIDE Invididual Share Icon</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Set Floating Icons in Vertical</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Define how many icons in 1 row</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Add Custom Icons</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 74px;padding-bottom: 74px;">
-Icon Function 
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Link to Social Media Profile</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Share On Social Media</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Show Share on Posts/Pages</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Efficient Image Picker For Pinterest</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Define Social Media Meta for Each Page/Post</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 23px;padding-bottom: 25px;">
-Animation
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Fly Animation</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Mouse Over Effects</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 65px;padding-bottom: 65px;">
-Fly Animation Repeat Interval
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Based On Time in Seconds</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Based On Time in Minutes</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Based On Time in Hours</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Based on Page Views</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Based On Page Views and Time</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left highlighted" style="padding-top: 24px;padding-bottom: 24px;">
-Multiple Fly Animation
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Can Choose Fly Start Position</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Can Choose Fly End Position</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 40px;padding-bottom: 41px;">
-Easy to Configure
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Ajax Based Settings Page</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Drag & Drop Reorder Icons</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Easy to Configure</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 90px;padding-bottom: 90px;">
-Widget Support
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Multiple Widgets</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Icon Style/Theme For Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Icon Size For Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Set whether the icons to Link Profiles/SHARE</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Seperate Mouse Over Multiple Animation for Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Default Opacity for Each</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 90px;padding-bottom: 90px;">
-Shortcode Support
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Multiple Instances</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Icon Style/Theme For Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Seperate Icon Size For Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Set whether the icons to Link Profiles/SHARE</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Mouse Over Multiple Animation for Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Default Opacity for Each</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-<div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 106px;padding-bottom: 107px;border-bottom:0px;">
-PHP Code Support
-</div> <!-- left -->
-<div class="right">
-<div class="fsmi_lp_compare_row_1_features">Multiple Instances</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Use Outside Loop</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Icon Style/Theme For Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Icon Size For Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features highlighted">Set whether the icons to Link Profiles/SHARE</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features">Seperate Mouse Over Multiple Animation for Each</div> <!-- fsmi_lp_compare_row_1_features -->
-<div class="fsmi_lp_compare_row_1_features" style="border-bottom:0px;">Seperate Default Opacity for Each</div> <!-- fsmi_lp_compare_row_1_features -->
-</div> <!-- right -->
-</div> <!-- fsmi_lp_f_group -->
-</div> <!-- row_1 -->
-<div class="row_2">
-<div class="fsmi_lp_compare_row_2_1"></div> <!-- fsmi_lp_compare_row_2_1 -->
-<div class="row_2_border">
-<div class="fsmi_lp_compare_row_2_2"></div> <!-- fsmi_lp_compare_row_2_1 -->
-<div class="n"></div>
-<div class="y"></div>
-<div class="y"></div>
-<div class="y"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="y"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="y"></div>
-<div class="n"></div>
-<div class="y"></div>
-<div class="y"></div>
-<div class="y"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n"></div>
-<div class="n" style="border-bottom:0px;"></div>
-</div> <!-- row_2_border -->
-</div> <!-- row_2 -->
-<div class="row_3">
-<div class="fsmi_lp_compare_row_3_1"></div> <!-- fsmi_lp_compare_row_3_1 -->
-<div class="row_3_shadow">
-<a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_smw_settings_table&utm_medium=link&utm_campaign=compare_buynow" target="_blank"><div class="fsmi_lp_compare_row_3_2"></div></a> <!-- fsmi_lp_compare_row_3_2 -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y"></div> <!-- y -->
-<div class="y" style="border-bottom:0px;"></div> <!-- y -->
-</div> <!-- row_3_shadow -->
-</div> <!-- row_3 -->
-</div> <!-- fsmi_lp_compare -->
-<div id="fsmi_lp_shadow"></div> <!-- fsmi_lp_shadow -->
-<!-- div style="font-family: arial; font-size: 11px; color: darkgreen; float: left; margin-left: 39px; margin-bottom: 5px;">* Special Offer Price on Premium Version for Free Plugin Users Valid Only Until Next Free Version Upgrade - Click Order Now to Get Premium Version for $19.50</div -->
-</div> <!-- fsmi_landing_holder -->
-<div id="ad_fsmi_2_button_order" style="float:left;margin-left: 445px;">
-<a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_smw_settings&utm_medium=banner&utm_campaign=plugin_yellow_order" target="_blank"><div id="ad_fsmi_2_button_order_link"></div></a></div> <!-- ad_fsmi_2_button_order -->
-';
+<a name="compare"></a><div id="ss_middle_wrapper"> 
+		<div id="ss_middle_center"> 
+			<div id="ss_middle_inline_block"> 
+			
+				<div class="middle_h2_1"> 
+					<h2>Limited on Features ?</h2>
+					<h3>Compare and Decide</h3>
+				</div><!-- middle_h2_1 -->
+				
+<div id="ss_features_table"> 
+				
+					<div id="ss_table_header"> 
+						<div class="tb_h1"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+							<div class="tb_h2"> <h3>Features</h3> </div><!-- tb_h2 -->
+							<div class="tb_h3"> <div class="ss_download"> </div><!-- ss_download --> </div><!-- tb_h3 -->
+						<div class="tb_h4 fsmi_tb_h4"> <a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_asmw_settings_table&utm_medium=link&utm_campaign=compare_buynow" target="_blank"><div class="ss_buy_now"> </div><!-- ss_buy_now --></a> </div><!-- tb_h4 -->
+					</div><!-- ss_table_header -->
+						
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 197px;"> Display </div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>More Sharp Quality Icons</li>
+									<li>20+ Icon Theme/Style</li>
+										<li>Can Choose Icon Theme/Style</li>
+											<li>Can Choose Icon Size</li>
+												<li>Automatic/Manual Integration</li>
+													<li>Set MouseOver text for each icon in Share Mode</li>
+												<li>Set MouseOver text for each icon in Profile Link Mode</li>
+											<li>Option to HIDE Invididual Share Icon</li>
+										<li><strong>Set Floating Icons in Vertical</strong></li>
+									<li><strong>Define how many icons in 1 row</strong></li>
+								<li class="ss_last_one"><strong>Add Custom Icons</strong></li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder"> 
+							<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+										<div class="ss_yes"> </div><!-- ss_yes -->
+											<div class="ss_yes"> </div><!-- ss_yes -->
+												<div class="ss_no"> </div><!-- ss_no -->
+											<div class="ss_no"> </div><!-- ss_no -->
+										<div class="ss_no"> </div><!-- ss_no -->
+									<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+										<div class="ss_yes"> </div><!-- ss_yes -->
+											<div class="ss_yes"> </div><!-- ss_yes -->
+												<div class="ss_yes"> </div><!-- ss_yes -->
+											<div class="ss_yes"> </div><!-- ss_yes -->
+										<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->
+					
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 30px;"> Icon Function </div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Link to Social Media Profile</li>
+								<li class="ss_last_one"><strong>Share On Social Media</strong></li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->			
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 30px;"> Animation </div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Fly Animation</li>
+								<li class="ss_last_one"><strong>Mouse Over Effects</strong></li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->	
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 84px;"> Fly Animation Repeat Interval</div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Based On Time in Seconds</li>
+									<li><strong>Based On Time in Minutes</strong></li>
+										<li>Based On Time in Hours</li>
+									<li>Based on Page Views</li>
+								<li class="ss_last_one">Based On Page Views and Time</li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder"> 
+							<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+									<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->	
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 30px;"> Multiple Fly Animation<br/></div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Can Choose Fly Start Position</li>
+								<li class="ss_last_one">Can Choose Fly End Position</li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder"> 
+							<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->				
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 52px;">Easy to Configure</div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Ajax Based Settings Page</li>
+									<li>Drag & Drop Reorder Icons</li>
+								<li class="ss_last_one">Easy to Configure</li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder"> 
+							<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->			
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 106px;">Widget Support </div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Multiple Widgets</li>
+									<li>Separate Icon Style/Theme For Each</li>
+										<li>Separate Icon Size For Each</li>
+										<li>Set whether the icons to Link Profiles/SHARE</li>
+									<li><strong>Separate Mouse Over Multiple Animation for Each</strong></li>
+								<li class="ss_last_one">Separate Default Opacity for Each</li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder">
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->	
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 106px;">Shortcode Support </div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Multiple Instances</li>
+									<li>Separate Icon Style/Theme For Each</li>
+										<li><strong>Separate Icon Size For Each</strong></li>
+										<li>Set whether the icons to Link Profiles/SHARE</li>
+									<li>Separate Mouse Over Multiple Animation for Each</li>
+								<li class="ss_last_one">Separate Default Opacity for Each</li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder">
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->	
+
+					<div class="ss_column_holder"> 
+					
+						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
+						<div class="ss_feature_group" style="padding-top: 126px;">PHP Code Support </div><!-- -->
+						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
+						<div class="ss_features"> 
+							<ul>
+								<li>Multiple Instances</li>
+									<li>Use Outside Loop</li>
+										<li>Separate Icon Style/Theme For Each</li>
+											<li>Separate Icon Size For Each</li>
+										<li><strong>Set whether the icons to Link Profiles/SHARE</strong></li>
+									<li>Separate Mouse Over Multiple Animation for Each</li>
+								<li class="ss_last_one">Separate Default Opacity for Each</li>
+							</ul>
+						</div><!-- ss_features -->
+						
+						<div class="tb_h1 mini"> <h3>FREE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="color: #ffe400;">PREMIUM</span></h3> </div><!-- tb_h1 -->
+						<div class="ss_y_n_holder">
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+										<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
+						</div><!-- ss_y_n_holder -->
+						
+						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+										<div class="ss_yes"> </div><!-- ss_yes -->
+									<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
+						</div><!-- ss_y_n_holder -->						
+						
+					</div><!-- column_holder -->						
+					
+				
+					
+				</div><!-- ss_features_table -->		
+
+			<div id="ad_fsmi_2_button_order" style="float: left; width: 100%;">
+<a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_asmw_settings&utm_medium=banner&utm_campaign=plugin_yellow_order" target="_blank"><div id="ad_fsmi_2_button_order_link"></div></a></div> <!-- ad_fsmi_2_button_order --></div></div></div>';
 $ad_2='<div id="ad_fsmi_2"> <a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_smw_settings&utm_medium=banner&utm_campaign=plugin_enjoy" target="_blank"><div id="ad_fsmi_2_button"></div></a> </div> <!-- ad_fsmi_2 --><br>
 <div id="ad_fsmi_2_button_order">
 <a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_smw_settings&utm_medium=banner&utm_campaign=plugin_yellow_order" target="_blank"><div id="ad_fsmi_2_button_order_link"></div></a></div> <!-- ad_fsmi_2_button_order --> ';
@@ -625,4 +727,48 @@ if (current_user_can('manage_options')) {
 }
 	die(); // this is required to return a proper result
 } add_action('wp_ajax_acx_asmw_saveorder', 'acx_asmw_saveorder_callback');
+function acx_quick_widget_request_submit_callback()
+{
+	$acx_name =  $_POST['acx_name'];
+	$acx_email =  $_POST['acx_email'];
+	$acx_phone =  $_POST['acx_phone'];
+	$acx_weburl =  $_POST['acx_weburl'];
+	$acx_subject =  $_POST['acx_subject'];
+	$acx_question =  $_POST['acx_question'];
+if($acx_name == "" || $acx_email == "" || $acx_weburl == "" || $acx_subject == "" || $acx_question == "")
+{
+echo 2;
+} else
+{
+$current_user_acx = wp_get_current_user();
+$current_user_acx = $current_user->user_email;
+if($current_user_acx == "")
+{
+$current_user_acx = $acx_email;
+}
+$headers[] = 'From: ' . $acx_name . ' <' . $current_user_acx . '>';
+$headers[] = 'Content-Type: text/html; charset=UTF-8'; 
+$message = "Name: ".$acx_name . "\r\n <br>";
+$message = $message . "Email: ".$acx_email . "\r\n <br>";
+if($acx_phone != "")
+{
+$message = $message . "Phone: ".$acx_phone . "\r\n <br>";
+}
+// In case any of our lines are larger than 70 characters, we should use wordwrap()
+$acx_question = wordwrap($acx_question, 70, "\r\n <br>");
+$message = $message . "Website: ".$acx_weburl . "\r\n <br>";
+$message = $message . "Question: ".$acx_question . "\r\n <br>";
+$message = stripslashes($message);
+$acx_subject = "Quick Support - " . $acx_subject;
+$emailed = wp_mail( 'info@acurax.com', $acx_subject, $message, $headers );
+if($emailed)
+{
+echo 1;
+} else
+{
+echo 0;
+}
+}
+	die(); // this is required to return a proper result
+}add_action('wp_ajax_acx_quick_widget_request_submit','acx_quick_widget_request_submit_callback');
 ?>

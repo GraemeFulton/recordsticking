@@ -3,7 +3,7 @@
 Plugin Name: WordPress Visual Icon Fonts
 Plugin URI: http://wordpress.org/plugins/
 Description: Easily and quickly add an extended 'Font Awesome' icon font icons to your content in the visual editor, visual icon management, search and filter all at your fingertips with this handy plugin.
-Version: 0.5.5
+Version: 0.5.7
 Author:  Paul van Zyl
 Author URI: http://profiles.wordpress.org/pushplaybang/
 */
@@ -30,6 +30,7 @@ Author URI: http://profiles.wordpress.org/pushplaybang/
  * **********************************************************************
  *
  */
+
 
 // Include Options
 include 'wpvi-options.php';
@@ -133,55 +134,17 @@ function wp_v_icon_frontend_styles() {
   - - - - - - - - - - - - - - - - - - - - - - - - - */
 add_action('admin_head', 'wpvi_include_icon_list');
 add_action('admin_head', 'wpvi_admin');
-add_action( 'wp_head', 'wp_v_icon_frontend_styles' );
+add_action( 'wp_enqueue_scripts', 'wp_v_icon_frontend_styles' );
 
 
-add_action( 'contextual_help', 'wptuts_screen_help', 10, 3 );
-function wptuts_screen_help( $contextual_help, $screen_id, $screen ) {
-
-    // The add_help_tab function for screen was introduced in WordPress 3.3.
-    if ( ! method_exists( $screen, 'add_help_tab' ) )
-        return $contextual_help;
-
-    global $hook_suffix;
-
-    // List screen properties
-    $variables = '<ul style="width:50%;float:left;"> <strong>Screen variables </strong>'
-        . sprintf( '<li> Screen id : %s</li>', $screen_id )
-        . sprintf( '<li> Screen base : %s</li>', $screen->base )
-        . sprintf( '<li>Parent base : %s</li>', $screen->parent_base )
-        . sprintf( '<li> Parent file : %s</li>', $screen->parent_file )
-        . sprintf( '<li> Hook suffix : %s</li>', $hook_suffix )
-        . '</ul>';
-
-    // Append global $hook_suffix to the hook stems
-    $hooks = array(
-        "load-$hook_suffix",
-        "admin_print_styles-$hook_suffix",
-        "admin_print_scripts-$hook_suffix",
-        "admin_head-$hook_suffix",
-        "admin_footer-$hook_suffix"
-    );
-
-    // If add_meta_boxes or add_meta_boxes_{screen_id} is used, list these too
-    if ( did_action( 'add_meta_boxes_' . $screen_id ) )
-        $hooks[] = 'add_meta_boxes_' . $screen_id;
-
-    if ( did_action( 'add_meta_boxes' ) )
-        $hooks[] = 'add_meta_boxes';
-
-    // Get List HTML for the hooks
-    $hooks = '<ul style="width:50%;float:left;"> <strong>Hooks </strong> <li>' . implode( '</li><li>', $hooks ) . '</li></ul>';
-
-    // Combine $variables list with $hooks list.
-    $help_content = $variables . $hooks;
-
-    // Add help panel
-    $screen->add_help_tab( array(
-        'id'      => 'wptuts-screen-help',
-        'title'   => 'Screen Information',
-        'content' => $help_content,
-    ));
-
-    return $contextual_help;
+/* add a settings link to the plugin management page
+  - - - - - - - - - - - - - - - - - - - - - - - - - */
+function wpvi_plugin_add_settings_link( $links ) {
+    $settings_link = '<a href="options-general.php?page=wpvi_plugin_options">Settings</a>';
+    array_push( $links, $settings_link );
+    return $links;
 }
+
+$plugin = plugin_basename( __FILE__ );
+
+add_filter( "plugin_action_links_$plugin", 'wpvi_plugin_add_settings_link' );

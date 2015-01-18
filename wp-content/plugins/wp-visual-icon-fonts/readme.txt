@@ -1,9 +1,9 @@
-=== WordPress Visual Icon Fonts ===
+=== WP Visual Icon Fonts ===
 Contributors: pushplaybang
 Tags: admin, editor, visual editor, icon, icons, icon font, icon fonts, fonts, font awesome, fontawesome
 Requires at least: 3.0.1
-Tested up to: 3.7.1
-Stable tag: 0.5.5
+Tested up to: 3.8
+Stable tag: 0.5.7
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,11 +17,14 @@ See the screenshots to preview the super simple user interface.
 = Includes Font Awesome 4 (369 Icons) =
 Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. (and coming soon to a wp editor near you!).
 
+Check out the font awesome website here [Fontawesome.io](http://fontawesome.io/)
+
 = Includes Genericons Set (62 Icons) =
 Genericons are vector icons embedded in a webfont designed to be clean and simple keeping with a generic aesthetic.
 Use genericons for instant HiDPI, to change icon colors on the fly, or even with CSS effects such as drop-shadows or gradients!
 
-Check out the font awesome website here [Fontawesome.io](http://fontawesome.io/)
+Genericons website here [genericons.com/](http://genericons.com/)
+
 
 = Features =
 * Simple option to select the icon font family you prefer
@@ -55,7 +58,7 @@ This section describes how to install the plugin and get it working.
 == Frequently Asked Questions ==
 
 = In the visual editor ? =
-Hells yeah! you'll see those ilttle critters right in there.  Click the drop down, search or peruse, click and it'll be visible in your content, highlight it and add a little colour, maybe a font size, go crazy  - you deserve to live a little.
+Hellz yeah! you'll see those little critters right in there.  Click the drop down, search or peruse, click and it'll be visible in your content, highlight it and add a little color, maybe a font size, go crazy  - you deserve to live a little.
 
 = Are the icons really awesome? =
 
@@ -76,14 +79,20 @@ Its coming, please be patient, I will allow full access to font awesome via a sh
 
 == Changelog ==
 
-= 0.5 =
+### 0.5.7 ###
+* small admin update, a tweak here and there.
+
+### 0.5.6 ###
+* change from wp_head to wp_enqueue_scripts to enqueue front end styles
+
+### 0.5 ###
 * CSS Fixes
 * Added Admin Page
 * Added Genericon Icon Font
 
-= 0.2 =
+### 0.2 ###
 * Slightly improved alpha release.
 
-= 0.1 =
+### 0.1 ###
 * Initial Stable Release, take her for a ride, and let me know what you think.
 

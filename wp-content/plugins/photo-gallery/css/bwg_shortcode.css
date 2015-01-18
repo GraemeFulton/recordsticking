@@ -1,7 +1,11 @@
 .gallery_type {
   border: 1px solid #CCCCCC;
   display: inline-block;
-  width: 13%;
+  width: 11.7%;
+}
+
+.gallery_type img {
+  max-width: 100%;
 }
 
 .panel_wrapper,

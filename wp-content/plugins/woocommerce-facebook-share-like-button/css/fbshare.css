@@ -6,27 +6,11 @@
 }
 
 .facebook-button {
-    width: 500px;
+    width: 400px !important;
     height: 25px;
-    overflow: visible;
 }
 
-.fb-like { z-index: 99999; overflow: visible; }
-
-.fbpdl {
-    z-index: 99999 !important; width:300px;
-    overflow: visible;
-}
-
-.fb-like span {
-    z-index: 99999 !important; width:500px !important;
-    overflow: visible;
-}
-
-.fb_iframe_widget span {
-display: inline-block;
-position: relative;
-text-align: justify;
-width: 500px !important;
-height: 95px !important;
+embed, iframe, object
+{
+    max-width: 635% !important;
 }

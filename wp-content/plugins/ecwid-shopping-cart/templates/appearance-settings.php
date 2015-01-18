@@ -1,15 +1,7 @@
-<?php
-function ecwid_embed_svg($name) {
-	$code = file_get_contents(ECWID_PLUGIN_DIR . '/images/' . $name . '.svg');
-
-	echo $code;
-}
-
-?>
 <div class="wrap">
 <form class="pure-form pure-form-aligned ecwid-settings appearance-settings" method="POST" action="options.php">
 
-	<h2><?php _e('Ecwid Shopping Cart - Appearance settings', 'ecwid-shopping-cart'); ?></h2>
+	<h2><?php _e('Ecwid Shopping Cart — Appearance settings', 'ecwid-shopping-cart'); ?></h2>
 
 	<?php settings_fields('ecwid_options_page'); ?>
 	<input type="hidden" name="settings_section" value="appearance" />
@@ -36,7 +28,7 @@ function ecwid_embed_svg($name) {
 				</label>
 			</div>
 			<div class="note">
-				<?php _e('Or you can add search box to your website\'s toolbar using <a href="widgets.php">WordPress native widgets</a>.', 'ecwid-shopping-cart'); ?>
+				<?php echo sprintf(__('Or you can add search box to your website\'s toolbar using <a href="%s">WordPress native widgets</a>', 'ecwid-shopping-cart'), 'widgets.php?from-ecwid=appearance'); ?>
 			</div>
 		</div>
 
@@ -60,7 +52,7 @@ function ecwid_embed_svg($name) {
 				</label>
 			</div>
 			<div class="note">
-				<?php _e('Or you can add vertical categories to your website\'s toolbar using <a href="widgets.php">WordPress native widgets</a>.', 'ecwid-shopping-cart'); ?>
+				<?php echo sprintf(__('Or you can add vertical categories to your website\'s toolbar using <a href="%s">WordPress native widgets</a>', 'ecwid-shopping-cart'), 'widgets.php?from-ecwid-appearance'); ?>
 			</div>
 		</div>
 
@@ -85,7 +77,7 @@ function ecwid_embed_svg($name) {
 				</label>
 			</div>
 			<div class="note">
-				<?php _e("You should disable this option, if you added minicart to your website's&nbsp;sidebar.", 'ecwid-shopping-cart'); ?>
+				<?php _e("You should disable this option, if you added minicart to your website's&nbsp;sidebar", 'ecwid-shopping-cart'); ?>
 			</div>
 		</div>
 
@@ -126,9 +118,9 @@ function ecwid_embed_svg($name) {
 					<input
 						type="text"
 						size="2"
-						name="ecwid_pb_productsperrow_grid"
+						name="ecwid_pb_productspercolumn_grid"
 						class="number"
-						value="<?php echo esc_attr(get_option('ecwid_pb_productsperrow_grid')); ?>"
+						value="<?php echo esc_attr(get_option('ecwid_pb_productspercolumn_grid')); ?>"
 						/>
 				</div>
 				<div class="bottom">
@@ -136,9 +128,9 @@ function ecwid_embed_svg($name) {
 					<input
 						type="text"
 						size="2"
-						name="ecwid_pb_productspercolumn_grid"
+						name="ecwid_pb_productsperrow_grid"
 						class="number"
-						value="<?php echo esc_attr(get_option('ecwid_pb_productspercolumn_grid')); ?>"
+						value="<?php echo esc_attr(get_option('ecwid_pb_productsperrow_grid')); ?>"
 						/>
 				</div>
 			</div>

@@ -10,4 +10,20 @@ jQuery(document).ready(function() {
 			}
 		);
 	});
+
+	jQuery('a.ecwid-message-hide').click(function() {
+
+		var a = this;
+		jQuery(a).css('cursor', 'wait');
+		jQuery.getJSON(
+			'admin-ajax.php',
+			{
+				action: 'ecwid_hide_message',
+				message: a.name
+			},
+			function(data) {
+				jQuery(a).closest('.ecwid-message').fadeOut();
+			}
+		);
+	});
 });

@@ -52,6 +52,9 @@ function bwg_watermark(watermark_type) {
 function bwg_enable_disable(display, id, current) {
   jQuery("#" + current).prop('checked', true);
   jQuery("#" + id).css('display', display);
+  if(id == 'tr_slideshow_title_position') { 
+    jQuery("#tr_slideshow_full_width_title").css('display', display);
+  }
 }
 
 function bwg_popup_fullscreen() { 
@@ -211,6 +214,7 @@ function bwg_gallery_type(gallery_type) {
   jQuery("#tr_slideshow_filmstrip_height").css('display', 'none');
   jQuery("#tr_slideshow_enable_title").css('display', 'none');
   jQuery("#tr_slideshow_title_position").css('display', 'none');
+  jQuery("#tr_slideshow_full_width_title").css('display', 'none');   
   jQuery("#tr_slideshow_enable_description").css('display', 'none');
   jQuery("#tr_slideshow_description_position").css('display', 'none');
   jQuery("#tr_enable_slideshow_music").css('display', 'none');
@@ -227,6 +231,7 @@ function bwg_gallery_type(gallery_type) {
   jQuery("#tr_popup_enable_ctrl_btn").css('display', 'none');
   jQuery("#tr_popup_enable_fullscreen").css('display', 'none');
   jQuery("#tr_popup_enable_info").css('display', 'none');
+  jQuery("#tr_popup_info_full_width").css('display', 'none');
   jQuery("#tr_popup_enable_rate").css('display', 'none');
   jQuery("#tr_popup_enable_comment").css('display', 'none');
   jQuery("#tr_popup_enable_facebook").css('display', 'none');
@@ -433,6 +438,7 @@ function bwg_gallery_type(gallery_type) {
     }
     jQuery("#tr_popup_enable_fullscreen").css('display', '');
     jQuery("#tr_popup_enable_info").css('display', '');
+	jQuery("#tr_popup_info_full_width").css('display', '');
     jQuery("#tr_popup_enable_rate").css('display', '');
     jQuery("#tr_popup_enable_comment").css('display', '');
     jQuery("#tr_popup_enable_facebook").css('display', '');

@@ -80,7 +80,7 @@ class BWGControllerGalleries_bwg {
   }
 
   public function ajax_search() {
-    if (isset($_POST['ajax_task']) && ((esc_html($_POST['ajax_task']) == 'ajax_apply') || (esc_html($_POST['ajax_task']) == 'ajax_save'))) {
+    if (isset($_POST['ajax_task'])) {
       // Save gallery on "apply" and "save".
       $this->save_db();
       global $wpdb;
