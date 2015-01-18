@@ -1042,3 +1042,11 @@ background: #fff;
     padding-right:15px;
 }
 .product_meta{display:none;}
+.shop-images{
+    background:#fff;
+padding-bottom: 1px;
+margin-bottom: 20px;
+z-index:5;
+float:left
+
+}

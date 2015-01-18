@@ -1,0 +1,58 @@
+.magictoolboxparams { 
+	margin:20px 0; 
+	width:70%; 
+	border:1px solid #dfdfdf;
+	
+}
+.magictoolboxparams .params { 
+	margin:0; 
+	width:100%;
+	
+}
+.magictoolboxparams .params th { 
+	vertical-align:middle; 
+	border-bottom:1px solid #dfdfdf; 
+	padding:15px 5px; 
+	font-weight:bold; 
+	background:#fff; 
+	text-align:left; 
+	padding:0 20px; 
+	
+}
+.magictoolboxparams .params td { 
+	vertical-align:middle; 
+	border-bottom:1px solid #dfdfdf; 
+	padding:10px 5px; 
+	background:#fff; 
+	width:100%; 
+	
+}
+.magictoolboxparams .params tr.back th, .magictoolboxparams .params tr.back td { background:#f9f9f9; }
+.magictoolboxparams .params tr.last th, .magictoolboxparams .params tr.last td { border:none; }
+.afterText {
+	font-size:10px;
+	font-style:normal;
+	font-weight:normal;
+	
+}
+.settingsTitle {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 1.7em 0 1em 0;
+	
+}
+input[type="checkbox"],input[type="radio"] {
+	margin:5px;
+	vertical-align:middle !important;
+	
+}
+td img {
+	vertical-align:middle !important;
+	margin-right:10px;
+	
+}
+td span {
+	vertical-align:middle !important;
+	margin-right:10px;
+	
+}
