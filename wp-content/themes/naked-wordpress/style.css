@@ -1050,3 +1050,10 @@ z-index:5;
 float:left
 
 }
+#jckWooThumbs_img_wrap {
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+float: left;
+width: 100%!important;
+}

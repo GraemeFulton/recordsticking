@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div class="container">
 <div itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="col-md-6 shop-images">
+    <div class="col-md-6 col-sm-12 col-xs-12 shop-images">
         <!--TITLE-->
         <h1 itemprop="name" class="product_title entry-title"><?php the_title(); ?></h1>
 	<?php
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	?>
     </div>
 
-	<div class="col-md-6">
+	<div class="col-md-6 col-sm-12 col-xs-12">
             <div class="shop-description">
 <?php
 		/**
