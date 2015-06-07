@@ -38,14 +38,14 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 
 
             <?php if (has_post_thumbnail( $post->ID ) ): ?>
-<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'shop_single' ); ?>
 
             
 <?php endif; ?>
 	<a class="product-link" href="<?php the_permalink(); ?>">
 
             <div class="col-sm-4 grid-box">
-            <div class="product-box" style="background-image: url('<?php echo $image[0]; ?>')">
+            <div class="product-box lazy" data-original="<?php echo $image[0]; ?>" style="background-image: url('http://www.therecordsticking.co.uk/wp-content/uploads/2015/01/ajax-loader-1.gif')">
         
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 

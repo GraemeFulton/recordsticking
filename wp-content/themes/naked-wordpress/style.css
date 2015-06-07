@@ -745,8 +745,7 @@ html[xmlns] .clearfix {
       text-align:center;
 /*          background-position: 30% 50%;
     background-size: cover;*/
-
-background-size:   cover;                      /* <------ */
+                      /* <------ */
     background-repeat: no-repeat;
     background-position: center center;            /* optionally, center the image */
     border:8px white solid;

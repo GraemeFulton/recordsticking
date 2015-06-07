@@ -21,22 +21,7 @@
 //        wp_enqueue_script("jquery");
 
 ?>
-    <?php $template_dir= get_template_directory_uri();?>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="<?php echo $template_dir; ?>/css/bootstrap-theme.min.css">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="<?php echo $template_dir; ?>/css/bootstrap.min.css">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="<?php echo $template_dir; ?>/js/bootstrap.min.js"></script>
-
-<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
 
 <?php wp_head(); 
 // This fxn allows plugins, and Wordpress itself, to insert themselves/scripts/css/files
@@ -44,6 +29,14 @@
 // Removing this fxn call will disable all kinds of plugins and Wordpress default insertions. 
 // Move it if you like, but I would keep it around.
 ?>
+<script>
+    $(document).ready(function(){
+    
+    $(".lazy").lazyload();
+});
+  
+    
+    </script>
 </head>
 
 <body 
@@ -63,9 +56,7 @@
  ?>
             <?php get_search_form(); ?>
 
-	</div>
-	
-		
+	</div>		
 </header><!-- #masthead .site-header -->
 <div class="container">
 <div class="center">

@@ -49,16 +49,17 @@ add_action( 'widgets_init', 'naked_register_sidebars' );
 /*-----------------------------------------------------------------------------------*/
 
 function naked_scripts()  { 
-
+        
+        wp_enqueue_style( 'bs', get_template_directory_uri() . '/css/bootstrap-theme.min.css', '10000', 'all' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', '10000', 'all' );
+ 
 	// get the theme directory style.css and link to it in the header
 	wp_enqueue_style( 'naked-style', get_template_directory_uri() . '/style.css', '10000', 'all' );
 			
-	// add fitvid
-	wp_enqueue_script( 'naked-fitvid', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), NAKED_VERSION, true );
-	
-	// add theme scripts
-	wp_enqueue_script( 'naked', get_template_directory_uri() . '/js/theme.min.js', array(), NAKED_VERSION, true );
-  
+        wp_deregister_script('jquery');
+        wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-latest.min.js');
+        wp_enqueue_script( 'bootstrap-js', get_template_directory_uri().'/js/bootstrap.min.js');    
+
 }
 add_action( 'wp_enqueue_scripts', 'naked_scripts' ); // Register this fxn and allow Wordpress to call it automatcally in the header
 
@@ -95,6 +96,7 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_a
 //remove related products from after product summary, and put into single_product_summary
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
 add_action( 'records_ticking_related_products', 'woocommerce_output_related_products', 50);
+
 
 
 
